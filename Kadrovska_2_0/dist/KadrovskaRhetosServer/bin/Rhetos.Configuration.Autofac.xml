@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rhetos.Configuration.Autofac</name>
+    </assembly>
+    <members>
+        <member name="T:Rhetos.Configuration.Autofac.RhetosTestContainer">
+            <summary>
+            Inherit this class and override virtual functions to customize it.
+            </summary>
+        </member>
+        <member name="M:Rhetos.Configuration.Autofac.RhetosTestContainer.#ctor(System.Boolean,System.String)">
+            <param name="commitChanges">
+            Whether database updates (by ORM repositories) will be committed or rollbacked.
+            Note: Database updates done by SqlExecuter are always instantly committed.
+            </param>
+            <param name="rhetosServerFolder">
+            If not set, the class will try to automatically locate Rhetos server, looking from current directory.
+            </param>
+        </member>
+        <member name="M:Rhetos.Configuration.Autofac.RhetosTestContainer.Initialize">
+            <summary>
+            No need to call this method directly before calling Resolve().
+            Calling Initialize() is needed only when directly accessing static (global) Rhetos properties before resolving any component.
+            </summary>
+        </member>
+    </members>
+</doc>

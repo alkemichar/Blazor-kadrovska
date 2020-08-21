@@ -1,0 +1,7 @@
+﻿Module Kadrovska
+{
+	Entity Sektor
+	{		
+		ShortString Naziv { Required; Unique; }
+	}
+}

@@ -1,0 +1,68 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "BlazorApp.Shared/1.0.0": {
+        "dependencies": {
+          "RestService": "0.0.0.0",
+          "Rhetos.Dom.DefaultConcepts.Interfaces": "3.0.1.0",
+          "ServerDom.Model": "0.0.0.0"
+        },
+        "runtime": {
+          "BlazorApp.Shared.dll": {}
+        }
+      },
+      "RestService/0.0.0.0": {
+        "runtime": {
+          "RestService.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Rhetos.Dom.DefaultConcepts.Interfaces/3.0.1.0": {
+        "runtime": {
+          "Rhetos.Dom.DefaultConcepts.Interfaces.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
+          }
+        }
+      },
+      "ServerDom.Model/0.0.0.0": {
+        "runtime": {
+          "ServerDom.Model.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BlazorApp.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RestService/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rhetos.Dom.DefaultConcepts.Interfaces/3.0.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ServerDom.Model/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

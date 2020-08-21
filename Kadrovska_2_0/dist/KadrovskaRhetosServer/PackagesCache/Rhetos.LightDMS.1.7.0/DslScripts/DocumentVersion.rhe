@@ -1,0 +1,71 @@
+﻿Module LightDMS
+{
+	Entity DocumentVersion
+	{
+		Logging { AllProperties; }
+		
+		Reference Repository LightDMS.DocumentRepository; 
+		Guid DocumentID;
+		Reference CreatedBy Common.Principal { SystemRequired; CreatedBy; }
+		DateTime CreatedDate { DenyUserEdit; CreationTime; SystemRequired; }
+		LongString Comment;
+		
+		Integer VersionNumber { AutocodeForEach LightDMS.DocumentVersion.DocumentID; }
+		LongString FileName { Required; }
+		Reference FileContent { Required; SqlIndex; }
+
+		Is LightDMS.DocumentEvent;
+		
+		SaveMethod
+		{
+			OnInitialization 'DeadlockPrevention' <DeadlockPrevention.cs>;
+		}
+		
+		ComposableFilterBy OtherUserDocumentCheckIn
+		'(items, repository, filterParameter) =>
+		{
+			var itemList = items.Select(x => new { ID = (Guid?)x.ID, DocumentID = x.DocumentID }).ToList();
+			var itemListIds = itemList.Select(x => x.ID);
+			var itemListDocumentIds = itemList.Select(x => x.DocumentID).Distinct();
+
+			return repository.LightDMS.DocumentEvent.Query()
+				.Where(de =>
+					itemListIds.Contains(de.DocumentVersionID) &&
+					itemListDocumentIds.Contains(de.DocumentID) && // Ne micati. Dodatan uvjet za sprječavanje lockova 
+					de.Extension_DocumentStatusBeforeEvent.CheckoutID != null &&
+					de.Extension_DocumentStatusBeforeEvent.CheckedOutToID != de.DocumentVersion.CreatedByID)
+				.Select(de => de.DocumentVersion);
+		}
+		';
+		InvalidData OtherUserDocumentCheckIn 'Akcija nije moguća jer je sadržaj rezerviran za uređivanje od strane drugog korisnika.';
+	}
+	
+	Parameter OtherUserDocumentCheckIn;
+	
+	SqlQueryable DocumentVersionExt
+	"
+		SELECT
+			dv.ID,
+			SizeInKBytes = CAST(((DATALENGTH(fc.Content) + 1024 - 1) / 1024) as decimal) -- Round to a higher integer number.
+			/*SqlQueryableInfo Select LightDMS.DocumentVersionExt*/
+		FROM
+			LightDMS.DocumentVersion dv
+			LEFT JOIN LightDMS.FileContent fc ON fc.ID = dv.FileContentID
+			/*SqlQueryableInfo From LightDMS.DocumentVersionExt*/
+	"
+	{
+		Extends LightDMS.DocumentVersion;
+
+		Decimal SizeInKBytes;
+	}
+
+	Entity FileContent
+	{
+		Binary Content; // Important: This column is converted to FILESTREAM in the AfterDeploy script "Use filestream if supported.sql".
+		DateTime CreatedDate { DenyUserEdit; CreationTime; SystemRequired; SqlIndex; }
+		Bool AzureStorage;
+
+		ItemFilter ContentIliAzureStorage 'item => item.Content == null && item.AzureStorage != true';
+		InvalidData ContentIliAzureStorage 'Ako Content nije postavljen, AzureStorage mora biti true.';
+	}
+}

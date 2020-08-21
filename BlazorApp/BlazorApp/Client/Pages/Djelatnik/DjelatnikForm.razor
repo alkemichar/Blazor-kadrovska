@@ -1,0 +1,38 @@
+﻿@using Rhetos.Mvc.Kadrovska
+@inject AKSoftware.Localization.MultiLanguages.ILanguageContainerService langCont
+
+<EditForm Model="Djelatnik" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+
+    <div class="form-group">
+        <label for="name">@langCont.Keys[Djelatnik.PropertyMaticniBroj]</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Djelatnik.MaticniBroj" disabled="@IsReadOnly"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="name">@langCont.Keys[Djelatnik.PropertyIme]</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Djelatnik.Ime" disabled="@IsReadOnly"/>
+            <ValidationMessage For="@(() => Djelatnik.Ime)" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="name">@langCont.Keys[Djelatnik.PropertyPrezime]</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Djelatnik.Prezime" disabled="@IsReadOnly"/>
+            <ValidationMessage For="@(() => Djelatnik.Prezime)" />
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</EditForm>
+
+@code{
+    [Parameter] public Djelatnik Djelatnik { get; set; }
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+    [Parameter] public bool IsReadOnly { get; set; }    
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata>
+    <id>Rhetos.LightDMS</id>
+    <version>1.7.0</version>
+    <title>Rhetos.LightDMS</title>
+    <authors>Omega software</authors>
+    <owners>Omega software</owners>
+    <licenseUrl>http://opensource.org/licenses/AGPL-3.0</licenseUrl>
+    <projectUrl>https://github.com/rhetos/rhetos</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>LightDMS is a plugin package for Rhetos development platform.
+      It is light implementation of a document version system. Provides DSL containers for Documents/DocumentVersions and service interfaces for upload/download files.</description>
+    <summary />
+    <copyright>Copyright Omega software 2016</copyright>
+    <tags>Rhetos plugin</tags>
+    <dependencies>
+      <dependency id="Rhetos.AfterDeploy" version="1.0.0" />
+      <dependency id="Rhetos.CommonConcepts" version="2.7.0" />
+      <dependency id="WindowsAzure.Storage" version="7.2.1" />
+    </dependencies>
+    <references>
+      <group targetFramework=".NETFramework4.5.1">
+        <reference file="Rhetos.LightDMS.dll" />
+      </group>
+    </references>
+  </metadata>
+</package>

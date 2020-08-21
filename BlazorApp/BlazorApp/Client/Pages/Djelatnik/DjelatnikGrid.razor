@@ -1,0 +1,39 @@
+﻿@page "/djelatnici"
+@inject IJSRuntime js
+@using Rhetos.Mvc.Kadrovska
+
+<Table Namespace="Kadrovska"
+       Columns="@djelatnikColumns"
+       InfoLink="/djelatnik/info/"
+       EditLink="/djelatnik/edit/"
+       CreateLink="/djelatnik/new/"
+       records="djelatnici" />
+
+@code{
+    private List<string> djelatnikColumns;
+    private List<Djelatnik> djelatnici;
+
+    public DjelatnikGrid()
+    {
+        djelatnikColumns = new List<string>()
+        {
+            Rhetos.Mvc.Kadrovska.Djelatnik.PropertyMaticniBroj,
+            Rhetos.Mvc.Kadrovska.Djelatnik.PropertyPrezime,
+            Rhetos.Mvc.Kadrovska.Djelatnik.PropertyIme
+        };
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        
+        djelatnici = await js.InvokeAsync<List<Djelatnik>>("GetItems", "Kadrovska", "Djelatnik");
+        /*try
+        {
+            djelatnici = await djelatnikRepository.GetDjelatnici();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }*/
+    }
+}

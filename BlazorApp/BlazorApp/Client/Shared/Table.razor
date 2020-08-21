@@ -1,0 +1,61 @@
+﻿@typeparam TItem
+@using Rhetos.Mvc.Kadrovska;
+@using BlazorApp.Client.Shared
+@inject AKSoftware.Localization.MultiLanguages.ILanguageContainerService langCont
+
+
+    <nav class="navbar navbar-light bg-light">       
+        <div class="navbar-brand">
+            <a href="@CreateLink" class="btn btn-secondary btn-sm" role="button" aria-pressed="true"><i class="oi oi-plus"></i><span style="margin-left:10px">Novi djelatnik</span></a>
+        </div>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Traži</button>
+        </form>
+    </nav>
+<table class="table table-bordered table-hover">
+
+    <thead class="thead-dark">
+        <tr>
+            <th style="width:150px;"></th>
+            @foreach (var column in Columns)
+            {
+                <th scope="col">@langCont.Keys[GetDisplayName(column)]</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @if (records == null)
+        {
+            <tr>
+                <td style="width:100px;">
+                </td>
+                @foreach (var column in Columns)
+                {
+                    <td>
+                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                    </td>
+                }
+            </tr>
+        }
+        else
+        {
+            @foreach (var record in records)
+            {
+                <tr>
+                    <td style="width:150px;">
+                        <a href="@String.Format("{0}{1}/{2}",InfoLink, record.GetType().GetProperty("ID").GetValue(record, null).ToString(),"true")" class="btn btn-outline-info btn-sm" role="button" aria-pressed="true"><i class="oi oi-info"></i></a>
+                        <a href="@String.Format("{0}{1}",EditLink, record.GetType().GetProperty("ID").GetValue(record, null).ToString())" class="btn btn-outline-danger btn-sm" role="button" aria-pressed="true" style="margin-left:10px;"><i class="oi oi-trash"></i></a>
+                        <a href="@String.Format("{0}{1}",EditLink, record.GetType().GetProperty("ID").GetValue(record, null).ToString())" class="btn btn-outline-dark btn-sm" role="button" aria-pressed="true" style="margin-left:10px;"><i class="oi oi-pencil"></i></a>
+                    </td>
+                    @foreach (var column in Columns)
+                    {
+                        <td>
+                            @record.GetType().GetProperty(column).GetValue(record, null)
+                        </td>
+                    }
+                </tr>
+            }
+        }
+    </tbody>
+</table>

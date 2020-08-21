@@ -1,0 +1,16 @@
+﻿Module Kadrovska
+{
+	Entity Djelatnik
+	{		
+		ShortString MaticniBroj;
+		ShortString Prezime {Required;}
+		ShortString Ime {Required;}
+		ShortString Email;
+		ShortString Mobitel;
+		ShortString Tvrtka;
+		
+		Reference Odjel Kadrovska.Odjel;
+		Reference Sektor Kadrovska.Sektor;
+		Reference Tim Kadrovska.Tim;
+	}
+}

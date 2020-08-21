@@ -1,0 +1,23 @@
+C:\aplikacije\New folder\BlazorApp\BlazorApp\Shared\bin\Debug\netstandard2.1\BlazorApp.Shared.deps.json
+C:\aplikacije\New folder\BlazorApp\BlazorApp\Shared\bin\Debug\netstandard2.1\BlazorApp.Shared.dll
+C:\aplikacije\New folder\BlazorApp\BlazorApp\Shared\bin\Debug\netstandard2.1\BlazorApp.Shared.pdb
+C:\aplikacije\New folder\BlazorApp\BlazorApp\Shared\obj\Debug\netstandard2.1\BlazorApp.Shared.AssemblyInfoInputs.cache
+C:\aplikacije\New folder\BlazorApp\BlazorApp\Shared\obj\Debug\netstandard2.1\BlazorApp.Shared.AssemblyInfo.cs
+C:\aplikacije\New folder\BlazorApp\BlazorApp\Shared\obj\Debug\netstandard2.1\BlazorApp.Shared.dll
+C:\aplikacije\New folder\BlazorApp\BlazorApp\Shared\obj\Debug\netstandard2.1\BlazorApp.Shared.pdb
+C:\aplikacije\New folder\BlazorApp\BlazorApp\Shared\obj\Debug\netstandard2.1\BlazorApp.Shared.csprojAssemblyReference.cache
+C:\aplikacije\BlazorApp\BlazorApp\Shared\bin\Debug\netstandard2.1\BlazorApp.Shared.deps.json
+C:\aplikacije\BlazorApp\BlazorApp\Shared\bin\Debug\netstandard2.1\BlazorApp.Shared.dll
+C:\aplikacije\BlazorApp\BlazorApp\Shared\bin\Debug\netstandard2.1\BlazorApp.Shared.pdb
+C:\aplikacije\BlazorApp\BlazorApp\Shared\bin\Debug\netstandard2.1\RestService.dll
+C:\aplikacije\BlazorApp\BlazorApp\Shared\bin\Debug\netstandard2.1\Rhetos.Dom.DefaultConcepts.Interfaces.dll
+C:\aplikacije\BlazorApp\BlazorApp\Shared\bin\Debug\netstandard2.1\ServerDom.Model.dll
+C:\aplikacije\BlazorApp\BlazorApp\Shared\bin\Debug\netstandard2.1\RestService.pdb
+C:\aplikacije\BlazorApp\BlazorApp\Shared\bin\Debug\netstandard2.1\Rhetos.Dom.DefaultConcepts.Interfaces.pdb
+C:\aplikacije\BlazorApp\BlazorApp\Shared\bin\Debug\netstandard2.1\Rhetos.Dom.DefaultConcepts.Interfaces.xml
+C:\aplikacije\BlazorApp\BlazorApp\Shared\bin\Debug\netstandard2.1\ServerDom.Model.pdb
+C:\aplikacije\BlazorApp\BlazorApp\Shared\obj\Debug\netstandard2.1\BlazorApp.Shared.AssemblyInfoInputs.cache
+C:\aplikacije\BlazorApp\BlazorApp\Shared\obj\Debug\netstandard2.1\BlazorApp.Shared.AssemblyInfo.cs
+C:\aplikacije\BlazorApp\BlazorApp\Shared\obj\Debug\netstandard2.1\BlazorApp.Shared.csproj.CopyComplete
+C:\aplikacije\BlazorApp\BlazorApp\Shared\obj\Debug\netstandard2.1\BlazorApp.Shared.dll
+C:\aplikacije\BlazorApp\BlazorApp\Shared\obj\Debug\netstandard2.1\BlazorApp.Shared.pdb

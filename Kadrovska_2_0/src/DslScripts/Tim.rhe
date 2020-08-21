@@ -1,0 +1,8 @@
+﻿Module Kadrovska
+{
+	Entity Tim
+	{		
+		ShortString Naziv { Required; Unique; }
+		Reference Voditelj Kadrovska.Djelatnik { Required; Unique; }
+	}
+}

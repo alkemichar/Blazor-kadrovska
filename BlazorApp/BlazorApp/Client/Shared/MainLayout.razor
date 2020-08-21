@@ -1,0 +1,29 @@
+﻿@inherits LayoutComponentBase
+<CascadingValue Value="@appState">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <div class="main">
+        <div class="top-row px-4">
+            <span class="mr-md-auto">@appState.PageTitle</span>
+            <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
+        </div>
+
+        <div class="content px-4">
+
+            @Body
+        </div>
+    </div>
+</CascadingValue>
+
+
+@code{
+    AppState appState = new AppState();
+
+    public class AppState
+    {
+        public string PageTitle { get; set; } = "Dobrodošli";
+    }
+}
+

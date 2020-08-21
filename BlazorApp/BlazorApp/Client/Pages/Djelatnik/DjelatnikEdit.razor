@@ -1,0 +1,50 @@
+﻿@page "/djelatnik/edit/{ID:guid}"
+@page "/djelatnik/info/{ID:guid}/{ReadOnly:bool}"
+@page "/djelatnik/new/"
+@using Rhetos.Mvc.Kadrovska;
+@inject IJSRuntime js
+@using System.Text.Json
+@using System.Text
+
+
+@if (ReadOnly == true)
+{
+    <h2>Detalji o djelatniku</h2>
+}
+else if (ID == Guid.Empty)
+{
+    <h2>Novi djelatnik</h2>
+}
+else
+{
+    <h2>Uređivanje djelatnika</h2>
+}
+
+<DjelatnikForm Djelatnik="Djelatnik" OnValidSubmit="SaveDjelatnik" IsReadOnly="ReadOnly" />
+
+@code {
+    [Parameter] public Guid? ID { get; set; }
+    [Parameter] public bool ReadOnly { get; set; }
+
+    private Djelatnik Djelatnik = new Djelatnik();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (ID != null)
+            Djelatnik = await js.InvokeAsync<Rhetos.Mvc.Kadrovska.Djelatnik>("GetItemByID", "Kadrovska", "Djelatnik", ID.ToString());
+    }
+
+    private async void SaveDjelatnik()
+    {
+        var dataJson = JsonSerializer.Serialize(Djelatnik);
+        var stringContent = new StringContent(dataJson, Encoding.UTF8, "application/json");
+        if (ID == null)
+        {
+            await js.InvokeVoidAsync("InsertItem", "Kadrovska", "Djelatnik", dataJson);
+        }
+        else { 
+            await js.InvokeVoidAsync("UpdateItem", "Kadrovska", "Djelatnik", dataJson, Djelatnik.ID.ToString());
+        }   
+    }
+}

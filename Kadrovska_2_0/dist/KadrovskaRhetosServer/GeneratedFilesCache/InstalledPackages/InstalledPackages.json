@@ -1,0 +1,2300 @@
+﻿{
+  "$id": "1",
+  "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces]], mscorlib",
+  "$values": [
+    {
+      "$id": "2",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "Kadrovska.Service",
+      "Version": "0.0.0.1",
+      "Dependencies": {
+        "$id": "3",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": []
+      },
+      "Folder": "..\\..\\src",
+      "ContentFiles": {
+        "$id": "4",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "5",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "..\\..\\src\\DslScripts\\Djelatnik.rhe",
+            "InPackagePath": "DslScripts\\Djelatnik.rhe"
+          },
+          {
+            "$id": "6",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "..\\..\\src\\DslScripts\\ModuleConfigs.rhe",
+            "InPackagePath": "DslScripts\\ModuleConfigs.rhe"
+          },
+          {
+            "$id": "7",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "..\\..\\src\\DslScripts\\Odjel.rhe",
+            "InPackagePath": "DslScripts\\Odjel.rhe"
+          },
+          {
+            "$id": "8",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "..\\..\\src\\DslScripts\\Sektor.rhe",
+            "InPackagePath": "DslScripts\\Sektor.rhe"
+          },
+          {
+            "$id": "9",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "..\\..\\src\\DslScripts\\Tim.rhe",
+            "InPackagePath": "DslScripts\\Tim.rhe"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "10",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "Kadrovska.Service",
+        "VersionsRange": null,
+        "Source": "..\\..\\src",
+        "RequestedBy": "configuration file RhetosPackages.config"
+      },
+      "Source": "C:\\aplikacije\\Kadrovska_2_0\\src"
+    },
+    {
+      "$id": "11",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "Microsoft.Azure.KeyVault.Core",
+      "Version": "1.0.0",
+      "Dependencies": {
+        "$id": "12",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": []
+      },
+      "Folder": "PackagesCache\\Microsoft.Azure.KeyVault.Core.1.0.0",
+      "ContentFiles": {
+        "$id": "13",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "14",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Azure.KeyVault.Core.1.0.0\\Microsoft.Azure.KeyVault.Core.1.0.0.nuspec",
+            "InPackagePath": "Microsoft.Azure.KeyVault.Core.1.0.0.nuspec"
+          },
+          {
+            "$id": "15",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Azure.KeyVault.Core.1.0.0\\lib\\net40\\Microsoft.Azure.KeyVault.Core.dll",
+            "InPackagePath": "lib\\net40\\Microsoft.Azure.KeyVault.Core.dll"
+          },
+          {
+            "$id": "16",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Azure.KeyVault.Core.1.0.0\\lib\\net40\\Microsoft.Azure.KeyVault.Core.xml",
+            "InPackagePath": "lib\\net40\\Microsoft.Azure.KeyVault.Core.xml"
+          },
+          {
+            "$id": "17",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Azure.KeyVault.Core.1.0.0\\lib\\portable-net45+wp8+wpa81+win\\Microsoft.Azure.KeyVault.Core.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+wpa81+win\\Microsoft.Azure.KeyVault.Core.dll"
+          },
+          {
+            "$id": "18",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Azure.KeyVault.Core.1.0.0\\lib\\portable-net45+wp8+wpa81+win\\Microsoft.Azure.KeyVault.Core.xml",
+            "InPackagePath": "lib\\portable-net45+wp8+wpa81+win\\Microsoft.Azure.KeyVault.Core.xml"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "19",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "Microsoft.Azure.KeyVault.Core",
+        "VersionsRange": "1.0.0",
+        "Source": null,
+        "RequestedBy": "package WindowsAzure.Storage"
+      },
+      "Source": "C:\\aplikacije\\Kadrovska_2_0\\dist\\KadrovskaRhetosServer\\PackagesCache"
+    },
+    {
+      "$id": "20",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "Microsoft.Data.Edm",
+      "Version": "5.6.4",
+      "Dependencies": {
+        "$id": "21",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": []
+      },
+      "Folder": "PackagesCache\\Microsoft.Data.Edm.5.6.4",
+      "ContentFiles": {
+        "$id": "22",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "23",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\Microsoft.Data.Edm.5.6.4.nuspec",
+            "InPackagePath": "Microsoft.Data.Edm.5.6.4.nuspec"
+          },
+          {
+            "$id": "24",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\net40\\Microsoft.Data.Edm.dll",
+            "InPackagePath": "lib\\net40\\Microsoft.Data.Edm.dll"
+          },
+          {
+            "$id": "25",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\net40\\Microsoft.Data.Edm.xml",
+            "InPackagePath": "lib\\net40\\Microsoft.Data.Edm.xml"
+          },
+          {
+            "$id": "26",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\net40\\de\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\net40\\de\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "27",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\net40\\es\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\net40\\es\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "28",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\net40\\fr\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\net40\\fr\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "29",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\net40\\it\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\net40\\it\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "30",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\net40\\ja\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\net40\\ja\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "31",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\net40\\ko\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\net40\\ko\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "32",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\net40\\ru\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\net40\\ru\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "33",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\net40\\zh-Hans\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\net40\\zh-Hans\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "34",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\net40\\zh-Hant\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\net40\\zh-Hant\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "35",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\Microsoft.Data.Edm.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\Microsoft.Data.Edm.dll"
+          },
+          {
+            "$id": "36",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\Microsoft.Data.Edm.xml",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\Microsoft.Data.Edm.xml"
+          },
+          {
+            "$id": "37",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\de\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\de\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "38",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\es\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\es\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "39",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\fr\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\fr\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "40",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\it\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\it\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "41",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\ja\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\ja\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "42",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\ko\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\ko\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "43",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\ru\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\ru\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "44",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\zh-Hans\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\zh-Hans\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "45",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\zh-Hant\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\zh-Hant\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "46",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\Microsoft.Data.Edm.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\Microsoft.Data.Edm.dll"
+          },
+          {
+            "$id": "47",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\Microsoft.Data.Edm.xml",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\Microsoft.Data.Edm.xml"
+          },
+          {
+            "$id": "48",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\de\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\de\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "49",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\es\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\es\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "50",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\fr\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\fr\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "51",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\it\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\it\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "52",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\ja\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\ja\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "53",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\ko\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\ko\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "54",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\ru\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\ru\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "55",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\zh-Hans\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\zh-Hans\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "56",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\zh-Hant\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\zh-Hant\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "57",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\sl4\\Microsoft.Data.Edm.dll",
+            "InPackagePath": "lib\\sl4\\Microsoft.Data.Edm.dll"
+          },
+          {
+            "$id": "58",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\sl4\\Microsoft.Data.Edm.xml",
+            "InPackagePath": "lib\\sl4\\Microsoft.Data.Edm.xml"
+          },
+          {
+            "$id": "59",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\sl4\\de\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\sl4\\de\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "60",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\sl4\\es\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\sl4\\es\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "61",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\sl4\\fr\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\sl4\\fr\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "62",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\sl4\\it\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\sl4\\it\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "63",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\sl4\\ja\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\sl4\\ja\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "64",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\sl4\\ko\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\sl4\\ko\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "65",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\sl4\\ru\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\sl4\\ru\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "66",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\sl4\\zh-Hans\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\sl4\\zh-Hans\\Microsoft.Data.Edm.resources.dll"
+          },
+          {
+            "$id": "67",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Edm.5.6.4\\lib\\sl4\\zh-Hant\\Microsoft.Data.Edm.resources.dll",
+            "InPackagePath": "lib\\sl4\\zh-Hant\\Microsoft.Data.Edm.resources.dll"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "68",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "Microsoft.Data.Edm",
+        "VersionsRange": "[5.6.4]",
+        "Source": null,
+        "RequestedBy": "package Microsoft.Data.OData"
+      },
+      "Source": "C:\\aplikacije\\Kadrovska_2_0\\dist\\KadrovskaRhetosServer\\PackagesCache"
+    },
+    {
+      "$id": "69",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "System.Spatial",
+      "Version": "5.6.4",
+      "Dependencies": {
+        "$id": "70",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": []
+      },
+      "Folder": "PackagesCache\\System.Spatial.5.6.4",
+      "ContentFiles": {
+        "$id": "71",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "72",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\System.Spatial.5.6.4.nuspec",
+            "InPackagePath": "System.Spatial.5.6.4.nuspec"
+          },
+          {
+            "$id": "73",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\net40\\System.Spatial.dll",
+            "InPackagePath": "lib\\net40\\System.Spatial.dll"
+          },
+          {
+            "$id": "74",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\net40\\System.Spatial.xml",
+            "InPackagePath": "lib\\net40\\System.Spatial.xml"
+          },
+          {
+            "$id": "75",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\net40\\de\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\net40\\de\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "76",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\net40\\es\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\net40\\es\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "77",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\net40\\fr\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\net40\\fr\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "78",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\net40\\it\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\net40\\it\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "79",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\net40\\ja\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\net40\\ja\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "80",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\net40\\ko\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\net40\\ko\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "81",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\net40\\ru\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\net40\\ru\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "82",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\net40\\zh-Hans\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\net40\\zh-Hans\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "83",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\net40\\zh-Hant\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\net40\\zh-Hant\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "84",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\System.Spatial.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\System.Spatial.dll"
+          },
+          {
+            "$id": "85",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\System.Spatial.xml",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\System.Spatial.xml"
+          },
+          {
+            "$id": "86",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\de\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\de\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "87",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\es\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\es\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "88",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\fr\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\fr\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "89",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\it\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\it\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "90",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\ja\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\ja\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "91",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\ko\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\ko\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "92",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\ru\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\ru\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "93",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\zh-Hans\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\zh-Hans\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "94",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\zh-Hant\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\zh-Hant\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "95",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\System.Spatial.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\System.Spatial.dll"
+          },
+          {
+            "$id": "96",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\System.Spatial.xml",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\System.Spatial.xml"
+          },
+          {
+            "$id": "97",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\de\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\de\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "98",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\es\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\es\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "99",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\fr\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\fr\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "100",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\it\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\it\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "101",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\ja\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\ja\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "102",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\ko\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\ko\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "103",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\ru\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\ru\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "104",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\zh-Hans\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\zh-Hans\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "105",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\zh-Hant\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\zh-Hant\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "106",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\sl4\\System.Spatial.dll",
+            "InPackagePath": "lib\\sl4\\System.Spatial.dll"
+          },
+          {
+            "$id": "107",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\sl4\\System.Spatial.xml",
+            "InPackagePath": "lib\\sl4\\System.Spatial.xml"
+          },
+          {
+            "$id": "108",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\sl4\\de\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\sl4\\de\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "109",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\sl4\\es\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\sl4\\es\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "110",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\sl4\\fr\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\sl4\\fr\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "111",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\sl4\\it\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\sl4\\it\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "112",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\sl4\\ja\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\sl4\\ja\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "113",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\sl4\\ko\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\sl4\\ko\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "114",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\sl4\\ru\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\sl4\\ru\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "115",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\sl4\\zh-Hans\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\sl4\\zh-Hans\\System.Spatial.resources.dll"
+          },
+          {
+            "$id": "116",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\System.Spatial.5.6.4\\lib\\sl4\\zh-Hant\\System.Spatial.resources.dll",
+            "InPackagePath": "lib\\sl4\\zh-Hant\\System.Spatial.resources.dll"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "117",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "System.Spatial",
+        "VersionsRange": "[5.6.4]",
+        "Source": null,
+        "RequestedBy": "package Microsoft.Data.OData"
+      },
+      "Source": "C:\\aplikacije\\Kadrovska_2_0\\dist\\KadrovskaRhetosServer\\PackagesCache"
+    },
+    {
+      "$id": "118",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "Microsoft.Data.OData",
+      "Version": "5.6.4",
+      "Dependencies": {
+        "$id": "119",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$ref": "117"
+          },
+          {
+            "$ref": "68"
+          }
+        ]
+      },
+      "Folder": "PackagesCache\\Microsoft.Data.OData.5.6.4",
+      "ContentFiles": {
+        "$id": "120",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "121",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\Microsoft.Data.OData.5.6.4.nuspec",
+            "InPackagePath": "Microsoft.Data.OData.5.6.4.nuspec"
+          },
+          {
+            "$id": "122",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\net40\\Microsoft.Data.OData.dll",
+            "InPackagePath": "lib\\net40\\Microsoft.Data.OData.dll"
+          },
+          {
+            "$id": "123",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\net40\\Microsoft.Data.OData.xml",
+            "InPackagePath": "lib\\net40\\Microsoft.Data.OData.xml"
+          },
+          {
+            "$id": "124",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\net40\\de\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\net40\\de\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "125",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\net40\\es\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\net40\\es\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "126",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\net40\\fr\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\net40\\fr\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "127",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\net40\\it\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\net40\\it\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "128",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\net40\\ja\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\net40\\ja\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "129",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\net40\\ko\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\net40\\ko\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "130",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\net40\\ru\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\net40\\ru\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "131",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\net40\\zh-Hans\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\net40\\zh-Hans\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "132",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\net40\\zh-Hant\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\net40\\zh-Hant\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "133",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\Microsoft.Data.OData.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\Microsoft.Data.OData.dll"
+          },
+          {
+            "$id": "134",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\Microsoft.Data.OData.xml",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\Microsoft.Data.OData.xml"
+          },
+          {
+            "$id": "135",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\de\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\de\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "136",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\es\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\es\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "137",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\fr\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\fr\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "138",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\it\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\it\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "139",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\ja\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\ja\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "140",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\ko\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\ko\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "141",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\ru\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\ru\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "142",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\zh-Hans\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\zh-Hans\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "143",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net40+sl5+wp8+win8+wpa\\zh-Hant\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp8+win8+wpa\\zh-Hant\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "144",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\Microsoft.Data.OData.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\Microsoft.Data.OData.dll"
+          },
+          {
+            "$id": "145",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\Microsoft.Data.OData.xml",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\Microsoft.Data.OData.xml"
+          },
+          {
+            "$id": "146",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\de\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\de\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "147",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\es\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\es\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "148",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\fr\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\fr\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "149",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\it\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\it\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "150",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\ja\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\ja\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "151",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\ko\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\ko\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "152",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\ru\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\ru\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "153",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\zh-Hans\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\zh-Hans\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "154",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\zh-Hant\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\zh-Hant\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "155",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\sl4\\Microsoft.Data.OData.dll",
+            "InPackagePath": "lib\\sl4\\Microsoft.Data.OData.dll"
+          },
+          {
+            "$id": "156",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\sl4\\Microsoft.Data.OData.xml",
+            "InPackagePath": "lib\\sl4\\Microsoft.Data.OData.xml"
+          },
+          {
+            "$id": "157",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\sl4\\de\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\sl4\\de\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "158",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\sl4\\es\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\sl4\\es\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "159",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\sl4\\fr\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\sl4\\fr\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "160",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\sl4\\it\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\sl4\\it\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "161",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\sl4\\ja\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\sl4\\ja\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "162",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\sl4\\ko\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\sl4\\ko\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "163",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\sl4\\ru\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\sl4\\ru\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "164",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\sl4\\zh-Hans\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\sl4\\zh-Hans\\Microsoft.Data.OData.resources.dll"
+          },
+          {
+            "$id": "165",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.OData.5.6.4\\lib\\sl4\\zh-Hant\\Microsoft.Data.OData.resources.dll",
+            "InPackagePath": "lib\\sl4\\zh-Hant\\Microsoft.Data.OData.resources.dll"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "166",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "Microsoft.Data.OData",
+        "VersionsRange": "5.6.4",
+        "Source": null,
+        "RequestedBy": "package WindowsAzure.Storage"
+      },
+      "Source": "C:\\aplikacije\\Kadrovska_2_0\\dist\\KadrovskaRhetosServer\\PackagesCache"
+    },
+    {
+      "$id": "167",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "Microsoft.Data.Services.Client",
+      "Version": "5.6.4",
+      "Dependencies": {
+        "$id": "168",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "169",
+            "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+            "Id": "Microsoft.Data.OData",
+            "VersionsRange": "[5.6.4]",
+            "Source": null,
+            "RequestedBy": "package Microsoft.Data.Services.Client"
+          }
+        ]
+      },
+      "Folder": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4",
+      "ContentFiles": {
+        "$id": "170",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "171",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\Microsoft.Data.Services.Client.5.6.4.nuspec",
+            "InPackagePath": "Microsoft.Data.Services.Client.5.6.4.nuspec"
+          },
+          {
+            "$id": "172",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\net40\\Microsoft.Data.Services.Client.dll",
+            "InPackagePath": "lib\\net40\\Microsoft.Data.Services.Client.dll"
+          },
+          {
+            "$id": "173",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\net40\\Microsoft.Data.Services.Client.xml",
+            "InPackagePath": "lib\\net40\\Microsoft.Data.Services.Client.xml"
+          },
+          {
+            "$id": "174",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\net40\\de\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\net40\\de\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "175",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\net40\\es\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\net40\\es\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "176",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\net40\\fr\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\net40\\fr\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "177",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\net40\\it\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\net40\\it\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "178",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\net40\\ja\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\net40\\ja\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "179",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\net40\\ko\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\net40\\ko\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "180",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\net40\\ru\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\net40\\ru\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "181",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\net40\\zh-Hans\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\net40\\zh-Hans\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "182",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\net40\\zh-Hant\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\net40\\zh-Hant\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "183",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\Microsoft.Data.Services.Client.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\Microsoft.Data.Services.Client.dll"
+          },
+          {
+            "$id": "184",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\Microsoft.Data.Services.Client.xml",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\Microsoft.Data.Services.Client.xml"
+          },
+          {
+            "$id": "185",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\de\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\de\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "186",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\es\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\es\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "187",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\fr\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\fr\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "188",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\it\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\it\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "189",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\ja\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\ja\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "190",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\ko\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\ko\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "191",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\ru\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\ru\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "192",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\zh-Hans\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\zh-Hans\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "193",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\portable-net45+wp8+win8+wpa\\zh-Hant\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\portable-net45+wp8+win8+wpa\\zh-Hant\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "194",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\sl4\\Microsoft.Data.Services.Client.dll",
+            "InPackagePath": "lib\\sl4\\Microsoft.Data.Services.Client.dll"
+          },
+          {
+            "$id": "195",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\sl4\\Microsoft.Data.Services.Client.xml",
+            "InPackagePath": "lib\\sl4\\Microsoft.Data.Services.Client.xml"
+          },
+          {
+            "$id": "196",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\sl4\\de\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\sl4\\de\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "197",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\sl4\\es\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\sl4\\es\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "198",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\sl4\\fr\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\sl4\\fr\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "199",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\sl4\\it\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\sl4\\it\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "200",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\sl4\\ja\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\sl4\\ja\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "201",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\sl4\\ko\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\sl4\\ko\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "202",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\sl4\\ru\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\sl4\\ru\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "203",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\sl4\\zh-Hans\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\sl4\\zh-Hans\\Microsoft.Data.Services.Client.resources.dll"
+          },
+          {
+            "$id": "204",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Microsoft.Data.Services.Client.5.6.4\\lib\\sl4\\zh-Hant\\Microsoft.Data.Services.Client.resources.dll",
+            "InPackagePath": "lib\\sl4\\zh-Hant\\Microsoft.Data.Services.Client.resources.dll"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "205",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "Microsoft.Data.Services.Client",
+        "VersionsRange": "5.6.4",
+        "Source": null,
+        "RequestedBy": "package WindowsAzure.Storage"
+      },
+      "Source": "C:\\aplikacije\\Kadrovska_2_0\\dist\\KadrovskaRhetosServer\\PackagesCache"
+    },
+    {
+      "$id": "206",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "Newtonsoft.Json",
+      "Version": "6.0.8",
+      "Dependencies": {
+        "$id": "207",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": []
+      },
+      "Folder": "PackagesCache\\Newtonsoft.Json.6.0.8",
+      "ContentFiles": {
+        "$id": "208",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "209",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\Newtonsoft.Json.6.0.8.nuspec",
+            "InPackagePath": "Newtonsoft.Json.6.0.8.nuspec"
+          },
+          {
+            "$id": "210",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\net20\\Newtonsoft.Json.dll",
+            "InPackagePath": "lib\\net20\\Newtonsoft.Json.dll"
+          },
+          {
+            "$id": "211",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\net20\\Newtonsoft.Json.xml",
+            "InPackagePath": "lib\\net20\\Newtonsoft.Json.xml"
+          },
+          {
+            "$id": "212",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\net35\\Newtonsoft.Json.dll",
+            "InPackagePath": "lib\\net35\\Newtonsoft.Json.dll"
+          },
+          {
+            "$id": "213",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\net35\\Newtonsoft.Json.xml",
+            "InPackagePath": "lib\\net35\\Newtonsoft.Json.xml"
+          },
+          {
+            "$id": "214",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\net40\\Newtonsoft.Json.dll",
+            "InPackagePath": "lib\\net40\\Newtonsoft.Json.dll"
+          },
+          {
+            "$id": "215",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\net40\\Newtonsoft.Json.xml",
+            "InPackagePath": "lib\\net40\\Newtonsoft.Json.xml"
+          },
+          {
+            "$id": "216",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\net45\\Newtonsoft.Json.dll",
+            "InPackagePath": "lib\\net45\\Newtonsoft.Json.dll"
+          },
+          {
+            "$id": "217",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\net45\\Newtonsoft.Json.xml",
+            "InPackagePath": "lib\\net45\\Newtonsoft.Json.xml"
+          },
+          {
+            "$id": "218",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\netcore45\\Newtonsoft.Json.dll",
+            "InPackagePath": "lib\\netcore45\\Newtonsoft.Json.dll"
+          },
+          {
+            "$id": "219",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\netcore45\\Newtonsoft.Json.xml",
+            "InPackagePath": "lib\\netcore45\\Newtonsoft.Json.xml"
+          },
+          {
+            "$id": "220",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\portable-net40+sl5+wp80+win8+wpa81\\Newtonsoft.Json.dll",
+            "InPackagePath": "lib\\portable-net40+sl5+wp80+win8+wpa81\\Newtonsoft.Json.dll"
+          },
+          {
+            "$id": "221",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\portable-net40+sl5+wp80+win8+wpa81\\Newtonsoft.Json.xml",
+            "InPackagePath": "lib\\portable-net40+sl5+wp80+win8+wpa81\\Newtonsoft.Json.xml"
+          },
+          {
+            "$id": "222",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\portable-net45+wp80+win8+wpa81+aspnetcore50\\Newtonsoft.Json.dll",
+            "InPackagePath": "lib\\portable-net45+wp80+win8+wpa81+aspnetcore50\\Newtonsoft.Json.dll"
+          },
+          {
+            "$id": "223",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\lib\\portable-net45+wp80+win8+wpa81+aspnetcore50\\Newtonsoft.Json.xml",
+            "InPackagePath": "lib\\portable-net45+wp80+win8+wpa81+aspnetcore50\\Newtonsoft.Json.xml"
+          },
+          {
+            "$id": "224",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Newtonsoft.Json.6.0.8\\tools\\install.ps1",
+            "InPackagePath": "tools\\install.ps1"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "225",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "Newtonsoft.Json",
+        "VersionsRange": "6.0.8",
+        "Source": null,
+        "RequestedBy": "package WindowsAzure.Storage"
+      },
+      "Source": "C:\\aplikacije\\Kadrovska_2_0\\dist\\KadrovskaRhetosServer\\PackagesCache"
+    },
+    {
+      "$id": "226",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "Rhetos",
+      "Version": "3.0.1",
+      "Dependencies": {
+        "$id": "227",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": []
+      },
+      "Folder": ".",
+      "ContentFiles": {
+        "$id": "228",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": []
+      },
+      "Request": {
+        "$id": "229",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "Rhetos",
+        "VersionsRange": "",
+        "Source": "",
+        "RequestedBy": "Rhetos framework"
+      },
+      "Source": "."
+    },
+    {
+      "$id": "230",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "Rhetos.AfterDeploy",
+      "Version": "1.2.0",
+      "Dependencies": {
+        "$id": "231",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "232",
+            "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+            "Id": "Rhetos",
+            "VersionsRange": "2.12.0",
+            "Source": null,
+            "RequestedBy": "package Rhetos.AfterDeploy"
+          }
+        ]
+      },
+      "Folder": "PackagesCache\\Rhetos.AfterDeploy.1.2.0",
+      "ContentFiles": {
+        "$id": "233",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "234",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.AfterDeploy.1.2.0\\ChangeLog.md",
+            "InPackagePath": "ChangeLog.md"
+          },
+          {
+            "$id": "235",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.AfterDeploy.1.2.0\\Readme.md",
+            "InPackagePath": "Readme.md"
+          },
+          {
+            "$id": "236",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.AfterDeploy.1.2.0\\Rhetos.AfterDeploy.1.2.0.nuspec",
+            "InPackagePath": "Rhetos.AfterDeploy.1.2.0.nuspec"
+          },
+          {
+            "$id": "237",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.AfterDeploy.1.2.0\\lib\\net451\\Rhetos.AfterDeploy.dll",
+            "InPackagePath": "lib\\net451\\Rhetos.AfterDeploy.dll"
+          },
+          {
+            "$id": "238",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.AfterDeploy.1.2.0\\lib\\net451\\Rhetos.AfterDeploy.pdb",
+            "InPackagePath": "lib\\net451\\Rhetos.AfterDeploy.pdb"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "239",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "Rhetos.AfterDeploy",
+        "VersionsRange": "[1.2.0,1.2.0]",
+        "Source": null,
+        "RequestedBy": "configuration file RhetosPackages.config"
+      },
+      "Source": "C:\\aplikacije\\Kadrovska_2_0\\dist\\KadrovskaRhetosServer\\PackagesCache"
+    },
+    {
+      "$id": "240",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "Rhetos.CommonConcepts",
+      "Version": "3.0.1",
+      "Dependencies": {
+        "$id": "241",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "242",
+            "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+            "Id": "Rhetos",
+            "VersionsRange": "2.0.0",
+            "Source": null,
+            "RequestedBy": "package Rhetos.CommonConcepts"
+          }
+        ]
+      },
+      "Folder": "PackagesCache\\Rhetos.CommonConcepts.3.0.1",
+      "ContentFiles": {
+        "$id": "243",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "244",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\Readme.md",
+            "InPackagePath": "Readme.md"
+          },
+          {
+            "$id": "245",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\Rhetos.CommonConcepts.3.0.1.nuspec",
+            "InPackagePath": "Rhetos.CommonConcepts.3.0.1.nuspec"
+          },
+          {
+            "$id": "246",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DataMigration\\0.9.12\\1 - AppliedConcept Options1 Options2.sql",
+            "InPackagePath": "DataMigration\\0.9.12\\1 - AppliedConcept Options1 Options2.sql"
+          },
+          {
+            "$id": "247",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DataMigration\\0.9.14\\1 - Claim.Active.sql",
+            "InPackagePath": "DataMigration\\0.9.14\\1 - Claim.Active.sql"
+          },
+          {
+            "$id": "248",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DataMigration\\0.9.29\\1 - RoleInheritsRole renames columns.sql",
+            "InPackagePath": "DataMigration\\0.9.29\\1 - RoleInheritsRole renames columns.sql"
+          },
+          {
+            "$id": "249",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DataMigration\\0.9.29\\2 - Permissions to RP and PP.sql",
+            "InPackagePath": "DataMigration\\0.9.29\\2 - Permissions to RP and PP.sql"
+          },
+          {
+            "$id": "250",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DataMigration\\0.9.35\\1 - A new tag in create property.sql",
+            "InPackagePath": "DataMigration\\0.9.35\\1 - A new tag in create property.sql"
+          },
+          {
+            "$id": "251",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DataMigration\\1.11\\1 - DataStructureExtendsInfo to UniqueReferenceInfo.sql",
+            "InPackagePath": "DataMigration\\1.11\\1 - DataStructureExtendsInfo to UniqueReferenceInfo.sql"
+          },
+          {
+            "$id": "252",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DataMigration\\1.3\\1 - Clear excess dependencies for subtype id.sql",
+            "InPackagePath": "DataMigration\\1.3\\1 - Clear excess dependencies for subtype id.sql"
+          },
+          {
+            "$id": "253",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DataMigration\\2.12\\1 - Optimized index CreateQuery modification.sql",
+            "InPackagePath": "DataMigration\\2.12\\1 - Optimized index CreateQuery modification.sql"
+          },
+          {
+            "$id": "254",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DataMigration\\2.12\\2 - Separate foreign key concept.sql",
+            "InPackagePath": "DataMigration\\2.12\\2 - Separate foreign key concept.sql"
+          },
+          {
+            "$id": "255",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DataMigration\\2.4\\1 - KeepSynchronizedMetadata for Polymorphic.sql",
+            "InPackagePath": "DataMigration\\2.4\\1 - KeepSynchronizedMetadata for Polymorphic.sql"
+          },
+          {
+            "$id": "256",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\AutoCode.rhe",
+            "InPackagePath": "DslScripts\\AutoCode.rhe"
+          },
+          {
+            "$id": "257",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\AutoCodeCacheGetNext body.sql",
+            "InPackagePath": "DslScripts\\AutoCodeCacheGetNext body.sql"
+          },
+          {
+            "$id": "258",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\AutoCodeCacheGetNext param.sql",
+            "InPackagePath": "DslScripts\\AutoCodeCacheGetNext param.sql"
+          },
+          {
+            "$id": "259",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\AutoCodeCacheUpdate body.sql",
+            "InPackagePath": "DslScripts\\AutoCodeCacheUpdate body.sql"
+          },
+          {
+            "$id": "260",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\AutoCodeCacheUpdate param.sql",
+            "InPackagePath": "DslScripts\\AutoCodeCacheUpdate param.sql"
+          },
+          {
+            "$id": "261",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\FilterId.rhe",
+            "InPackagePath": "DslScripts\\FilterId.rhe"
+          },
+          {
+            "$id": "262",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\KeepSynchronizedMetadata.rhe",
+            "InPackagePath": "DslScripts\\KeepSynchronizedMetadata.rhe"
+          },
+          {
+            "$id": "263",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\Locking.rhe",
+            "InPackagePath": "DslScripts\\Locking.rhe"
+          },
+          {
+            "$id": "264",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\Log.ContextInfo default.MsSql.sql",
+            "InPackagePath": "DslScripts\\Log.ContextInfo default.MsSql.sql"
+          },
+          {
+            "$id": "265",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\Log.ContextInfo default.Oracle.sql",
+            "InPackagePath": "DslScripts\\Log.ContextInfo default.Oracle.sql"
+          },
+          {
+            "$id": "266",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\Log.Created default.MsSql.sql",
+            "InPackagePath": "DslScripts\\Log.Created default.MsSql.sql"
+          },
+          {
+            "$id": "267",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\Log.Created default.Oracle.sql",
+            "InPackagePath": "DslScripts\\Log.Created default.Oracle.sql"
+          },
+          {
+            "$id": "268",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\Log.UserName default.MsSql.sql",
+            "InPackagePath": "DslScripts\\Log.UserName default.MsSql.sql"
+          },
+          {
+            "$id": "269",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\Log.UserName default.Oracle.sql",
+            "InPackagePath": "DslScripts\\Log.UserName default.Oracle.sql"
+          },
+          {
+            "$id": "270",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\Log.Workstation default.MsSql.sql",
+            "InPackagePath": "DslScripts\\Log.Workstation default.MsSql.sql"
+          },
+          {
+            "$id": "271",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\Log.Workstation default.Oracle.sql",
+            "InPackagePath": "DslScripts\\Log.Workstation default.Oracle.sql"
+          },
+          {
+            "$id": "272",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\Logging.rhe",
+            "InPackagePath": "DslScripts\\Logging.rhe"
+          },
+          {
+            "$id": "273",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\LogReader.MsSql.sql",
+            "InPackagePath": "DslScripts\\LogReader.MsSql.sql"
+          },
+          {
+            "$id": "274",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\LogReader.Oracle.sql",
+            "InPackagePath": "DslScripts\\LogReader.Oracle.sql"
+          },
+          {
+            "$id": "275",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\LogRelatedItemReader.MsSql.sql",
+            "InPackagePath": "DslScripts\\LogRelatedItemReader.MsSql.sql"
+          },
+          {
+            "$id": "276",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\LogRelatedItemReader.Oracle.sql",
+            "InPackagePath": "DslScripts\\LogRelatedItemReader.Oracle.sql"
+          },
+          {
+            "$id": "277",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\RelatedEvents.sql",
+            "InPackagePath": "DslScripts\\RelatedEvents.sql"
+          },
+          {
+            "$id": "278",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\DslScripts\\Security.rhe",
+            "InPackagePath": "DslScripts\\Security.rhe"
+          },
+          {
+            "$id": "279",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.DatabaseGenerator.DefaultConcepts.dll",
+            "InPackagePath": "lib\\net472\\Rhetos.DatabaseGenerator.DefaultConcepts.dll"
+          },
+          {
+            "$id": "280",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.DatabaseGenerator.DefaultConcepts.pdb",
+            "InPackagePath": "lib\\net472\\Rhetos.DatabaseGenerator.DefaultConcepts.pdb"
+          },
+          {
+            "$id": "281",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.DatabaseGenerator.DefaultConcepts.xml",
+            "InPackagePath": "lib\\net472\\Rhetos.DatabaseGenerator.DefaultConcepts.xml"
+          },
+          {
+            "$id": "282",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Dom.DefaultConcepts.dll",
+            "InPackagePath": "lib\\net472\\Rhetos.Dom.DefaultConcepts.dll"
+          },
+          {
+            "$id": "283",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Dom.DefaultConcepts.Interfaces.dll",
+            "InPackagePath": "lib\\net472\\Rhetos.Dom.DefaultConcepts.Interfaces.dll"
+          },
+          {
+            "$id": "284",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Dom.DefaultConcepts.Interfaces.pdb",
+            "InPackagePath": "lib\\net472\\Rhetos.Dom.DefaultConcepts.Interfaces.pdb"
+          },
+          {
+            "$id": "285",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Dom.DefaultConcepts.Interfaces.xml",
+            "InPackagePath": "lib\\net472\\Rhetos.Dom.DefaultConcepts.Interfaces.xml"
+          },
+          {
+            "$id": "286",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Dom.DefaultConcepts.pdb",
+            "InPackagePath": "lib\\net472\\Rhetos.Dom.DefaultConcepts.pdb"
+          },
+          {
+            "$id": "287",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Dom.DefaultConcepts.xml",
+            "InPackagePath": "lib\\net472\\Rhetos.Dom.DefaultConcepts.xml"
+          },
+          {
+            "$id": "288",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Dsl.DefaultConcepts.dll",
+            "InPackagePath": "lib\\net472\\Rhetos.Dsl.DefaultConcepts.dll"
+          },
+          {
+            "$id": "289",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Dsl.DefaultConcepts.pdb",
+            "InPackagePath": "lib\\net472\\Rhetos.Dsl.DefaultConcepts.pdb"
+          },
+          {
+            "$id": "290",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Dsl.DefaultConcepts.xml",
+            "InPackagePath": "lib\\net472\\Rhetos.Dsl.DefaultConcepts.xml"
+          },
+          {
+            "$id": "291",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Processing.DefaultCommands.dll",
+            "InPackagePath": "lib\\net472\\Rhetos.Processing.DefaultCommands.dll"
+          },
+          {
+            "$id": "292",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Processing.DefaultCommands.Interfaces.dll",
+            "InPackagePath": "lib\\net472\\Rhetos.Processing.DefaultCommands.Interfaces.dll"
+          },
+          {
+            "$id": "293",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Processing.DefaultCommands.Interfaces.pdb",
+            "InPackagePath": "lib\\net472\\Rhetos.Processing.DefaultCommands.Interfaces.pdb"
+          },
+          {
+            "$id": "294",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Processing.DefaultCommands.Interfaces.xml",
+            "InPackagePath": "lib\\net472\\Rhetos.Processing.DefaultCommands.Interfaces.xml"
+          },
+          {
+            "$id": "295",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Processing.DefaultCommands.pdb",
+            "InPackagePath": "lib\\net472\\Rhetos.Processing.DefaultCommands.pdb"
+          },
+          {
+            "$id": "296",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.CommonConcepts.3.0.1\\lib\\net472\\Rhetos.Processing.DefaultCommands.xml",
+            "InPackagePath": "lib\\net472\\Rhetos.Processing.DefaultCommands.xml"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "297",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "Rhetos.CommonConcepts",
+        "VersionsRange": null,
+        "Source": null,
+        "RequestedBy": "configuration file RhetosPackages.config"
+      },
+      "Source": "https://www.nuget.org/api/v2/"
+    },
+    {
+      "$id": "298",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "WindowsAzure.Storage",
+      "Version": "7.2.1",
+      "Dependencies": {
+        "$id": "299",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$ref": "166"
+          },
+          {
+            "$ref": "225"
+          },
+          {
+            "$ref": "205"
+          },
+          {
+            "$ref": "19"
+          }
+        ]
+      },
+      "Folder": "PackagesCache\\WindowsAzure.Storage.7.2.1",
+      "ContentFiles": {
+        "$id": "300",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "301",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\WindowsAzure.Storage.7.2.1\\WindowsAzure.Storage.7.2.1.nuspec",
+            "InPackagePath": "WindowsAzure.Storage.7.2.1.nuspec"
+          },
+          {
+            "$id": "302",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\WindowsAzure.Storage.7.2.1\\lib\\net40\\Microsoft.WindowsAzure.Storage.dll",
+            "InPackagePath": "lib\\net40\\Microsoft.WindowsAzure.Storage.dll"
+          },
+          {
+            "$id": "303",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\WindowsAzure.Storage.7.2.1\\lib\\net40\\Microsoft.WindowsAzure.Storage.pdb",
+            "InPackagePath": "lib\\net40\\Microsoft.WindowsAzure.Storage.pdb"
+          },
+          {
+            "$id": "304",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\WindowsAzure.Storage.7.2.1\\lib\\net40\\Microsoft.WindowsAzure.Storage.xml",
+            "InPackagePath": "lib\\net40\\Microsoft.WindowsAzure.Storage.xml"
+          },
+          {
+            "$id": "305",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\WindowsAzure.Storage.7.2.1\\lib\\netstandard1.3\\Microsoft.WindowsAzure.Storage.dll",
+            "InPackagePath": "lib\\netstandard1.3\\Microsoft.WindowsAzure.Storage.dll"
+          },
+          {
+            "$id": "306",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\WindowsAzure.Storage.7.2.1\\lib\\netstandard1.3\\Microsoft.WindowsAzure.Storage.pdb",
+            "InPackagePath": "lib\\netstandard1.3\\Microsoft.WindowsAzure.Storage.pdb"
+          },
+          {
+            "$id": "307",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\WindowsAzure.Storage.7.2.1\\lib\\win8\\Microsoft.WindowsAzure.Storage.dll",
+            "InPackagePath": "lib\\win8\\Microsoft.WindowsAzure.Storage.dll"
+          },
+          {
+            "$id": "308",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\WindowsAzure.Storage.7.2.1\\lib\\win8\\Microsoft.WindowsAzure.Storage.pdb",
+            "InPackagePath": "lib\\win8\\Microsoft.WindowsAzure.Storage.pdb"
+          },
+          {
+            "$id": "309",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\WindowsAzure.Storage.7.2.1\\lib\\wp8\\Microsoft.WindowsAzure.Storage.dll",
+            "InPackagePath": "lib\\wp8\\Microsoft.WindowsAzure.Storage.dll"
+          },
+          {
+            "$id": "310",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\WindowsAzure.Storage.7.2.1\\lib\\wp8\\Microsoft.WindowsAzure.Storage.pdb",
+            "InPackagePath": "lib\\wp8\\Microsoft.WindowsAzure.Storage.pdb"
+          },
+          {
+            "$id": "311",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\WindowsAzure.Storage.7.2.1\\lib\\wpa\\Microsoft.WindowsAzure.Storage.dll",
+            "InPackagePath": "lib\\wpa\\Microsoft.WindowsAzure.Storage.dll"
+          },
+          {
+            "$id": "312",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\WindowsAzure.Storage.7.2.1\\lib\\wpa\\Microsoft.WindowsAzure.Storage.pdb",
+            "InPackagePath": "lib\\wpa\\Microsoft.WindowsAzure.Storage.pdb"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "313",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "WindowsAzure.Storage",
+        "VersionsRange": "7.2.1",
+        "Source": null,
+        "RequestedBy": "package Rhetos.LightDMS"
+      },
+      "Source": "C:\\aplikacije\\Kadrovska_2_0\\dist\\KadrovskaRhetosServer\\PackagesCache"
+    },
+    {
+      "$id": "314",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "Rhetos.LightDMS",
+      "Version": "1.7.0",
+      "Dependencies": {
+        "$id": "315",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "316",
+            "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+            "Id": "Rhetos.AfterDeploy",
+            "VersionsRange": "1.0.0",
+            "Source": null,
+            "RequestedBy": "package Rhetos.LightDMS"
+          },
+          {
+            "$id": "317",
+            "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+            "Id": "Rhetos.CommonConcepts",
+            "VersionsRange": "2.7.0",
+            "Source": null,
+            "RequestedBy": "package Rhetos.LightDMS"
+          },
+          {
+            "$ref": "313"
+          }
+        ]
+      },
+      "Folder": "PackagesCache\\Rhetos.LightDMS.1.7.0",
+      "ContentFiles": {
+        "$id": "318",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "319",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\ChangeLog.md",
+            "InPackagePath": "ChangeLog.md"
+          },
+          {
+            "$id": "320",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\Readme.md",
+            "InPackagePath": "Readme.md"
+          },
+          {
+            "$id": "321",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\Rhetos.LightDMS.1.7.0.nuspec",
+            "InPackagePath": "Rhetos.LightDMS.1.7.0.nuspec"
+          },
+          {
+            "$id": "322",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\DataMigration\\001 - CreateDefaultRepository.sql",
+            "InPackagePath": "DataMigration\\001 - CreateDefaultRepository.sql"
+          },
+          {
+            "$id": "323",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\DataMigration\\002 - ExternalEntityID rename.sql",
+            "InPackagePath": "DataMigration\\002 - ExternalEntityID rename.sql"
+          },
+          {
+            "$id": "324",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\DataMigration\\003 - FileContent CreatedDate.sql",
+            "InPackagePath": "DataMigration\\003 - FileContent CreatedDate.sql"
+          },
+          {
+            "$id": "325",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\DataMigration\\004 - FileContent_FileStream micanje RemoveQuery.sql",
+            "InPackagePath": "DataMigration\\004 - FileContent_FileStream micanje RemoveQuery.sql"
+          },
+          {
+            "$id": "326",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\DslScripts\\Checkout.rhe",
+            "InPackagePath": "DslScripts\\Checkout.rhe"
+          },
+          {
+            "$id": "327",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\DslScripts\\ComputeDocumentStatusSync.cs",
+            "InPackagePath": "DslScripts\\ComputeDocumentStatusSync.cs"
+          },
+          {
+            "$id": "328",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\DslScripts\\DeadlockPrevention.cs",
+            "InPackagePath": "DslScripts\\DeadlockPrevention.cs"
+          },
+          {
+            "$id": "329",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\DslScripts\\DocumentEvent.rhe",
+            "InPackagePath": "DslScripts\\DocumentEvent.rhe"
+          },
+          {
+            "$id": "330",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\DslScripts\\DocumentStatus.rhe",
+            "InPackagePath": "DslScripts\\DocumentStatus.rhe"
+          },
+          {
+            "$id": "331",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\DslScripts\\DocumentVersion.rhe",
+            "InPackagePath": "DslScripts\\DocumentVersion.rhe"
+          },
+          {
+            "$id": "332",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\DslScripts\\Registers.rhe",
+            "InPackagePath": "DslScripts\\Registers.rhe"
+          },
+          {
+            "$id": "333",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\DslScripts\\SqlIndex.rhe",
+            "InPackagePath": "DslScripts\\SqlIndex.rhe"
+          },
+          {
+            "$id": "334",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\DslScripts\\UndoCheckout.rhe",
+            "InPackagePath": "DslScripts\\UndoCheckout.rhe"
+          },
+          {
+            "$id": "335",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\lib\\net451\\Rhetos.LightDMS.dll",
+            "InPackagePath": "lib\\net451\\Rhetos.LightDMS.dll"
+          },
+          {
+            "$id": "336",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\lib\\net451\\Rhetos.LightDMS.pdb",
+            "InPackagePath": "lib\\net451\\Rhetos.LightDMS.pdb"
+          },
+          {
+            "$id": "337",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.LightDMS.1.7.0\\Resources\\HomePageSnippet.html",
+            "InPackagePath": "Resources\\HomePageSnippet.html"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "338",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "Rhetos.LightDMS",
+        "VersionsRange": "[1.7.0,1.7.0]",
+        "Source": null,
+        "RequestedBy": "configuration file RhetosPackages.config"
+      },
+      "Source": "C:\\aplikacije\\Kadrovska_2_0\\dist\\KadrovskaRhetosServer\\PackagesCache"
+    },
+    {
+      "$id": "339",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "Rhetos.MvcModelGenerator.Client",
+      "Version": "2.4.0",
+      "Dependencies": {
+        "$id": "340",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": []
+      },
+      "Folder": "PackagesCache\\Rhetos.MvcModelGenerator.Client.2.4.0",
+      "ContentFiles": {
+        "$id": "341",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "342",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.MvcModelGenerator.Client.2.4.0\\Readme.md",
+            "InPackagePath": "Readme.md"
+          },
+          {
+            "$id": "343",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.MvcModelGenerator.Client.2.4.0\\Rhetos.MvcModelGenerator.Client.2.4.0.nuspec",
+            "InPackagePath": "Rhetos.MvcModelGenerator.Client.2.4.0.nuspec"
+          },
+          {
+            "$id": "344",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.MvcModelGenerator.Client.2.4.0\\lib\\net451\\Rhetos.Mvc.Client.dll",
+            "InPackagePath": "lib\\net451\\Rhetos.Mvc.Client.dll"
+          },
+          {
+            "$id": "345",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.MvcModelGenerator.Client.2.4.0\\lib\\net451\\Rhetos.Mvc.Client.pdb",
+            "InPackagePath": "lib\\net451\\Rhetos.Mvc.Client.pdb"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "346",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "Rhetos.MvcModelGenerator.Client",
+        "VersionsRange": "2.4.0",
+        "Source": null,
+        "RequestedBy": "package Rhetos.MvcModelGenerator"
+      },
+      "Source": "C:\\aplikacije\\Kadrovska_2_0\\dist\\KadrovskaRhetosServer\\PackagesCache"
+    },
+    {
+      "$id": "347",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "Rhetos.MvcModelGenerator",
+      "Version": "2.4.0",
+      "Dependencies": {
+        "$id": "348",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "349",
+            "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+            "Id": "Rhetos",
+            "VersionsRange": "1.2.0",
+            "Source": null,
+            "RequestedBy": "package Rhetos.MvcModelGenerator"
+          },
+          {
+            "$id": "350",
+            "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+            "Id": "Rhetos.CommonConcepts",
+            "VersionsRange": "1.2.0",
+            "Source": null,
+            "RequestedBy": "package Rhetos.MvcModelGenerator"
+          },
+          {
+            "$ref": "346"
+          }
+        ]
+      },
+      "Folder": "PackagesCache\\Rhetos.MvcModelGenerator.2.4.0",
+      "ContentFiles": {
+        "$id": "351",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "352",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.MvcModelGenerator.2.4.0\\ChangeLog.md",
+            "InPackagePath": "ChangeLog.md"
+          },
+          {
+            "$id": "353",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.MvcModelGenerator.2.4.0\\Readme.md",
+            "InPackagePath": "Readme.md"
+          },
+          {
+            "$id": "354",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.MvcModelGenerator.2.4.0\\Rhetos.MvcModelGenerator.2.4.0.nuspec",
+            "InPackagePath": "Rhetos.MvcModelGenerator.2.4.0.nuspec"
+          },
+          {
+            "$id": "355",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.MvcModelGenerator.2.4.0\\lib\\net451\\Rhetos.MvcModelGenerator.DefaultConcepts.dll",
+            "InPackagePath": "lib\\net451\\Rhetos.MvcModelGenerator.DefaultConcepts.dll"
+          },
+          {
+            "$id": "356",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.MvcModelGenerator.2.4.0\\lib\\net451\\Rhetos.MvcModelGenerator.DefaultConcepts.pdb",
+            "InPackagePath": "lib\\net451\\Rhetos.MvcModelGenerator.DefaultConcepts.pdb"
+          },
+          {
+            "$id": "357",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.MvcModelGenerator.2.4.0\\lib\\net451\\Rhetos.MvcModelGenerator.dll",
+            "InPackagePath": "lib\\net451\\Rhetos.MvcModelGenerator.dll"
+          },
+          {
+            "$id": "358",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.MvcModelGenerator.2.4.0\\lib\\net451\\Rhetos.MvcModelGenerator.pdb",
+            "InPackagePath": "lib\\net451\\Rhetos.MvcModelGenerator.pdb"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "359",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "Rhetos.MvcModelGenerator",
+        "VersionsRange": "[2.4.0,2.4.0]",
+        "Source": null,
+        "RequestedBy": "configuration file RhetosPackages.config"
+      },
+      "Source": "C:\\aplikacije\\Kadrovska_2_0\\dist\\KadrovskaRhetosServer\\PackagesCache"
+    },
+    {
+      "$id": "360",
+      "$type": "Rhetos.Deployment.InstalledPackage, Rhetos.Deployment.Interfaces",
+      "Id": "Rhetos.RestGenerator",
+      "Version": "2.5.0",
+      "Dependencies": {
+        "$id": "361",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "362",
+            "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+            "Id": "Rhetos.CommonConcepts",
+            "VersionsRange": "2.0.0",
+            "Source": null,
+            "RequestedBy": "package Rhetos.RestGenerator"
+          }
+        ]
+      },
+      "Folder": "PackagesCache\\Rhetos.RestGenerator.2.5.0",
+      "ContentFiles": {
+        "$id": "363",
+        "$type": "System.Collections.Generic.List`1[[Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces]], mscorlib",
+        "$values": [
+          {
+            "$id": "364",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.RestGenerator.2.5.0\\Readme.md",
+            "InPackagePath": "Readme.md"
+          },
+          {
+            "$id": "365",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.RestGenerator.2.5.0\\Rhetos.RestGenerator.2.5.0.nuspec",
+            "InPackagePath": "Rhetos.RestGenerator.2.5.0.nuspec"
+          },
+          {
+            "$id": "366",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.RestGenerator.2.5.0\\lib\\net451\\Rhetos.RestGenerator.dll",
+            "InPackagePath": "lib\\net451\\Rhetos.RestGenerator.dll"
+          },
+          {
+            "$id": "367",
+            "$type": "Rhetos.Deployment.ContentFile, Rhetos.Deployment.Interfaces",
+            "PhysicalPath": "PackagesCache\\Rhetos.RestGenerator.2.5.0\\lib\\net451\\Rhetos.RestGenerator.pdb",
+            "InPackagePath": "lib\\net451\\Rhetos.RestGenerator.pdb"
+          }
+        ]
+      },
+      "Request": {
+        "$id": "368",
+        "$type": "Rhetos.Deployment.PackageRequest, Rhetos.Deployment.Interfaces",
+        "Id": "Rhetos.RestGenerator",
+        "VersionsRange": null,
+        "Source": null,
+        "RequestedBy": "configuration file RhetosPackages.config"
+      },
+      "Source": "https://www.nuget.org/api/v2/"
+    }
+  ]
+}

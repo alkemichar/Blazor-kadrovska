@@ -1,0 +1,25 @@
+﻿<div class="form-group">
+    <label for="exampleFormControlSelect1">@Title</label>
+    @if (records == null)
+    {
+        <button class="form-control btn btn-primary" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            Učitavanje u tijeku...
+        </button>
+    }
+    else if (records.Count == 0)
+    { 
+        <select class="form-control" id="exampleFormControlSelect1" readonly disabled>           
+            <option>Nema zapisa</option>
+        </select>
+    }
+    else
+    {
+        <select class="form-control" id="exampleFormControlSelect1">
+            @foreach (var item in records.Keys)
+            {
+                <option value="@item">@records[item]</option>
+            }
+        </select>
+    }
+</div>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rhetos.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Rhetos.Web.CommitBeforeResponseMessageInspector">
+            <summary>
+            This WCF extension forces the Rhetos web server to close SQL transaction (either commit or rollback) before sending the response to a client.
+            IoC container would close the transaction when automatically disposing all components after the response,
+            but that would be too late for detection of some SQL errors (specially those related to snapshot isolation).
+            </summary>
+        </member>
+        <member name="T:Rhetos.Web.JsonErrorHandler">
+            <summary>
+            Converts exceptions to a HTTP WEB response that contains JSON-serialized string error message.
+            Convenient for RESTful JSON web service.
+            </summary>
+        </member>
+    </members>
+</doc>

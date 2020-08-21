@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata>
+    <id>System.Spatial</id>
+    <version>5.6.4</version>
+    <title>System.Spatial for OData V1-3</title>
+    <authors>Microsoft Corporation</authors>
+    <owners>Microsoft Corporation</owners>
+    <licenseUrl>http://go.microsoft.com/?linkid=9809688</licenseUrl>
+    <projectUrl>http://odata.github.io</projectUrl>
+    <iconUrl>https://api.nuget.org/v3-flatcontainer/system.spatial/5.6.4/icon</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Contains classes and methods that facilitate geography and geometry spatial operations. Targets .NET 4.0, Silverlight 4.0 or .NET Portable Lib with support for .NET 4.0, SL 5.0, Win Phone 8, Win Phone 8.1, and Win 8. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.</description>
+    <summary />
+    <releaseNotes>Features
+    [GitHub issue #144] ODataLib now suppresses the errors in reading open entity’s undeclared collection or complex property value
+
+Bug fixes
+    [GitHub issue #60] Fix an issue that $select does not work with EntityFramework 5</releaseNotes>
+    <tags>wcf data services odata odatalib edmlib spatial ado.net ef entity framework open protocol wcfds wcfdataservices dataservices</tags>
+    <references>
+      <group targetFramework=".NETFramework4.0">
+        <reference file="System.Spatial.dll" />
+      </group>
+      <group targetFramework=".NETPortable0.0-net40+sl5+wp8+win8+wpa">
+        <reference file="System.Spatial.dll" />
+      </group>
+      <group targetFramework=".NETPortable0.0-net45+wp8+win8+wpa">
+        <reference file="System.Spatial.dll" />
+      </group>
+      <group targetFramework="Silverlight4.0">
+        <reference file="System.Spatial.dll" />
+      </group>
+    </references>
+  </metadata>
+</package>

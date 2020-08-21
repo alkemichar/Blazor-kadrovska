@@ -1,0 +1,40 @@
+﻿@using static BlazorApp.Client.Shared.MainLayout;
+
+<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="">Kadrovska v2</a>
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <ul class="nav flex-column">
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All" @onclick="@(() => SetNaslov("Naslovna"))">
+                <span class="oi oi-home" aria-hidden="true"></span> Naslovna
+            </NavLink>
+        </li>      
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="djelatnici" @onclick="@(() => SetNaslov("Djelatnici"))">
+                <span class="oi oi-people" aria-hidden="true"></span> Djelatnici
+            </NavLink>
+        </li>
+    </ul>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+    [CascadingParameter] public AppState AppState { get; set; }
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    private void SetNaslov(string naslov) 
+    {
+        AppState.PageTitle = naslov;
+    }
+}

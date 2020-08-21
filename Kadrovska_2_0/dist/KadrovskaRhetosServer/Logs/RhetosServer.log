@@ -1,0 +1,325 @@
+2020-05-03 22:23:08.0302|ERROR|Global|Application error: System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-05-03 22:23:52.7221|ERROR|Global|Application error: System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-05-03 22:23:55.2973|ERROR|Global|Application error: System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-05-03 22:24:01.8197|ERROR|Global|Application error: System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-05-03 22:24:07.6494|ERROR|Global|Application error: System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-05-03 22:24:14.7791|ERROR|Global|Application error: System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-05-03 22:25:09.4505|ERROR|Global|Application error: System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-05-03 22:25:12.0433|ERROR|Global|Application error: System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2020-05-03 22:36:24.6265|ERROR|ProcessingEngine|Command failed: ReadCommandInfo Kadrovska.Djelatnik records, filters: ID equal "undefined". System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+   at System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult& result)
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid.Parse(String input)
+   at Rhetos.Dom.DefaultConcepts.GenericFilterHelper.ToExpression(IEnumerable`1 propertyFilters, Type parameterType) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericFilterHelper.cs:line 93
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 313
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.ExecuteGenericFilter(IEnumerable`1 genericFilter, Boolean preferQuery, IEnumerable`1 items) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 384
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 305
+   at Rhetos.Processing.DefaultCommands.ServerCommandsUtility.ExecuteReadCommand(ReadCommandInfo commandInfo, GenericRepository`1 genericRepository) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ServerCommandsUtility.cs:line 130
+   at Rhetos.Processing.DefaultCommands.ReadCommand.Execute(ICommandInfo commandInfo) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ReadCommand.cs:line 57
+   at Rhetos.Processing.ProcessingEngine.ExecuteInner(IList`1 commands, Guid executionId) in C:\My Projects\Rhetos\Source\Rhetos.Processing\ProcessingEngine.cs:line 144
+2020-05-03 22:36:24.6755|ERROR|GlobalErrorHandler|Rhetos.FrameworkException: Internal server error occurred. See RhetosServer.log for more information. (FormatException, 2020-05-03T22:36:24)
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.CheckForErrors(ProcessingResult result) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 53
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.ExecuteReadCommand(ReadCommandInfo commandInfo) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 124
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.GetData[T](String filter, String fparam, String genericfilter, String filters, IDictionary`2 filterTypesByName, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort, Boolean readRecords, Boolean readTotalCount) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 93
+   at Rhetos.Rest.RestServiceKadrovskaDjelatnik.Get(String filter, String fparam, String genericfilter, String filters, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\RestService.cs:line 226
+   at SyncInvokeGet(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+Info: 
+2020-05-03 22:36:30.7246|ERROR|ProcessingEngine|Command failed: ReadCommandInfo Kadrovska.Djelatnik records, filters: ID equal "undefined". System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+   at System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult& result)
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid.Parse(String input)
+   at Rhetos.Dom.DefaultConcepts.GenericFilterHelper.ToExpression(IEnumerable`1 propertyFilters, Type parameterType) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericFilterHelper.cs:line 93
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 313
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.ExecuteGenericFilter(IEnumerable`1 genericFilter, Boolean preferQuery, IEnumerable`1 items) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 384
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 305
+   at Rhetos.Processing.DefaultCommands.ServerCommandsUtility.ExecuteReadCommand(ReadCommandInfo commandInfo, GenericRepository`1 genericRepository) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ServerCommandsUtility.cs:line 130
+   at Rhetos.Processing.DefaultCommands.ReadCommand.Execute(ICommandInfo commandInfo) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ReadCommand.cs:line 57
+   at Rhetos.Processing.ProcessingEngine.ExecuteInner(IList`1 commands, Guid executionId) in C:\My Projects\Rhetos\Source\Rhetos.Processing\ProcessingEngine.cs:line 144
+2020-05-03 22:36:30.7356|ERROR|GlobalErrorHandler|Rhetos.FrameworkException: Internal server error occurred. See RhetosServer.log for more information. (FormatException, 2020-05-03T22:36:30)
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.CheckForErrors(ProcessingResult result) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 53
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.ExecuteReadCommand(ReadCommandInfo commandInfo) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 124
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.GetData[T](String filter, String fparam, String genericfilter, String filters, IDictionary`2 filterTypesByName, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort, Boolean readRecords, Boolean readTotalCount) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 93
+   at Rhetos.Rest.RestServiceKadrovskaDjelatnik.Get(String filter, String fparam, String genericfilter, String filters, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\RestService.cs:line 226
+   at SyncInvokeGet(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+Info: 
+2020-05-05 20:14:19.5606|ERROR|GlobalErrorHandler|System.InvalidOperationException: The incoming message has an unexpected message format 'Raw'. The expected message formats for the operation are 'Xml'; 'Json'. This can be because a WebContentTypeMapper has not been configured on the binding. See the documentation of WebContentTypeMapper for more details.
+   at System.ServiceModel.Dispatcher.DemultiplexingDispatchMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.UriTemplateDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.CompositeDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.DeserializeInputs(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+2020-05-05 20:15:04.2687|ERROR|GlobalErrorHandler|System.InvalidOperationException: The incoming message has an unexpected message format 'Raw'. The expected message formats for the operation are 'Xml'; 'Json'. This can be because a WebContentTypeMapper has not been configured on the binding. See the documentation of WebContentTypeMapper for more details.
+   at System.ServiceModel.Dispatcher.DemultiplexingDispatchMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.UriTemplateDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.CompositeDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.DeserializeInputs(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+2020-05-05 20:15:36.4554|ERROR|GlobalErrorHandler|System.InvalidOperationException: The incoming message has an unexpected message format 'Raw'. The expected message formats for the operation are 'Xml'; 'Json'. This can be because a WebContentTypeMapper has not been configured on the binding. See the documentation of WebContentTypeMapper for more details.
+   at System.ServiceModel.Dispatcher.DemultiplexingDispatchMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.UriTemplateDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.CompositeDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.DeserializeInputs(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+2020-05-05 20:16:51.5621|ERROR|GlobalErrorHandler|System.InvalidOperationException: The incoming message has an unexpected message format 'Raw'. The expected message formats for the operation are 'Xml'; 'Json'. This can be because a WebContentTypeMapper has not been configured on the binding. See the documentation of WebContentTypeMapper for more details.
+   at System.ServiceModel.Dispatcher.DemultiplexingDispatchMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.UriTemplateDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.CompositeDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.DeserializeInputs(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+2020-05-05 20:18:44.2393|ERROR|GlobalErrorHandler|System.InvalidOperationException: The incoming message has an unexpected message format 'Raw'. The expected message formats for the operation are 'Xml'; 'Json'. This can be because a WebContentTypeMapper has not been configured on the binding. See the documentation of WebContentTypeMapper for more details.
+   at System.ServiceModel.Dispatcher.DemultiplexingDispatchMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.UriTemplateDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.CompositeDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.DeserializeInputs(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+2020-05-05 20:21:58.6227|ERROR|GlobalErrorHandler|System.InvalidOperationException: The incoming message has an unexpected message format 'Raw'. The expected message formats for the operation are 'Xml'; 'Json'. This can be because a WebContentTypeMapper has not been configured on the binding. See the documentation of WebContentTypeMapper for more details.
+   at System.ServiceModel.Dispatcher.DemultiplexingDispatchMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.UriTemplateDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.CompositeDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.DeserializeInputs(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+2020-07-29 12:28:08.0255|INFO|ProcessingEngine|Command failed: SaveEntityCommandInfo Kadrovska.Djelatnik, insert 1. Rhetos.ClientException: Inserting a record that already exists in database. ID=30f34355-94fe-4b52-93f7-fa9ff654d793
+
+Server stack trace: 
+   at Rhetos.Utilities.MsSqlUtility.ThrowIfPrimaryKeyErrorOnInsert(RhetosException interpretedException, String tableName) in C:\My Projects\Rhetos\Source\Rhetos.Utilities\MsSqlUtility.cs:line 251
+   at Kadrovska._Helper.Djelatnik_Repository.Save(IEnumerable`1 insertedNew, IEnumerable`1 updatedNew, IEnumerable`1 deletedIds, Boolean checkUserPermissions) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\ServerDom.Repositories.cs:line 585
+
+Exception rethrown at [0]: 
+   at Rhetos.Utilities.ExceptionsUtility.Rethrow(Exception exception) in C:\My Projects\Rhetos\Source\Rhetos.Utilities\ExceptionsUtility.cs:line 58
+   at Rhetos.Utilities.ExceptionsUtility.InvokeEx(MethodInfo method, Object obj, Object[] parameters) in C:\My Projects\Rhetos\Source\Rhetos.Utilities\ExceptionsUtility.cs:line 42
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Save(IEnumerable`1 insertNew, IEnumerable`1 updateNew, IEnumerable`1 deleteIds, Boolean checkUserPermissions) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 578
+   at Rhetos.Processing.DefaultCommands.SaveEntityCommand.Execute(ICommandInfo commandInfo) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\SaveEntityCommand.cs:line 79
+   at Rhetos.Processing.ProcessingEngine.ExecuteInner(IList`1 commands, Guid executionId) in C:\My Projects\Rhetos\Source\Rhetos.Processing\ProcessingEngine.cs:line 144
+Info: 
+2020-07-29 13:10:23.6834|ERROR|ProcessingEngine|Command failed: ReadCommandInfo Kadrovska.Djelatnik records, filters: ID equal "". System.FormatException: Unrecognized Guid format.
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid.Parse(String input)
+   at Rhetos.Dom.DefaultConcepts.GenericFilterHelper.ToExpression(IEnumerable`1 propertyFilters, Type parameterType) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericFilterHelper.cs:line 93
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 313
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.ExecuteGenericFilter(IEnumerable`1 genericFilter, Boolean preferQuery, IEnumerable`1 items) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 384
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 305
+   at Rhetos.Processing.DefaultCommands.ServerCommandsUtility.ExecuteReadCommand(ReadCommandInfo commandInfo, GenericRepository`1 genericRepository) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ServerCommandsUtility.cs:line 130
+   at Rhetos.Processing.DefaultCommands.ReadCommand.Execute(ICommandInfo commandInfo) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ReadCommand.cs:line 57
+   at Rhetos.Processing.ProcessingEngine.ExecuteInner(IList`1 commands, Guid executionId) in C:\My Projects\Rhetos\Source\Rhetos.Processing\ProcessingEngine.cs:line 144
+2020-07-29 13:10:23.7074|ERROR|GlobalErrorHandler|Rhetos.FrameworkException: Internal server error occurred. See RhetosServer.log for more information. (FormatException, 2020-07-29T13:10:23)
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.CheckForErrors(ProcessingResult result) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 53
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.ExecuteReadCommand(ReadCommandInfo commandInfo) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 124
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.GetData[T](String filter, String fparam, String genericfilter, String filters, IDictionary`2 filterTypesByName, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort, Boolean readRecords, Boolean readTotalCount) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 93
+   at Rhetos.Rest.RestServiceKadrovskaDjelatnik.Get(String filter, String fparam, String genericfilter, String filters, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\RestService.cs:line 235
+   at SyncInvokeGet(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+Info: 
+2020-07-29 13:10:35.3057|ERROR|ProcessingEngine|Command failed: ReadCommandInfo Kadrovska.Djelatnik records, filters: ID equal "". System.FormatException: Unrecognized Guid format.
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid.Parse(String input)
+   at Rhetos.Dom.DefaultConcepts.GenericFilterHelper.ToExpression(IEnumerable`1 propertyFilters, Type parameterType) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericFilterHelper.cs:line 93
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 313
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.ExecuteGenericFilter(IEnumerable`1 genericFilter, Boolean preferQuery, IEnumerable`1 items) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 384
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 305
+   at Rhetos.Processing.DefaultCommands.ServerCommandsUtility.ExecuteReadCommand(ReadCommandInfo commandInfo, GenericRepository`1 genericRepository) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ServerCommandsUtility.cs:line 130
+   at Rhetos.Processing.DefaultCommands.ReadCommand.Execute(ICommandInfo commandInfo) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ReadCommand.cs:line 57
+   at Rhetos.Processing.ProcessingEngine.ExecuteInner(IList`1 commands, Guid executionId) in C:\My Projects\Rhetos\Source\Rhetos.Processing\ProcessingEngine.cs:line 144
+2020-07-29 13:10:35.3057|ERROR|GlobalErrorHandler|Rhetos.FrameworkException: Internal server error occurred. See RhetosServer.log for more information. (FormatException, 2020-07-29T13:10:35)
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.CheckForErrors(ProcessingResult result) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 53
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.ExecuteReadCommand(ReadCommandInfo commandInfo) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 124
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.GetData[T](String filter, String fparam, String genericfilter, String filters, IDictionary`2 filterTypesByName, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort, Boolean readRecords, Boolean readTotalCount) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 93
+   at Rhetos.Rest.RestServiceKadrovskaDjelatnik.Get(String filter, String fparam, String genericfilter, String filters, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\RestService.cs:line 235
+   at SyncInvokeGet(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+Info: 
+2020-07-29 13:15:23.9814|ERROR|ProcessingEngine|Command failed: ReadCommandInfo Kadrovska.Djelatnik records, filters: ID equal "". System.FormatException: Unrecognized Guid format.
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid.Parse(String input)
+   at Rhetos.Dom.DefaultConcepts.GenericFilterHelper.ToExpression(IEnumerable`1 propertyFilters, Type parameterType) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericFilterHelper.cs:line 93
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 313
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.ExecuteGenericFilter(IEnumerable`1 genericFilter, Boolean preferQuery, IEnumerable`1 items) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 384
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 305
+   at Rhetos.Processing.DefaultCommands.ServerCommandsUtility.ExecuteReadCommand(ReadCommandInfo commandInfo, GenericRepository`1 genericRepository) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ServerCommandsUtility.cs:line 130
+   at Rhetos.Processing.DefaultCommands.ReadCommand.Execute(ICommandInfo commandInfo) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ReadCommand.cs:line 57
+   at Rhetos.Processing.ProcessingEngine.ExecuteInner(IList`1 commands, Guid executionId) in C:\My Projects\Rhetos\Source\Rhetos.Processing\ProcessingEngine.cs:line 144
+2020-07-29 13:15:23.9814|ERROR|GlobalErrorHandler|Rhetos.FrameworkException: Internal server error occurred. See RhetosServer.log for more information. (FormatException, 2020-07-29T13:15:23)
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.CheckForErrors(ProcessingResult result) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 53
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.ExecuteReadCommand(ReadCommandInfo commandInfo) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 124
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.GetData[T](String filter, String fparam, String genericfilter, String filters, IDictionary`2 filterTypesByName, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort, Boolean readRecords, Boolean readTotalCount) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 93
+   at Rhetos.Rest.RestServiceKadrovskaDjelatnik.Get(String filter, String fparam, String genericfilter, String filters, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\RestService.cs:line 235
+   at SyncInvokeGet(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+Info: 
+2020-07-29 13:17:43.7397|ERROR|ProcessingEngine|Command failed: ReadCommandInfo Kadrovska.Djelatnik records, filters: ID equal "". System.FormatException: Unrecognized Guid format.
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid.Parse(String input)
+   at Rhetos.Dom.DefaultConcepts.GenericFilterHelper.ToExpression(IEnumerable`1 propertyFilters, Type parameterType) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericFilterHelper.cs:line 93
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 313
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.ExecuteGenericFilter(IEnumerable`1 genericFilter, Boolean preferQuery, IEnumerable`1 items) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 384
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 305
+   at Rhetos.Processing.DefaultCommands.ServerCommandsUtility.ExecuteReadCommand(ReadCommandInfo commandInfo, GenericRepository`1 genericRepository) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ServerCommandsUtility.cs:line 130
+   at Rhetos.Processing.DefaultCommands.ReadCommand.Execute(ICommandInfo commandInfo) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ReadCommand.cs:line 57
+   at Rhetos.Processing.ProcessingEngine.ExecuteInner(IList`1 commands, Guid executionId) in C:\My Projects\Rhetos\Source\Rhetos.Processing\ProcessingEngine.cs:line 144
+2020-07-29 13:17:43.7397|ERROR|GlobalErrorHandler|Rhetos.FrameworkException: Internal server error occurred. See RhetosServer.log for more information. (FormatException, 2020-07-29T13:17:43)
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.CheckForErrors(ProcessingResult result) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 53
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.ExecuteReadCommand(ReadCommandInfo commandInfo) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 124
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.GetData[T](String filter, String fparam, String genericfilter, String filters, IDictionary`2 filterTypesByName, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort, Boolean readRecords, Boolean readTotalCount) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 93
+   at Rhetos.Rest.RestServiceKadrovskaDjelatnik.Get(String filter, String fparam, String genericfilter, String filters, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\RestService.cs:line 235
+   at SyncInvokeGet(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+Info: 
+2020-07-29 13:17:49.4999|ERROR|ProcessingEngine|Command failed: ReadCommandInfo Kadrovska.Djelatnik records, filters: ID equal "". System.FormatException: Unrecognized Guid format.
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid.Parse(String input)
+   at Rhetos.Dom.DefaultConcepts.GenericFilterHelper.ToExpression(IEnumerable`1 propertyFilters, Type parameterType) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericFilterHelper.cs:line 93
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 313
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.ExecuteGenericFilter(IEnumerable`1 genericFilter, Boolean preferQuery, IEnumerable`1 items) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 384
+   at Rhetos.Dom.DefaultConcepts.GenericRepository`1.Read(Object parameter, Type parameterType, Boolean preferQuery) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Dom.DefaultConcepts\GenericRepository.cs:line 305
+   at Rhetos.Processing.DefaultCommands.ServerCommandsUtility.ExecuteReadCommand(ReadCommandInfo commandInfo, GenericRepository`1 genericRepository) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ServerCommandsUtility.cs:line 130
+   at Rhetos.Processing.DefaultCommands.ReadCommand.Execute(ICommandInfo commandInfo) in C:\My Projects\Rhetos\CommonConcepts\Plugins\Rhetos.Processing.DefaultCommands\ReadCommand.cs:line 57
+   at Rhetos.Processing.ProcessingEngine.ExecuteInner(IList`1 commands, Guid executionId) in C:\My Projects\Rhetos\Source\Rhetos.Processing\ProcessingEngine.cs:line 144
+2020-07-29 13:17:49.4999|ERROR|GlobalErrorHandler|Rhetos.FrameworkException: Internal server error occurred. See RhetosServer.log for more information. (FormatException, 2020-07-29T13:17:49)
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.CheckForErrors(ProcessingResult result) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 53
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.ExecuteReadCommand(ReadCommandInfo commandInfo) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 124
+   at Rhetos.RestGenerator.Utilities.ServiceUtility.GetData[T](String filter, String fparam, String genericfilter, String filters, IDictionary`2 filterTypesByName, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort, Boolean readRecords, Boolean readTotalCount) in C:\My Projects\RhetosPackages\RestGenerator\Plugins\Rhetos.RestGenerator\Utilities\ServiceUtility.cs:line 93
+   at Rhetos.Rest.RestServiceKadrovskaDjelatnik.Get(String filter, String fparam, String genericfilter, String filters, Int32 top, Int32 skip, Int32 page, Int32 psize, String sort) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\RestService.cs:line 235
+   at SyncInvokeGet(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+Info: 

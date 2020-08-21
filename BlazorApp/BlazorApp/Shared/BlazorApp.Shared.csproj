@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="RestService">
+      <HintPath>..\..\..\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\RestService.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhetos.Dom.DefaultConcepts.Interfaces">
+      <HintPath>..\..\..\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Plugins\Rhetos.Dom.DefaultConcepts.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServerDom.Model">
+      <HintPath>..\..\..\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\ServerDom.Model.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

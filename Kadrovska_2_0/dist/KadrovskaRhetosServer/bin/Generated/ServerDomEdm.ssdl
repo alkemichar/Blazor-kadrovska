@@ -1,0 +1,964 @@
+﻿<Schema Namespace="Rhetos.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Function Name="InterceptFullTextSearch" ReturnType="bit" >
+    <Parameter Name = "itemId" Mode = "In" Type = "uniqueidentifier" />
+    <Parameter Name = "pattern" Mode = "In" Type = "nvarchar" />
+    <Parameter Name = "tableName" Mode = "In" Type = "nvarchar" />
+    <Parameter Name = "searchColumns" Mode = "In" Type = "nvarchar" />
+  </Function>
+  <Function Name="InterceptFullTextSearch" ReturnType="bit" >
+    <Parameter Name = "itemId" Mode = "In" Type = "uniqueidentifier" />
+    <Parameter Name = "pattern" Mode = "In" Type = "nvarchar" />
+    <Parameter Name = "tableName" Mode = "In" Type = "nvarchar" />
+    <Parameter Name = "searchColumns" Mode = "In" Type = "nvarchar" />
+    <Parameter Name = "rankTop" Mode = "In" Type = "int" />
+  </Function>
+  <Function Name="InterceptFullTextSearch" ReturnType="bit" >
+    <Parameter Name = "itemId" Mode = "In" Type = "int" />
+    <Parameter Name = "pattern" Mode = "In" Type = "nvarchar" />
+    <Parameter Name = "tableName" Mode = "In" Type = "nvarchar" />
+    <Parameter Name = "searchColumns" Mode = "In" Type = "nvarchar" />
+  </Function>
+  <Function Name="InterceptFullTextSearch" ReturnType="bit" >
+    <Parameter Name = "itemId" Mode = "In" Type = "int" />
+    <Parameter Name = "pattern" Mode = "In" Type = "nvarchar" />
+    <Parameter Name = "tableName" Mode = "In" Type = "nvarchar" />
+    <Parameter Name = "searchColumns" Mode = "In" Type = "nvarchar" />
+    <Parameter Name = "rankTop" Mode = "In" Type = "int" />
+  </Function>
+  <Function Name="InterceptContainsIds" ReturnType="bit" >
+    <Parameter Name = "id" Mode = "In" Type = "uniqueidentifier" />
+    <Parameter Name = "concatenatedids" Mode = "In" Type = "nvarchar" />
+  </Function>
+
+  <EntityType Name="Kadrovska_Djelatnik">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MaticniBroj" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Prezime" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Ime" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Mobitel" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Tvrtka" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OdjelID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_OdjelID, Order: 0 }" Nullable="true" />
+    <Property Name="SektorID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_SektorID, Order: 0 }" Nullable="true" />
+    <Property Name="TimID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_TimID, Order: 0 }" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Kadrovska_Odjel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Naziv" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <Association Name="Kadrovska_Djelatnik_Odjel">
+    <End Role="Kadrovska_Odjel" Type="Self.Kadrovska_Odjel" Multiplicity="0..1" />
+    <End Role="Kadrovska_Djelatnik" Type="Self.Kadrovska_Djelatnik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kadrovska_Odjel">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kadrovska_Djelatnik">
+        <PropertyRef Name="OdjelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Kadrovska_Sektor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Naziv" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <Association Name="Kadrovska_Djelatnik_Sektor">
+    <End Role="Kadrovska_Sektor" Type="Self.Kadrovska_Sektor" Multiplicity="0..1" />
+    <End Role="Kadrovska_Djelatnik" Type="Self.Kadrovska_Djelatnik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kadrovska_Sektor">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kadrovska_Djelatnik">
+        <PropertyRef Name="SektorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Kadrovska_Tim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Naziv" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="VoditeljID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_VoditeljID, Order: 0 }" Nullable="true" />
+  </EntityType>
+  <Association Name="Kadrovska_Djelatnik_Tim">
+    <End Role="Kadrovska_Tim" Type="Self.Kadrovska_Tim" Multiplicity="0..1" />
+    <End Role="Kadrovska_Djelatnik" Type="Self.Kadrovska_Djelatnik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kadrovska_Tim">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kadrovska_Djelatnik">
+        <PropertyRef Name="TimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Kadrovska_Tim_Voditelj">
+    <End Role="Kadrovska_Djelatnik" Type="Self.Kadrovska_Djelatnik" Multiplicity="0..1" />
+    <End Role="Kadrovska_Tim" Type="Self.Kadrovska_Tim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kadrovska_Djelatnik">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kadrovska_Tim">
+        <PropertyRef Name="VoditeljID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Common_AutoCodeCache">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Entity" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Property" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Grouping" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Prefix" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="MinDigits" Type="int" Nullable="true" />
+    <Property Name="LastCode" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Common_FilterId">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Handle" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="Value" Type="uniqueidentifier" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Common_KeepSynchronizedMetadata">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Target" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Source" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Context" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Common_ExclusiveLock">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ResourceType" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ResourceID" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="UserName" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Workstation" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="LockStart" Type="datetime" Nullable="true" />
+    <Property Name="LockFinish" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Common_LogReader">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Workstation" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ContextInfo" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Action" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="TableName" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ItemId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Created" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Common_LogRelatedItemReader">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TableName" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Relation" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ItemId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="LogID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_LogID, Order: 0 }" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Common_Log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Created" Type="datetime" Nullable="true" />
+    <Property Name="UserName" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Workstation" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ContextInfo" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Action" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="TableName" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ItemId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Common_LogRelatedItem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LogID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_LogID, Order: 0 }" Nullable="true" />
+    <Property Name="TableName" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ItemId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="Relation" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <Association Name="Common_LogRelatedItem_Log">
+    <End Role="Common_Log" Type="Self.Common_Log" Multiplicity="0..1" />
+    <End Role="Common_LogRelatedItem" Type="Self.Common_LogRelatedItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Log">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Common_LogRelatedItem">
+        <PropertyRef Name="LogID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Common_RelatedEventsSource">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LogID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_LogID, Order: 0 }" Nullable="true" />
+    <Property Name="Relation" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="RelatedToTable" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="RelatedToItem" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="UserName" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Workstation" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ContextInfo" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Action" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="TableName" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ItemId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Created" Type="datetime" Nullable="true" />
+  </EntityType>
+  <Association Name="Common_RelatedEventsSource_Log">
+    <End Role="Common_LogReader" Type="Self.Common_LogReader" Multiplicity="0..1" />
+    <End Role="Common_RelatedEventsSource" Type="Self.Common_RelatedEventsSource" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_LogReader">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Common_RelatedEventsSource">
+        <PropertyRef Name="LogID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Common_Claim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ClaimResource" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ClaimRight" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Active" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Common_Principal">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Common_PrincipalHasRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PrincipalID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_PrincipalID, Order: 0 }" Nullable="true" />
+    <Property Name="RoleID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_RoleID, Order: 0 }" Nullable="true" />
+  </EntityType>
+  <Association Name="Common_PrincipalHasRole_Principal">
+    <End Role="Common_Principal" Type="Self.Common_Principal" Multiplicity="0..1" />
+    <End Role="Common_PrincipalHasRole" Type="Self.Common_PrincipalHasRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Principal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Common_PrincipalHasRole">
+        <PropertyRef Name="PrincipalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Common_Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <Association Name="Common_PrincipalHasRole_Role">
+    <End Role="Common_Role" Type="Self.Common_Role" Multiplicity="0..1" />
+    <End Role="Common_PrincipalHasRole" Type="Self.Common_PrincipalHasRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Common_PrincipalHasRole">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Common_RoleInheritsRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UsersFromID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_UsersFromID, Order: 0 }" Nullable="true" />
+    <Property Name="PermissionsFromID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_PermissionsFromID, Order: 0 }" Nullable="true" />
+  </EntityType>
+  <Association Name="Common_RoleInheritsRole_UsersFrom">
+    <End Role="Common_Role" Type="Self.Common_Role" Multiplicity="0..1" />
+    <End Role="Common_RoleInheritsRole" Type="Self.Common_RoleInheritsRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Common_RoleInheritsRole">
+        <PropertyRef Name="UsersFromID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Common_RoleInheritsRole_PermissionsFrom">
+    <End Role="Common_Role" Type="Self.Common_Role" Multiplicity="0..1" />
+    <End Role="Common_RoleInheritsRole" Type="Self.Common_RoleInheritsRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Common_RoleInheritsRole">
+        <PropertyRef Name="PermissionsFromID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Common_PrincipalPermission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PrincipalID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_PrincipalID, Order: 0 }" Nullable="true" />
+    <Property Name="ClaimID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_ClaimID, Order: 0 }" Nullable="true" />
+    <Property Name="IsAuthorized" Type="bit" Nullable="true" />
+  </EntityType>
+  <Association Name="Common_PrincipalPermission_Principal">
+    <End Role="Common_Principal" Type="Self.Common_Principal" Multiplicity="0..1" />
+    <End Role="Common_PrincipalPermission" Type="Self.Common_PrincipalPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Principal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Common_PrincipalPermission">
+        <PropertyRef Name="PrincipalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Common_PrincipalPermission_Claim">
+    <End Role="Common_Claim" Type="Self.Common_Claim" Multiplicity="0..1" />
+    <End Role="Common_PrincipalPermission" Type="Self.Common_PrincipalPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Claim">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Common_PrincipalPermission">
+        <PropertyRef Name="ClaimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Common_RolePermission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_RoleID, Order: 0 }" Nullable="true" />
+    <Property Name="ClaimID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_ClaimID, Order: 0 }" Nullable="true" />
+    <Property Name="IsAuthorized" Type="bit" Nullable="true" />
+  </EntityType>
+  <Association Name="Common_RolePermission_Role">
+    <End Role="Common_Role" Type="Self.Common_Role" Multiplicity="0..1" />
+    <End Role="Common_RolePermission" Type="Self.Common_RolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Common_RolePermission">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Common_RolePermission_Claim">
+    <End Role="Common_Claim" Type="Self.Common_Claim" Multiplicity="0..1" />
+    <End Role="Common_RolePermission" Type="Self.Common_RolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Claim">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Common_RolePermission">
+        <PropertyRef Name="ClaimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="LightDMS_Checkout">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DocumentID" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="CreatedByID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_CreatedByID, Order: 0 }" Nullable="true" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="true" />
+    <Property Name="Comment" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="RepositoryID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_RepositoryID, Order: 0 }" Nullable="true" />
+  </EntityType>
+  <Association Name="LightDMS_Checkout_CreatedBy">
+    <End Role="Common_Principal" Type="Self.Common_Principal" Multiplicity="0..1" />
+    <End Role="LightDMS_Checkout" Type="Self.LightDMS_Checkout" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Principal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_Checkout">
+        <PropertyRef Name="CreatedByID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="LightDMS_DocumentEvent">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DocumentID" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="CreatedByID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_CreatedByID, Order: 0 }" Nullable="true" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="true" />
+    <Property Name="Comment" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="RepositoryID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_RepositoryID, Order: 0 }" Nullable="true" />
+    <Property Name="CheckoutID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_CheckoutID, Order: 0 }" Nullable="true" />
+    <Property Name="DocumentVersionID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_DocumentVersionID, Order: 0 }" Nullable="true" />
+    <Property Name="UndoCheckoutID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_UndoCheckoutID, Order: 0 }" Nullable="true" />
+    <Property Name="Subtype" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <Association Name="LightDMS_DocumentEvent_CreatedBy">
+    <End Role="Common_Principal" Type="Self.Common_Principal" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentEvent" Type="Self.LightDMS_DocumentEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Principal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentEvent">
+        <PropertyRef Name="CreatedByID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="LightDMS_DocumentStatusBeforeEvent">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false"  customannotation:Index="{ Name: IX_ID, Order: 0 }"/>
+    <Property Name="PreviousEventID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_PreviousEventID, Order: 0 }" Nullable="true" />
+    <Property Name="DocumentID" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="CheckoutID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_CheckoutID, Order: 0 }" Nullable="true" />
+    <Property Name="CheckedOutToID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_CheckedOutToID, Order: 0 }" Nullable="true" />
+    <Property Name="DocumentVersionID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_DocumentVersionID, Order: 0 }" Nullable="true" />
+  </EntityType>
+  <Association Name="LightDMS_DocumentStatusBeforeEvent_Base">
+    <End Role="LightDMS_DocumentEvent" Type="Self.LightDMS_DocumentEvent" Multiplicity="1" />
+    <End Role="LightDMS_DocumentStatusBeforeEvent" Type="Self.LightDMS_DocumentStatusBeforeEvent" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_DocumentEvent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentStatusBeforeEvent">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LightDMS_DocumentStatusBeforeEvent_PreviousEvent">
+    <End Role="LightDMS_DocumentEvent" Type="Self.LightDMS_DocumentEvent" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentStatusBeforeEvent" Type="Self.LightDMS_DocumentStatusBeforeEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_DocumentEvent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentStatusBeforeEvent">
+        <PropertyRef Name="PreviousEventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LightDMS_DocumentStatusBeforeEvent_Checkout">
+    <End Role="LightDMS_Checkout" Type="Self.LightDMS_Checkout" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentStatusBeforeEvent" Type="Self.LightDMS_DocumentStatusBeforeEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_Checkout">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentStatusBeforeEvent">
+        <PropertyRef Name="CheckoutID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LightDMS_DocumentStatusBeforeEvent_CheckedOutTo">
+    <End Role="Common_Principal" Type="Self.Common_Principal" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentStatusBeforeEvent" Type="Self.LightDMS_DocumentStatusBeforeEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Principal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentStatusBeforeEvent">
+        <PropertyRef Name="CheckedOutToID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="LightDMS_ComputeDocumentStatus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LastEventID" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="CheckedOutToID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_CheckedOutToID, Order: 0 }" Nullable="true" />
+    <Property Name="IsCheckout" Type="bit" Nullable="true" />
+    <Property Name="LastVersionID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_LastVersionID, Order: 0 }" Nullable="true" />
+  </EntityType>
+  <Association Name="LightDMS_ComputeDocumentStatus_CheckedOutTo">
+    <End Role="Common_Principal" Type="Self.Common_Principal" Multiplicity="0..1" />
+    <End Role="LightDMS_ComputeDocumentStatus" Type="Self.LightDMS_ComputeDocumentStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Principal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_ComputeDocumentStatus">
+        <PropertyRef Name="CheckedOutToID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="LightDMS_DocumentStatus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LastEventID" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="CheckedOutToID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_CheckedOutToID, Order: 0 }" Nullable="true" />
+    <Property Name="IsCheckout" Type="bit" Nullable="true" />
+    <Property Name="LastVersionID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_LastVersionID, Order: 0 }" Nullable="true" />
+  </EntityType>
+  <Association Name="LightDMS_DocumentStatus_CheckedOutTo">
+    <End Role="Common_Principal" Type="Self.Common_Principal" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentStatus" Type="Self.LightDMS_DocumentStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Principal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentStatus">
+        <PropertyRef Name="CheckedOutToID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="LightDMS_DocumentVersion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DocumentID" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="CreatedByID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_CreatedByID, Order: 0 }" Nullable="true" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="true" />
+    <Property Name="Comment" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="VersionNumber" Type="int" Nullable="true" />
+    <Property Name="FileName" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="FileContentID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_FileContentID, Order: 0 }" Nullable="true" />
+    <Property Name="RepositoryID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_RepositoryID, Order: 0 }" Nullable="true" />
+  </EntityType>
+  <Association Name="LightDMS_DocumentStatusBeforeEvent_DocumentVersion">
+    <End Role="LightDMS_DocumentVersion" Type="Self.LightDMS_DocumentVersion" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentStatusBeforeEvent" Type="Self.LightDMS_DocumentStatusBeforeEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_DocumentVersion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentStatusBeforeEvent">
+        <PropertyRef Name="DocumentVersionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LightDMS_ComputeDocumentStatus_LastVersion">
+    <End Role="LightDMS_DocumentVersion" Type="Self.LightDMS_DocumentVersion" Multiplicity="0..1" />
+    <End Role="LightDMS_ComputeDocumentStatus" Type="Self.LightDMS_ComputeDocumentStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_DocumentVersion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_ComputeDocumentStatus">
+        <PropertyRef Name="LastVersionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LightDMS_DocumentStatus_LastVersion">
+    <End Role="LightDMS_DocumentVersion" Type="Self.LightDMS_DocumentVersion" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentStatus" Type="Self.LightDMS_DocumentStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_DocumentVersion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentStatus">
+        <PropertyRef Name="LastVersionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LightDMS_DocumentVersion_CreatedBy">
+    <End Role="Common_Principal" Type="Self.Common_Principal" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentVersion" Type="Self.LightDMS_DocumentVersion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Principal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentVersion">
+        <PropertyRef Name="CreatedByID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="LightDMS_DocumentVersionExt">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false"  customannotation:Index="{ Name: IX_ID, Order: 0 }"/>
+    <Property Name="SizeInKBytes" Type="decimal" Precision="28" Scale="10" Nullable="true" />
+  </EntityType>
+  <Association Name="LightDMS_DocumentVersionExt_Base">
+    <End Role="LightDMS_DocumentVersion" Type="Self.LightDMS_DocumentVersion" Multiplicity="1" />
+    <End Role="LightDMS_DocumentVersionExt" Type="Self.LightDMS_DocumentVersionExt" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_DocumentVersion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentVersionExt">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="LightDMS_FileContent">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Content" Type="varbinary(max)" Nullable="true" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="true" />
+    <Property Name="AzureStorage" Type="bit" Nullable="true" />
+  </EntityType>
+  <Association Name="LightDMS_DocumentVersion_FileContent">
+    <End Role="LightDMS_FileContent" Type="Self.LightDMS_FileContent" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentVersion" Type="Self.LightDMS_DocumentVersion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_FileContent">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentVersion">
+        <PropertyRef Name="FileContentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="LightDMS_DocumentRepository">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <Association Name="LightDMS_Checkout_Repository">
+    <End Role="LightDMS_DocumentRepository" Type="Self.LightDMS_DocumentRepository" Multiplicity="0..1" />
+    <End Role="LightDMS_Checkout" Type="Self.LightDMS_Checkout" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_DocumentRepository">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_Checkout">
+        <PropertyRef Name="RepositoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LightDMS_DocumentEvent_Repository">
+    <End Role="LightDMS_DocumentRepository" Type="Self.LightDMS_DocumentRepository" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentEvent" Type="Self.LightDMS_DocumentEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_DocumentRepository">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentEvent">
+        <PropertyRef Name="RepositoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LightDMS_DocumentVersion_Repository">
+    <End Role="LightDMS_DocumentRepository" Type="Self.LightDMS_DocumentRepository" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentVersion" Type="Self.LightDMS_DocumentVersion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_DocumentRepository">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentVersion">
+        <PropertyRef Name="RepositoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="LightDMS_UndoCheckout">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RepositoryID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_RepositoryID, Order: 0 }" Nullable="true" />
+    <Property Name="DocumentID" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="CreatedByID" Type="uniqueidentifier" customannotation:Index="{ Name: IX_CreatedByID, Order: 0 }" Nullable="true" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="true" />
+    <Property Name="Comment" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <Association Name="LightDMS_UndoCheckout_Repository">
+    <End Role="LightDMS_DocumentRepository" Type="Self.LightDMS_DocumentRepository" Multiplicity="0..1" />
+    <End Role="LightDMS_UndoCheckout" Type="Self.LightDMS_UndoCheckout" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_DocumentRepository">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_UndoCheckout">
+        <PropertyRef Name="RepositoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LightDMS_UndoCheckout_CreatedBy">
+    <End Role="Common_Principal" Type="Self.Common_Principal" Multiplicity="0..1" />
+    <End Role="LightDMS_UndoCheckout" Type="Self.LightDMS_UndoCheckout" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Principal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_UndoCheckout">
+        <PropertyRef Name="CreatedByID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Common_LogRelatedItemReader_Log">
+    <End Role="Common_Log" Type="Self.Common_Log" Multiplicity="0..1" />
+    <End Role="Common_LogRelatedItemReader" Type="Self.Common_LogRelatedItemReader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Common_Log">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Common_LogRelatedItemReader">
+        <PropertyRef Name="LogID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LightDMS_DocumentEvent_Checkout">
+    <End Role="LightDMS_Checkout" Type="Self.LightDMS_Checkout" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentEvent" Type="Self.LightDMS_DocumentEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_Checkout">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentEvent">
+        <PropertyRef Name="CheckoutID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LightDMS_DocumentEvent_DocumentVersion">
+    <End Role="LightDMS_DocumentVersion" Type="Self.LightDMS_DocumentVersion" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentEvent" Type="Self.LightDMS_DocumentEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_DocumentVersion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentEvent">
+        <PropertyRef Name="DocumentVersionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LightDMS_DocumentEvent_UndoCheckout">
+    <End Role="LightDMS_UndoCheckout" Type="Self.LightDMS_UndoCheckout" Multiplicity="0..1" />
+    <End Role="LightDMS_DocumentEvent" Type="Self.LightDMS_DocumentEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LightDMS_UndoCheckout">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LightDMS_DocumentEvent">
+        <PropertyRef Name="UndoCheckoutID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CodeFirstDatabase">
+    
+    <EntitySet Name="Kadrovska_Djelatnik" EntityType="Self.Kadrovska_Djelatnik" Schema="Kadrovska" Table="Djelatnik" />
+    <EntitySet Name="Kadrovska_Odjel" EntityType="Self.Kadrovska_Odjel" Schema="Kadrovska" Table="Odjel" />
+  <AssociationSet Name="Kadrovska_Djelatnik_Odjel" Association="Self.Kadrovska_Djelatnik_Odjel">
+    <End Role="Kadrovska_Odjel" EntitySet="Kadrovska_Odjel" />
+    <End Role="Kadrovska_Djelatnik" EntitySet="Kadrovska_Djelatnik" />
+  </AssociationSet>
+    <EntitySet Name="Kadrovska_Sektor" EntityType="Self.Kadrovska_Sektor" Schema="Kadrovska" Table="Sektor" />
+  <AssociationSet Name="Kadrovska_Djelatnik_Sektor" Association="Self.Kadrovska_Djelatnik_Sektor">
+    <End Role="Kadrovska_Sektor" EntitySet="Kadrovska_Sektor" />
+    <End Role="Kadrovska_Djelatnik" EntitySet="Kadrovska_Djelatnik" />
+  </AssociationSet>
+    <EntitySet Name="Kadrovska_Tim" EntityType="Self.Kadrovska_Tim" Schema="Kadrovska" Table="Tim" />
+  <AssociationSet Name="Kadrovska_Djelatnik_Tim" Association="Self.Kadrovska_Djelatnik_Tim">
+    <End Role="Kadrovska_Tim" EntitySet="Kadrovska_Tim" />
+    <End Role="Kadrovska_Djelatnik" EntitySet="Kadrovska_Djelatnik" />
+  </AssociationSet>
+  <AssociationSet Name="Kadrovska_Tim_Voditelj" Association="Self.Kadrovska_Tim_Voditelj">
+    <End Role="Kadrovska_Djelatnik" EntitySet="Kadrovska_Djelatnik" />
+    <End Role="Kadrovska_Tim" EntitySet="Kadrovska_Tim" />
+  </AssociationSet>
+    <EntitySet Name="Common_AutoCodeCache" EntityType="Self.Common_AutoCodeCache" Schema="Common" Table="AutoCodeCache" />
+    <EntitySet Name="Common_FilterId" EntityType="Self.Common_FilterId" Schema="Common" Table="FilterId" />
+    <EntitySet Name="Common_KeepSynchronizedMetadata" EntityType="Self.Common_KeepSynchronizedMetadata" Schema="Common" Table="KeepSynchronizedMetadata" />
+    <EntitySet Name="Common_ExclusiveLock" EntityType="Self.Common_ExclusiveLock" Schema="Common" Table="ExclusiveLock" />
+    <EntitySet Name="Common_LogReader" EntityType="Self.Common_LogReader" Schema="Common" Table="LogReader" />
+    <EntitySet Name="Common_LogRelatedItemReader" EntityType="Self.Common_LogRelatedItemReader" Schema="Common" Table="LogRelatedItemReader" />
+    <EntitySet Name="Common_Log" EntityType="Self.Common_Log" Schema="Common" Table="Log" />
+    <EntitySet Name="Common_LogRelatedItem" EntityType="Self.Common_LogRelatedItem" Schema="Common" Table="LogRelatedItem" />
+  <AssociationSet Name="Common_LogRelatedItem_Log" Association="Self.Common_LogRelatedItem_Log">
+    <End Role="Common_Log" EntitySet="Common_Log" />
+    <End Role="Common_LogRelatedItem" EntitySet="Common_LogRelatedItem" />
+  </AssociationSet>
+    <EntitySet Name="Common_RelatedEventsSource" EntityType="Self.Common_RelatedEventsSource" Schema="Common" Table="RelatedEventsSource" />
+  <AssociationSet Name="Common_RelatedEventsSource_Log" Association="Self.Common_RelatedEventsSource_Log">
+    <End Role="Common_LogReader" EntitySet="Common_LogReader" />
+    <End Role="Common_RelatedEventsSource" EntitySet="Common_RelatedEventsSource" />
+  </AssociationSet>
+    <EntitySet Name="Common_Claim" EntityType="Self.Common_Claim" Schema="Common" Table="Claim" />
+    <EntitySet Name="Common_Principal" EntityType="Self.Common_Principal" Schema="Common" Table="Principal" />
+    <EntitySet Name="Common_PrincipalHasRole" EntityType="Self.Common_PrincipalHasRole" Schema="Common" Table="PrincipalHasRole" />
+  <AssociationSet Name="Common_PrincipalHasRole_Principal" Association="Self.Common_PrincipalHasRole_Principal">
+    <End Role="Common_Principal" EntitySet="Common_Principal" />
+    <End Role="Common_PrincipalHasRole" EntitySet="Common_PrincipalHasRole" />
+  </AssociationSet>
+    <EntitySet Name="Common_Role" EntityType="Self.Common_Role" Schema="Common" Table="Role" />
+  <AssociationSet Name="Common_PrincipalHasRole_Role" Association="Self.Common_PrincipalHasRole_Role">
+    <End Role="Common_Role" EntitySet="Common_Role" />
+    <End Role="Common_PrincipalHasRole" EntitySet="Common_PrincipalHasRole" />
+  </AssociationSet>
+    <EntitySet Name="Common_RoleInheritsRole" EntityType="Self.Common_RoleInheritsRole" Schema="Common" Table="RoleInheritsRole" />
+  <AssociationSet Name="Common_RoleInheritsRole_UsersFrom" Association="Self.Common_RoleInheritsRole_UsersFrom">
+    <End Role="Common_Role" EntitySet="Common_Role" />
+    <End Role="Common_RoleInheritsRole" EntitySet="Common_RoleInheritsRole" />
+  </AssociationSet>
+  <AssociationSet Name="Common_RoleInheritsRole_PermissionsFrom" Association="Self.Common_RoleInheritsRole_PermissionsFrom">
+    <End Role="Common_Role" EntitySet="Common_Role" />
+    <End Role="Common_RoleInheritsRole" EntitySet="Common_RoleInheritsRole" />
+  </AssociationSet>
+    <EntitySet Name="Common_PrincipalPermission" EntityType="Self.Common_PrincipalPermission" Schema="Common" Table="PrincipalPermission" />
+  <AssociationSet Name="Common_PrincipalPermission_Principal" Association="Self.Common_PrincipalPermission_Principal">
+    <End Role="Common_Principal" EntitySet="Common_Principal" />
+    <End Role="Common_PrincipalPermission" EntitySet="Common_PrincipalPermission" />
+  </AssociationSet>
+  <AssociationSet Name="Common_PrincipalPermission_Claim" Association="Self.Common_PrincipalPermission_Claim">
+    <End Role="Common_Claim" EntitySet="Common_Claim" />
+    <End Role="Common_PrincipalPermission" EntitySet="Common_PrincipalPermission" />
+  </AssociationSet>
+    <EntitySet Name="Common_RolePermission" EntityType="Self.Common_RolePermission" Schema="Common" Table="RolePermission" />
+  <AssociationSet Name="Common_RolePermission_Role" Association="Self.Common_RolePermission_Role">
+    <End Role="Common_Role" EntitySet="Common_Role" />
+    <End Role="Common_RolePermission" EntitySet="Common_RolePermission" />
+  </AssociationSet>
+  <AssociationSet Name="Common_RolePermission_Claim" Association="Self.Common_RolePermission_Claim">
+    <End Role="Common_Claim" EntitySet="Common_Claim" />
+    <End Role="Common_RolePermission" EntitySet="Common_RolePermission" />
+  </AssociationSet>
+    <EntitySet Name="LightDMS_Checkout" EntityType="Self.LightDMS_Checkout" Schema="LightDMS" Table="Checkout" />
+  <AssociationSet Name="LightDMS_Checkout_CreatedBy" Association="Self.LightDMS_Checkout_CreatedBy">
+    <End Role="Common_Principal" EntitySet="Common_Principal" />
+    <End Role="LightDMS_Checkout" EntitySet="LightDMS_Checkout" />
+  </AssociationSet>
+    <EntitySet Name="LightDMS_DocumentEvent" EntityType="Self.LightDMS_DocumentEvent" Schema="LightDMS" Table="DocumentEvent" />
+  <AssociationSet Name="LightDMS_DocumentEvent_CreatedBy" Association="Self.LightDMS_DocumentEvent_CreatedBy">
+    <End Role="Common_Principal" EntitySet="Common_Principal" />
+    <End Role="LightDMS_DocumentEvent" EntitySet="LightDMS_DocumentEvent" />
+  </AssociationSet>
+    <EntitySet Name="LightDMS_DocumentStatusBeforeEvent" EntityType="Self.LightDMS_DocumentStatusBeforeEvent" Schema="LightDMS" Table="DocumentStatusBeforeEvent" />
+  <AssociationSet Name="LightDMS_DocumentStatusBeforeEvent_Base" Association="Self.LightDMS_DocumentStatusBeforeEvent_Base">
+    <End Role="LightDMS_DocumentEvent" EntitySet="LightDMS_DocumentEvent" />
+    <End Role="LightDMS_DocumentStatusBeforeEvent" EntitySet="LightDMS_DocumentStatusBeforeEvent" />
+  </AssociationSet>
+  <AssociationSet Name="LightDMS_DocumentStatusBeforeEvent_PreviousEvent" Association="Self.LightDMS_DocumentStatusBeforeEvent_PreviousEvent">
+    <End Role="LightDMS_DocumentEvent" EntitySet="LightDMS_DocumentEvent" />
+    <End Role="LightDMS_DocumentStatusBeforeEvent" EntitySet="LightDMS_DocumentStatusBeforeEvent" />
+  </AssociationSet>
+  <AssociationSet Name="LightDMS_DocumentStatusBeforeEvent_Checkout" Association="Self.LightDMS_DocumentStatusBeforeEvent_Checkout">
+    <End Role="LightDMS_Checkout" EntitySet="LightDMS_Checkout" />
+    <End Role="LightDMS_DocumentStatusBeforeEvent" EntitySet="LightDMS_DocumentStatusBeforeEvent" />
+  </AssociationSet>
+  <AssociationSet Name="LightDMS_DocumentStatusBeforeEvent_CheckedOutTo" Association="Self.LightDMS_DocumentStatusBeforeEvent_CheckedOutTo">
+    <End Role="Common_Principal" EntitySet="Common_Principal" />
+    <End Role="LightDMS_DocumentStatusBeforeEvent" EntitySet="LightDMS_DocumentStatusBeforeEvent" />
+  </AssociationSet>
+    <EntitySet Name="LightDMS_ComputeDocumentStatus" EntityType="Self.LightDMS_ComputeDocumentStatus" Schema="LightDMS" Table="ComputeDocumentStatus" />
+  <AssociationSet Name="LightDMS_ComputeDocumentStatus_CheckedOutTo" Association="Self.LightDMS_ComputeDocumentStatus_CheckedOutTo">
+    <End Role="Common_Principal" EntitySet="Common_Principal" />
+    <End Role="LightDMS_ComputeDocumentStatus" EntitySet="LightDMS_ComputeDocumentStatus" />
+  </AssociationSet>
+    <EntitySet Name="LightDMS_DocumentStatus" EntityType="Self.LightDMS_DocumentStatus" Schema="LightDMS" Table="DocumentStatus" />
+  <AssociationSet Name="LightDMS_DocumentStatus_CheckedOutTo" Association="Self.LightDMS_DocumentStatus_CheckedOutTo">
+    <End Role="Common_Principal" EntitySet="Common_Principal" />
+    <End Role="LightDMS_DocumentStatus" EntitySet="LightDMS_DocumentStatus" />
+  </AssociationSet>
+    <EntitySet Name="LightDMS_DocumentVersion" EntityType="Self.LightDMS_DocumentVersion" Schema="LightDMS" Table="DocumentVersion" />
+  <AssociationSet Name="LightDMS_DocumentStatusBeforeEvent_DocumentVersion" Association="Self.LightDMS_DocumentStatusBeforeEvent_DocumentVersion">
+    <End Role="LightDMS_DocumentVersion" EntitySet="LightDMS_DocumentVersion" />
+    <End Role="LightDMS_DocumentStatusBeforeEvent" EntitySet="LightDMS_DocumentStatusBeforeEvent" />
+  </AssociationSet>
+  <AssociationSet Name="LightDMS_ComputeDocumentStatus_LastVersion" Association="Self.LightDMS_ComputeDocumentStatus_LastVersion">
+    <End Role="LightDMS_DocumentVersion" EntitySet="LightDMS_DocumentVersion" />
+    <End Role="LightDMS_ComputeDocumentStatus" EntitySet="LightDMS_ComputeDocumentStatus" />
+  </AssociationSet>
+  <AssociationSet Name="LightDMS_DocumentStatus_LastVersion" Association="Self.LightDMS_DocumentStatus_LastVersion">
+    <End Role="LightDMS_DocumentVersion" EntitySet="LightDMS_DocumentVersion" />
+    <End Role="LightDMS_DocumentStatus" EntitySet="LightDMS_DocumentStatus" />
+  </AssociationSet>
+  <AssociationSet Name="LightDMS_DocumentVersion_CreatedBy" Association="Self.LightDMS_DocumentVersion_CreatedBy">
+    <End Role="Common_Principal" EntitySet="Common_Principal" />
+    <End Role="LightDMS_DocumentVersion" EntitySet="LightDMS_DocumentVersion" />
+  </AssociationSet>
+    <EntitySet Name="LightDMS_DocumentVersionExt" EntityType="Self.LightDMS_DocumentVersionExt" Schema="LightDMS" Table="DocumentVersionExt" />
+  <AssociationSet Name="LightDMS_DocumentVersionExt_Base" Association="Self.LightDMS_DocumentVersionExt_Base">
+    <End Role="LightDMS_DocumentVersion" EntitySet="LightDMS_DocumentVersion" />
+    <End Role="LightDMS_DocumentVersionExt" EntitySet="LightDMS_DocumentVersionExt" />
+  </AssociationSet>
+    <EntitySet Name="LightDMS_FileContent" EntityType="Self.LightDMS_FileContent" Schema="LightDMS" Table="FileContent" />
+  <AssociationSet Name="LightDMS_DocumentVersion_FileContent" Association="Self.LightDMS_DocumentVersion_FileContent">
+    <End Role="LightDMS_FileContent" EntitySet="LightDMS_FileContent" />
+    <End Role="LightDMS_DocumentVersion" EntitySet="LightDMS_DocumentVersion" />
+  </AssociationSet>
+    <EntitySet Name="LightDMS_DocumentRepository" EntityType="Self.LightDMS_DocumentRepository" Schema="LightDMS" Table="DocumentRepository" />
+  <AssociationSet Name="LightDMS_Checkout_Repository" Association="Self.LightDMS_Checkout_Repository">
+    <End Role="LightDMS_DocumentRepository" EntitySet="LightDMS_DocumentRepository" />
+    <End Role="LightDMS_Checkout" EntitySet="LightDMS_Checkout" />
+  </AssociationSet>
+  <AssociationSet Name="LightDMS_DocumentEvent_Repository" Association="Self.LightDMS_DocumentEvent_Repository">
+    <End Role="LightDMS_DocumentRepository" EntitySet="LightDMS_DocumentRepository" />
+    <End Role="LightDMS_DocumentEvent" EntitySet="LightDMS_DocumentEvent" />
+  </AssociationSet>
+  <AssociationSet Name="LightDMS_DocumentVersion_Repository" Association="Self.LightDMS_DocumentVersion_Repository">
+    <End Role="LightDMS_DocumentRepository" EntitySet="LightDMS_DocumentRepository" />
+    <End Role="LightDMS_DocumentVersion" EntitySet="LightDMS_DocumentVersion" />
+  </AssociationSet>
+    <EntitySet Name="LightDMS_UndoCheckout" EntityType="Self.LightDMS_UndoCheckout" Schema="LightDMS" Table="UndoCheckout" />
+  <AssociationSet Name="LightDMS_UndoCheckout_Repository" Association="Self.LightDMS_UndoCheckout_Repository">
+    <End Role="LightDMS_DocumentRepository" EntitySet="LightDMS_DocumentRepository" />
+    <End Role="LightDMS_UndoCheckout" EntitySet="LightDMS_UndoCheckout" />
+  </AssociationSet>
+  <AssociationSet Name="LightDMS_UndoCheckout_CreatedBy" Association="Self.LightDMS_UndoCheckout_CreatedBy">
+    <End Role="Common_Principal" EntitySet="Common_Principal" />
+    <End Role="LightDMS_UndoCheckout" EntitySet="LightDMS_UndoCheckout" />
+  </AssociationSet>
+  <AssociationSet Name="Common_LogRelatedItemReader_Log" Association="Self.Common_LogRelatedItemReader_Log">
+    <End Role="Common_Log" EntitySet="Common_Log" />
+    <End Role="Common_LogRelatedItemReader" EntitySet="Common_LogRelatedItemReader" />
+  </AssociationSet>
+  <AssociationSet Name="LightDMS_DocumentEvent_Checkout" Association="Self.LightDMS_DocumentEvent_Checkout">
+    <End Role="LightDMS_Checkout" EntitySet="LightDMS_Checkout" />
+    <End Role="LightDMS_DocumentEvent" EntitySet="LightDMS_DocumentEvent" />
+  </AssociationSet>
+  <AssociationSet Name="LightDMS_DocumentEvent_DocumentVersion" Association="Self.LightDMS_DocumentEvent_DocumentVersion">
+    <End Role="LightDMS_DocumentVersion" EntitySet="LightDMS_DocumentVersion" />
+    <End Role="LightDMS_DocumentEvent" EntitySet="LightDMS_DocumentEvent" />
+  </AssociationSet>
+  <AssociationSet Name="LightDMS_DocumentEvent_UndoCheckout" Association="Self.LightDMS_DocumentEvent_UndoCheckout">
+    <End Role="LightDMS_UndoCheckout" EntitySet="LightDMS_UndoCheckout" />
+    <End Role="LightDMS_DocumentEvent" EntitySet="LightDMS_DocumentEvent" />
+  </AssociationSet>
+  </EntityContainer>
+</Schema>

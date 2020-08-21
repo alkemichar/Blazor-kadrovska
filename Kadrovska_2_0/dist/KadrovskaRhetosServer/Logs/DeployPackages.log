@@ -1,0 +1,920 @@
+2020-05-01 21:44:36.7839|ERROR|DeployPackages|Rhetos.UserException: '/DatabaseOnly' switch cannot be used if the server have not been deployed successfully before. Run a regular deployment instead. Missing 'C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\ServerDom.Model.dll'.
+   at DeployPackages.Program.InitialCleanup(ILogger logger, DeployArguments arguments) in C:\My Projects\Rhetos\Source\DeployPackages\Program.cs:line 145
+   at DeployPackages.Program.Main(String[] args) in C:\My Projects\Rhetos\Source\DeployPackages\Program.cs:line 67
+Info: 
+MessageParameters: null
+SystemMessage: 
+2020-05-01 21:44:41.8604|TRACE|DeployPackages|Moving old generated files to cache.
+2020-05-01 21:44:41.8994|TRACE|DeployPackages|Getting packages.
+2020-05-01 21:44:41.9144|TRACE|PackageDownloader|Not looking for Rhetos.CommonConcepts (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-01 21:44:44.1523|TRACE|PackageDownloader|Downloading NuGet package Rhetos.CommonConcepts 3.0.1 from https://www.nuget.org/api/v2/.
+2020-05-01 21:44:44.3322|TRACE|NuGet|Installing 'Rhetos.CommonConcepts 3.0.1'.
+2020-05-01 21:44:44.4202|TRACE|NuGet|Successfully installed 'Rhetos.CommonConcepts 3.0.1'.
+2020-05-01 21:44:44.5722|TRACE|PackageDownloader|Not looking for Rhetos.RestGenerator (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-01 21:44:44.9236|TRACE|PackageDownloader|Downloading NuGet package Rhetos.RestGenerator 2.5.0 from https://www.nuget.org/api/v2/.
+2020-05-01 21:44:45.9389|TRACE|NuGet|Installing 'Rhetos.RestGenerator 2.5.0'.
+2020-05-01 21:44:45.9495|TRACE|NuGet|Successfully installed 'Rhetos.RestGenerator 2.5.0'.
+2020-05-01 21:44:45.9665|TRACE|PackageDownloader|Reading package Kadrovska from unpacked source folder with metadata Kadrovska.Service.nuspec.
+2020-05-01 21:44:45.9665|TRACE|DeployPackages|Reading Kadrovska from source.
+2020-05-01 21:44:45.9985|ERROR|DeployPackages|Rhetos.UserException: Package ID 'Kadrovska.Service' at location 'C:\aplikacije\Kadrovska_2_0\src' does not match package ID 'Kadrovska' requested from configuration file RhetosPackages.config.
+   at Rhetos.Deployment.PackageDownloader.ValidatePackage(InstalledPackage installedPackage, PackageRequest request, List`1 installedPackages) in C:\My Projects\Rhetos\Source\Rhetos.Deployment\PackageDownloader.cs:line 185
+   at Rhetos.Deployment.PackageDownloader.GetPackages() in C:\My Projects\Rhetos\Source\Rhetos.Deployment\PackageDownloader.cs:line 87
+   at DeployPackages.Program.DownloadPackages(ILogger logger, DeployArguments arguments) in C:\My Projects\Rhetos\Source\DeployPackages\Program.cs:line 157
+   at DeployPackages.Program.Main(String[] args) in C:\My Projects\Rhetos\Source\DeployPackages\Program.cs:line 68
+Info: 
+MessageParameters: null
+SystemMessage: 
+2020-05-01 21:45:20.8178|TRACE|DeployPackages|Moving old generated files to cache.
+2020-05-01 21:45:20.8618|TRACE|DeployPackages|Getting packages.
+2020-05-01 21:45:20.8618|TRACE|PackageDownloader|Not looking for Rhetos.CommonConcepts (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-01 21:45:22.9269|TRACE|PackageDownloader|Downloading NuGet package Rhetos.CommonConcepts 3.0.1 from https://www.nuget.org/api/v2/.
+2020-05-01 21:45:23.0599|TRACE|NuGet|'Rhetos.CommonConcepts 3.0.1' already installed.
+2020-05-01 21:45:23.1619|TRACE|PackageDownloader|Not looking for Rhetos.RestGenerator (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-01 21:45:23.5490|TRACE|PackageDownloader|Downloading NuGet package Rhetos.RestGenerator 2.5.0 from https://www.nuget.org/api/v2/.
+2020-05-01 21:45:23.5690|TRACE|NuGet|'Rhetos.RestGenerator 2.5.0' already installed.
+2020-05-01 21:45:23.5938|TRACE|PackageDownloader|Reading package Kadrovska.Service from unpacked source folder with metadata Kadrovska.Service.nuspec.
+2020-05-01 21:45:23.5938|TRACE|DeployPackages|Reading Kadrovska.Service from source.
+2020-05-01 21:45:23.6448|TRACE|Packages|Kadrovska.Service 0.0.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\src.
+2020-05-01 21:45:23.6448|TRACE|Packages|Rhetos 3.0.1 (requested from Rhetos framework) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer.
+2020-05-01 21:45:23.6448|TRACE|Packages|Rhetos.CommonConcepts 3.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.CommonConcepts.3.0.1.
+2020-05-01 21:45:23.6448|TRACE|Packages|Rhetos.RestGenerator 2.5.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.RestGenerator.2.5.0.
+2020-05-01 21:45:23.7788|TRACE|DeployPackages|Loading plugins.
+2020-05-01 21:45:24.2188|TRACE|DeployPackages|SQL connection: DataSource=gemini\sql2016btim, InitialCatalog=BlazorKadrovska
+2020-05-01 21:45:24.4181|TRACE|DeployPackages|Preparing Rhetos database.
+2020-05-01 21:45:25.0507|TRACE|DeployPackages|Parsing DSL scripts.
+2020-05-01 21:45:25.3818|TRACE|DeployPackages|Application model has 533 statements.
+2020-05-01 21:45:25.3818|TRACE|DeployPackages|Compiling DOM assembly.
+2020-05-01 21:45:25.6818|TRACE|AssemblyGenerator|Compiling assembly: ServerDom.Model.dll.
+2020-05-01 21:45:28.1217|TRACE|AssemblyGenerator|Compiling assembly: ServerDom.Orm.dll.
+2020-05-01 21:45:28.2837|TRACE|AssemblyGenerator|Compiling assembly: ServerDom.Repositories.dll.
+2020-05-01 21:45:28.6917|TRACE|DeployPackages|Generated 150 types.
+2020-05-01 21:45:28.6917|TRACE|DeployPackages|Executing RestGenerator.
+2020-05-01 21:45:28.7307|TRACE|AssemblyGenerator|Compiling assembly: RestService.dll.
+2020-05-01 21:45:28.9577|INFO|AssemblyGenerator|60 warning(s) while compiling RestService.dll:
+C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\RestService.cs(680,27): warning CS0618: 'LegacyClientException' is obsolete: 'Use ClientException instead.' (60 warnings)
+2020-05-01 21:45:28.9737|TRACE|DeployPackages|Executing EntityFrameworkMappingGenerator.
+2020-05-01 21:45:29.0127|TRACE|DeployPackages|Cleaning old migration data.
+2020-05-01 21:45:29.1831|TRACE|DeployPackages|Deleted 0 columns in data migration schemas, 0 remaining.
+2020-05-01 21:45:29.2840|TRACE|DeployPackages|Executing 0 before data migration scripts.
+2020-05-01 21:45:29.2840|TRACE|DeployPackages|Executing data migration scripts.
+2020-05-01 21:45:29.3671|INFO|DataMigration|Execute Rhetos.CommonConcepts\0.9.12\1 - AppliedConcept Options1 Options2.sql (tag 533F534B-388C-4CE1-B8AE-A308542471F5)
+2020-05-01 21:45:29.3671|INFO|DataMigration|Execute Rhetos.CommonConcepts\0.9.14\1 - Claim.Active.sql (tag 323D7F48-433F-49E9-983B-09A4B7317077)
+2020-05-01 21:45:29.3791|INFO|DataMigration|Execute Rhetos.CommonConcepts\0.9.29\1 - RoleInheritsRole renames columns.sql (tag 0D99CDE7-E4CB-4FBF-937B-4ADEEEBC46CE)
+2020-05-01 21:45:29.3791|INFO|DataMigration|Execute Rhetos.CommonConcepts\0.9.29\2 - Permissions to RP and PP.sql (tag 33EA1F9E-1A89-4CF0-9AD3-A8E10BEF2D3C)
+2020-05-01 21:45:29.3932|INFO|DataMigration|Execute Rhetos.CommonConcepts\0.9.35\1 - A new tag in create property.sql (tag E2B91BB7-FED3-45DB-AFB1-61CEF615C2C3)
+2020-05-01 21:45:29.3932|INFO|DataMigration|Execute Rhetos.CommonConcepts\1.3\1 - Clear excess dependencies for subtype id.sql (tag B3D3CD35-D41F-4E70-A490-94CBD12226FF)
+2020-05-01 21:45:29.3932|INFO|DataMigration|Execute Rhetos.CommonConcepts\1.11\1 - DataStructureExtendsInfo to UniqueReferenceInfo.sql (tag 0246E7EA-F2F2-419B-9710-1149838E8604)
+2020-05-01 21:45:29.3932|INFO|DataMigration|Execute Rhetos.CommonConcepts\2.4\1 - KeepSynchronizedMetadata for Polymorphic.sql (tag BD03D06C-2EC3-4322-B46F-A88EEFB88572)
+2020-05-01 21:45:29.3932|INFO|DataMigration|Execute Rhetos.CommonConcepts\2.12\1 - Optimized index CreateQuery modification.sql (tag F0F1C9B6-058D-41DF-8514-DF9D7BD2D701)
+2020-05-01 21:45:29.3932|INFO|DataMigration|Execute Rhetos.CommonConcepts\2.12\2 - Separate foreign key concept.sql (tag 654F5AA3-4DB4-4C3A-8AF7-52CA3BBC5E2C)
+2020-05-01 21:45:30.1211|TRACE|DeployPackages|Executed 10 of 10 scripts.
+2020-05-01 21:45:30.1292|TRACE|DeployPackages|Executing 0 after data migration scripts.
+2020-05-01 21:45:30.1292|TRACE|DeployPackages|Upgrading database.
+2020-05-01 21:45:30.3203|TRACE|DeployPackages|DatabaseGenerator removing 0 concept applications.
+2020-05-01 21:45:30.3203|TRACE|DatabaseGenerator Concepts|Creating ModuleInfo Kadrovska/Rhetos.DatabaseGenerator.DefaultConcepts.ModuleDatabaseDefinition, ID=31CBE025-BC47-494C-950D-C15309914222.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Kadrovska.Djelatnik/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=7725D9AC-AE16-40D2-8A2E-B24DA43C76C1.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Djelatnik.MaticniBroj/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=53D0B6DE-0E80-4D6D-A20F-9EDF67BD44D7.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Djelatnik.Prezime/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=7327DA52-0EDC-4FD1-8D86-33BC6FEF6427.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Djelatnik.Ime/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=1842BA5B-257A-4014-9B37-1E58CDD8253A.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating ModuleInfo Common/Rhetos.DatabaseGenerator.DefaultConcepts.ModuleDatabaseDefinition, ID=A4F76848-C455-4898-8A59-5FAB9C830E82.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.AutoCodeCache/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=0F188D2B-15E3-40D1-BF95-9BCB089A2E6D.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.AutoCodeCache.Entity/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=4380C349-F80D-426C-A820-C8A09E286C3B.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.AutoCodeCache.Property/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=A54AAC90-BEEF-432D-B153-1DD2F1BF8359.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.AutoCodeCache.Grouping/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=DB21EE71-DF20-40D0-B135-C12616305EF3.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.AutoCodeCache.Prefix/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=DEACA24D-226B-4286-BE78-B513F6656A2D.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.AutoCodeCache.MinDigits/Rhetos.DatabaseGenerator.DefaultConcepts.IntegerPropertyDatabaseDefinition, ID=C7B0D1A2-C34F-4B80-927F-235CAB1EC584.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.AutoCodeCache.LastCode/Rhetos.DatabaseGenerator.DefaultConcepts.IntegerPropertyDatabaseDefinition, ID=1E882FA7-2648-4D09-8AA1-568FEF7389A4.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating SqlProcedureInfo Common.AutoCodeCacheGetNext/Rhetos.DatabaseGenerator.DefaultConcepts.SqlProcedureDatabaseDefinition, ID=5D5AD5FD-E650-402A-84E8-50FB1B22EA1A.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating SqlProcedureInfo Common.AutoCodeCacheUpdate/Rhetos.DatabaseGenerator.DefaultConcepts.SqlProcedureDatabaseDefinition, ID=A1425269-DADD-4B5A-B425-5F2DB0C1CE48.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.FilterId/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=F396E688-E5D6-415C-8B00-98906BF7CD4B.
+2020-05-01 21:45:30.3343|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.FilterId.Handle/Rhetos.DatabaseGenerator.DefaultConcepts.GuidPropertyDatabaseDefinition, ID=A4FE328B-BFB4-4406-A691-AE507D9F9B66.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.FilterId.Value/Rhetos.DatabaseGenerator.DefaultConcepts.GuidPropertyDatabaseDefinition, ID=1DFBAA3D-2DAC-456F-8030-03A40FC814C4.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.FilterId.'Handle Value'/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=2F59D3D7-A644-414A-B046-39784B3A5870.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.KeepSynchronizedMetadata/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=89C2A43E-F271-496F-9746-8B7DCF047B5D.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.KeepSynchronizedMetadata.Target/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=A8350665-C725-471B-BA31-D585B704125E.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.KeepSynchronizedMetadata.Source/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=7DD95BC1-0890-498B-85CF-A49ECEC3BD1C.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.KeepSynchronizedMetadata.Context/Rhetos.DatabaseGenerator.DefaultConcepts.LongStringPropertyDatabaseDefinition, ID=76C33BC1-E92C-4F1A-B6DF-08D5D16BE565.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.ExclusiveLock/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=AA5E6212-9C7E-427F-9458-4A82F493D7FB.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.ExclusiveLock.ResourceType/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=D1063FD3-41E8-43FB-9DB1-312B6DEEEC17.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.ExclusiveLock.ResourceID/Rhetos.DatabaseGenerator.DefaultConcepts.GuidPropertyDatabaseDefinition, ID=7A4A51A8-646A-4295-B825-FD3247261A34.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.ExclusiveLock.UserName/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=A35E4A45-B284-449E-A39F-C6ED381CC640.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.ExclusiveLock.Workstation/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=1E11DEA8-3160-4E50-9FAE-991FB89FAFF8.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.ExclusiveLock.LockStart/Rhetos.DatabaseGenerator.DefaultConcepts.DateTimePropertyDatabaseDefinition, ID=B9288795-14CB-4156-B39C-D39E49CBA757.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.ExclusiveLock.LockFinish/Rhetos.DatabaseGenerator.DefaultConcepts.DateTimePropertyDatabaseDefinition, ID=DA3D5DFE-AA8F-4001-827D-41D3BF49FD18.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.Log/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=66EEED35-7740-4753-93ED-6C6F69D27552.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.Log.UserName/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=173831E8-94C4-48EB-9B6F-94775D59EC30.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.Log.Workstation/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=9AEE8AB6-75DB-43BD-81F8-FB332EA05033.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.Log.ContextInfo/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=0999BA11-8875-4BF6-8D06-6ACD24106F58.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.Log.Action/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=715076CE-B622-482B-97D8-2A5289C2AC85.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.Log.TableName/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=7D60312B-D323-4DB4-8514-6C5C7C4F533A.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.Log.ItemId/Rhetos.DatabaseGenerator.DefaultConcepts.GuidPropertyDatabaseDefinition, ID=65423066-9AD1-40EB-A900-ACFF58D8B22F.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.Log.Description/Rhetos.DatabaseGenerator.DefaultConcepts.LongStringPropertyDatabaseDefinition, ID=C8B41888-B6A6-4F62-AB76-6752C819C0F7.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.Log.Created/Rhetos.DatabaseGenerator.DefaultConcepts.DateTimePropertyDatabaseDefinition, ID=A8FC2124-5B8D-43C7-BA37-34F31F54C7E9.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.LogReader/Rhetos.DatabaseGenerator.DefaultConcepts.SqlQueryableDatabaseDefinition, ID=9DE30E70-CC82-428C-B199-BC8A372A6C23.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.LogRelatedItem/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=87E55200-0818-44F8-9F3F-FA97713A3A7C.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.LogRelatedItem.TableName/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=BB041E42-9647-42F6-9118-0B21D4187B02.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.LogRelatedItem.Relation/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=70F6EBED-6504-4A69-8AD4-1745EBD33B3E.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.LogRelatedItem.ItemId/Rhetos.DatabaseGenerator.DefaultConcepts.GuidPropertyDatabaseDefinition, ID=5D1CAAFD-93F5-447D-9AEB-816A66F0DE78.
+2020-05-01 21:45:30.3463|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.LogRelatedItem.Log/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=477684D2-91CC-4086-97D5-2A58C9F203ED.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.LogRelatedItemReader/Rhetos.DatabaseGenerator.DefaultConcepts.SqlQueryableDatabaseDefinition, ID=CFE708B6-1F35-411A-9A25-7CDA13ECC04E.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating SqlDefaultPropertyInfo Common.Log.Created/Rhetos.DatabaseGenerator.DefaultConcepts.SqlDefaultPropertyDatabaseDefinition, ID=1E662E95-E3B3-4816-9567-8361CA7FCEB2.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating SqlDefaultPropertyInfo Common.Log.UserName/Rhetos.DatabaseGenerator.DefaultConcepts.SqlDefaultPropertyDatabaseDefinition, ID=F887EE8F-3003-455A-9D84-A589A0993286.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating SqlDefaultPropertyInfo Common.Log.Workstation/Rhetos.DatabaseGenerator.DefaultConcepts.SqlDefaultPropertyDatabaseDefinition, ID=0882F1DF-5D32-4088-8FD4-BCC6A3A5083D.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating SqlDefaultPropertyInfo Common.Log.ContextInfo/Rhetos.DatabaseGenerator.DefaultConcepts.SqlDefaultPropertyDatabaseDefinition, ID=96083C70-FE7B-47CA-B83B-DE030675AE3E.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.Log.'TableName Action'/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=2803DFDC-47E3-44C8-98E0-F72D89621629.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.RelatedEventsSource/Rhetos.DatabaseGenerator.DefaultConcepts.SqlQueryableDatabaseDefinition, ID=0491C8A1-17D8-41F8-B56E-49E92CD6DDF4.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.Claim/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=E482C4C9-3FF2-44DB-A4B8-92D69D517330.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.Claim.ClaimResource/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=E0DE55D2-DB9B-4057-A48B-4FA4E92458C0.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.Claim.ClaimRight/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=9B3CE3AA-AB3A-4D73-9036-D4DB289EED1D.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.Claim.Active/Rhetos.DatabaseGenerator.DefaultConcepts.BoolPropertyDatabaseDefinition, ID=AAACB019-E8D8-414C-A07A-AC16E8DCEE73.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo Common.Claim/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=5B1B139E-2CE0-480C-A08B-E4CE23F7D1F5.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.Principal/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=2EB7AD90-C59B-4CFD-ADC9-94B176E4B299.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.Principal.Name/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=C5651406-C559-4AF7-8890-6769ED553ABB.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo Common.Principal/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=F84F2FBF-D0D9-4C46-8EF3-EC38FB0375D7.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.PrincipalHasRole/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=CAC5E5E3-B3B2-4002-A9A9-E6AB429139B5.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.PrincipalHasRole.Principal/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=9F2566F9-4227-4C6D-9E4B-4136EF8CA90A.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.Role/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=AE8B97A6-7D7D-4715-A087-445F77ACE11E.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.PrincipalHasRole.Role/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=C7C351AA-0C2A-48A7-BFE1-B25F1968DDC0.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo Common.PrincipalHasRole/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=B5E71C1D-A3A9-4D1B-A476-E67290CB02CC.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.Role.Name/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=66520084-09F5-4DEE-B7B3-0C13FC69DB3A.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo Common.Role/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=0414A5CD-5956-46E1-A280-7B2C09747707.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.RoleInheritsRole/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=6F723EF1-1C30-4590-9BEC-3A4ADD2E34CA.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.RoleInheritsRole.UsersFrom/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=EA210AA6-9FC1-4CE1-9B4A-073CD8A142ED.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.RoleInheritsRole.PermissionsFrom/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=02DF63FC-4B4E-41F8-BBAB-A47CB939EBAA.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo Common.RoleInheritsRole/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=BC065812-8726-41D3-9A87-D484E466F654.
+2020-05-01 21:45:30.3613|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.PrincipalPermission/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=51E53859-C303-47C3-934A-A2B70152E4FE.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.PrincipalPermission.Principal/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=A15EFDA3-79A4-4595-B321-408805EC2128.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.PrincipalPermission.Claim/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=B5D5F4E4-7E63-45B1-98A6-0DBBBE10EE01.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.PrincipalPermission.IsAuthorized/Rhetos.DatabaseGenerator.DefaultConcepts.BoolPropertyDatabaseDefinition, ID=50DD387C-A2BB-4381-B638-44D6BB7762D5.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo Common.PrincipalPermission/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=7BD314BC-B94A-417A-9F94-419E98255EB2.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Common.RolePermission/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=1B4125CB-5C80-498E-AFED-C92D06973633.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.RolePermission.Role/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=B5072CF0-EF58-4022-A7E1-3F9D318A39EC.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.RolePermission.Claim/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=79C78E63-1B9F-4404-A8F8-E938BD0377D0.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Common.RolePermission.IsAuthorized/Rhetos.DatabaseGenerator.DefaultConcepts.BoolPropertyDatabaseDefinition, ID=0E5B3DF9-8251-4573-9C6E-16143169757C.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo Common.RolePermission/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=4D008211-69D7-4D1D-8449-DEFC8167C19B.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.AutoCodeCache.'Entity Property Grouping Prefix'/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=19C4D969-41D2-4C90-8EA2-BF0DFBB115E0.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.PrincipalHasRole.'Principal Role'/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=671C487B-C1F4-4EFD-B97E-77E883D1C94D.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.RoleInheritsRole.'UsersFrom PermissionsFrom'/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=67E9A4B0-8140-4905-BDDE-618777069B55.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.PrincipalPermission.'Principal Claim'/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=4BF190DC-47CC-455F-A404-F290E925DF78.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.RolePermission.'Role Claim'/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=782CCC57-E7E1-45EC-B1E5-B82C2AF3041B.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Common.LogRelatedItem.Log/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=B60FE39A-249C-49D3-87F1-8D06FD046812.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Common.PrincipalHasRole.Principal/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=E18D01E6-20DF-4C87-A93E-A16DD121A58A.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Common.PrincipalHasRole.Role/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=A490D621-78A7-4AD7-B814-665FF8A51839.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Common.RolePermission.Role/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=2145D9D0-84B8-4FF5-916D-71B9F7522926.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Common.RolePermission.Claim/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=726952F9-3B58-4157-B860-B203E1BFA715.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Common.RoleInheritsRole.UsersFrom/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=932D988F-B09C-4F8A-8A57-B00F16BFCAF9.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Common.RoleInheritsRole.PermissionsFrom/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=04CFE0C5-A42A-4BFE-8306-96200B807377.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Common.PrincipalPermission.Principal/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=1B6F1D24-6655-4A64-BCE3-064FF2E30754.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Common.PrincipalPermission.Claim/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=D7D93CFE-B4A5-4934-B223-01EBDD2298F5.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.Log.ItemId/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=E79C0C25-FA8E-4231-8782-BE5BB5C606B3.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.LogRelatedItem.TableName/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=B497555B-9FFD-4806-A1CC-1EDAB5F5FE23.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.LogRelatedItem.ItemId/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=094EE0C6-C983-4906-8D61-95C7837DB510.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.ExclusiveLock.'ResourceID ResourceType'/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=1EE88C51-627D-414F-863E-44CA698348CF.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.Claim.'ClaimResource ClaimRight'/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=158C8FED-858B-4C60-83D5-64EE5A92F51C.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.Principal.Name/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=018DC7AC-C1B6-46F2-8722-A1CA74A2E6B1.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.Role.Name/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=C42EB2BA-BB3C-46D5-8BE5-93EA34DDA4F0.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.LogRelatedItem.Log/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=030B930E-BFDD-4B95-9B4F-6CB90E7FD6FD.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.PrincipalHasRole.Principal/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=0740FE10-0666-4017-890D-20EEE24FD1B2.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.RoleInheritsRole.UsersFrom/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=85709268-C915-4857-B66A-693E56FBC644.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.PrincipalPermission.Principal/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=F3836260-7189-405C-9E4B-A68A01E90A15.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.PrincipalPermission.Claim/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=2E4511A9-B759-4237-8A2C-5D168FC3431B.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.RolePermission.Role/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=5C45A892-C067-434F-8155-296C7F57D7AA.
+2020-05-01 21:45:30.3773|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Common.RolePermission.Claim/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=D4080AA2-23A3-419C-830E-456CA3DF5212.
+2020-05-01 21:45:30.3773|INFO|DeployPackages|DatabaseGenerator creating 109 concept applications.
+2020-05-01 21:45:34.4825|TRACE|DeployPackages|Deleting redundant migration data.
+2020-05-01 21:45:34.7087|TRACE|DeployPackages|Deleted 12 columns in data migration schemas, 7 remaining.
+2020-05-01 21:45:34.7596|TRACE|DeployPackages|Uploading DSL scripts.
+2020-05-01 21:45:34.9172|TRACE|DeployPackages|Uploaded 7 DSL scripts to database.
+2020-05-01 21:45:34.9260|TRACE|DeployPackages|Loading generated plugins.
+2020-05-01 21:45:35.0340|TRACE|DeployPackages|Initialization ClaimGenerator.
+2020-05-01 21:45:35.7063|TRACE|ClaimGenerator Claims|Inserting claims Common.AddToLog.Execute, Common.AutoCodeCache.Edit, Common.AutoCodeCache.New, Common.AutoCodeCache.Read, Common.AutoCodeCache.Remove, Common.Claim.Edit, Common.Claim.New, Common.Claim.Read, Common.Claim.Remove, Common.ExclusiveLock.Edit, Common.ExclusiveLock.New, Common.ExclusiveLock.Read, Common.ExclusiveLock.Remove, Common.FilterId.Edit, Common.FilterId.New, Common.FilterId.Read, Common.FilterId.Remove, Common.KeepSynchronizedMetadata.Edit, Common.KeepSynchronizedMetadata.New, Common.KeepSynchronizedMetadata.Read, Common.KeepSynchronizedMetadata.Remove, Common.Log.Edit, Common.Log.New, Common.Log.Read, Common.Log.Remove, Common.LogReader.Read, Common.LogRelatedItem.Edit, Common.LogRelatedItem.New, Common.LogRelatedItem.Read, Common.LogRelatedItem.Remove, Common.LogRelatedItemReader.Read, Common.MyClaim.Read, Common.Principal.Edit, Common.Principal.New, Common.Principal.Read, Common.Principal.Remove, Common.PrincipalHasRole.Edit, Common.PrincipalHasRole.New, Common.PrincipalHasRole.Read, Common.PrincipalHasRole.Remove, Common.PrincipalPermission.Edit, Common.PrincipalPermission.New, Common.PrincipalPermission.Read, Common.PrincipalPermission.Remove, Common.RelatedEventsSource.Read, Common.ReleaseLock.Execute, Common.Role.Edit, Common.Role.New, Common.Role.Read, Common.Role.Remove, Common.RoleInheritsRole.Edit, Common.RoleInheritsRole.New, Common.RoleInheritsRole.Read, Common.RoleInheritsRole.Remove, Common.RolePermission.Edit, Common.RolePermission.New, Common.RolePermission.Read, Common.RolePermission.Remove, Common.SetLock.Execute, Kadrovska.Djelatnik.Edit, Kadrovska.Djelatnik.New, Kadrovska.Djelatnik.Read, Kadrovska.Djelatnik.Remove.
+2020-05-01 21:45:36.6566|TRACE|DeployPackages|Initialization KeepSynchronizedRecomputeOnDeploy.
+2020-05-01 21:45:36.7146|TRACE|DeployPackages|Updated Web.config modification date to restart server.
+2020-05-01 21:45:36.7146|TRACE|DeployPackages|Done.
+2020-05-02 19:52:43.9819|TRACE|DeployPackages|Moving old generated files to cache.
+2020-05-02 19:52:44.0369|TRACE|DeployPackages|Getting packages.
+2020-05-02 19:52:44.0619|TRACE|PackageDownloader|Not looking for Rhetos.CommonConcepts (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-02 19:52:46.0503|TRACE|PackageDownloader|Downloading NuGet package Rhetos.CommonConcepts 3.0.1 from https://www.nuget.org/api/v2/.
+2020-05-02 19:52:46.2264|TRACE|NuGet|'Rhetos.CommonConcepts 3.0.1' already installed.
+2020-05-02 19:52:46.3859|TRACE|PackageDownloader|Not looking for Rhetos.RestGenerator (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-02 19:52:46.7457|TRACE|PackageDownloader|Downloading NuGet package Rhetos.RestGenerator 2.5.0 from https://www.nuget.org/api/v2/.
+2020-05-02 19:52:46.7727|TRACE|NuGet|'Rhetos.RestGenerator 2.5.0' already installed.
+2020-05-02 19:52:47.0440|TRACE|PackageDownloader|Downloading NuGet package Rhetos.AfterDeploy 1.2.0 from https://www.nuget.org/api/v2/.
+2020-05-02 19:52:47.0614|TRACE|NuGet|Installing 'Rhetos.AfterDeploy 1.2.0'.
+2020-05-02 19:52:47.1287|TRACE|NuGet|Successfully installed 'Rhetos.AfterDeploy 1.2.0'.
+2020-05-02 19:52:47.3160|TRACE|PackageDownloader|Downloading NuGet package Rhetos.MvcModelGenerator 2.4.0 from https://www.nuget.org/api/v2/.
+2020-05-02 19:52:47.3333|TRACE|NuGet|Installing 'Rhetos.MvcModelGenerator 2.4.0'.
+2020-05-02 19:52:47.3333|TRACE|NuGet|Successfully installed 'Rhetos.MvcModelGenerator 2.4.0'.
+2020-05-02 19:52:47.6611|TRACE|PackageDownloader|Downloading NuGet package Rhetos.LightDMS 1.7.0 from https://www.nuget.org/api/v2/.
+2020-05-02 19:52:47.6882|TRACE|NuGet|Installing 'Rhetos.LightDMS 1.7.0'.
+2020-05-02 19:52:47.7041|TRACE|NuGet|Successfully installed 'Rhetos.LightDMS 1.7.0'.
+2020-05-02 19:52:47.7051|TRACE|PackageDownloader|Reading package Kadrovska.Service from unpacked source folder with metadata Kadrovska.Service.nuspec.
+2020-05-02 19:52:47.7051|TRACE|DeployPackages|Reading Kadrovska.Service from source.
+2020-05-02 19:52:47.9242|TRACE|PackageDownloader|Downloading NuGet package Rhetos.MvcModelGenerator.Client 2.4.0 from https://www.nuget.org/api/v2/.
+2020-05-02 19:52:47.9442|TRACE|NuGet|Installing 'Rhetos.MvcModelGenerator.Client 2.4.0'.
+2020-05-02 19:52:47.9442|TRACE|NuGet|Successfully installed 'Rhetos.MvcModelGenerator.Client 2.4.0'.
+2020-05-02 19:52:48.4717|TRACE|PackageDownloader|Downloading NuGet package WindowsAzure.Storage 7.2.1 from https://www.nuget.org/api/v2/.
+2020-05-02 19:52:48.5270|TRACE|NuGet|Installing 'WindowsAzure.Storage 7.2.1'.
+2020-05-02 19:52:48.6786|TRACE|NuGet|Successfully installed 'WindowsAzure.Storage 7.2.1'.
+2020-05-02 19:52:49.0741|TRACE|PackageDownloader|Downloading NuGet package Microsoft.Data.OData 5.6.4 from https://www.nuget.org/api/v2/.
+2020-05-02 19:52:49.3902|TRACE|NuGet|Installing 'Microsoft.Data.OData 5.6.4'.
+2020-05-02 19:52:49.4692|TRACE|NuGet|Successfully installed 'Microsoft.Data.OData 5.6.4'.
+2020-05-02 19:52:50.2171|TRACE|PackageDownloader|Downloading NuGet package Newtonsoft.Json 6.0.8 from https://www.nuget.org/api/v2/.
+2020-05-02 19:52:50.3223|TRACE|NuGet|Installing 'Newtonsoft.Json 6.0.8'.
+2020-05-02 19:52:50.3453|TRACE|NuGet|Successfully installed 'Newtonsoft.Json 6.0.8'.
+2020-05-02 19:52:50.7544|TRACE|PackageDownloader|Downloading NuGet package Microsoft.Data.Services.Client 5.6.4 from https://www.nuget.org/api/v2/.
+2020-05-02 19:52:50.7906|TRACE|NuGet|Installing 'Microsoft.Data.Services.Client 5.6.4'.
+2020-05-02 19:52:50.9093|TRACE|NuGet|Successfully installed 'Microsoft.Data.Services.Client 5.6.4'.
+2020-05-02 19:52:51.2722|TRACE|PackageDownloader|Downloading NuGet package Microsoft.Azure.KeyVault.Core 1.0.0 from https://www.nuget.org/api/v2/.
+2020-05-02 19:52:51.3052|TRACE|NuGet|Installing 'Microsoft.Azure.KeyVault.Core 1.0.0'.
+2020-05-02 19:52:51.3052|TRACE|NuGet|Successfully installed 'Microsoft.Azure.KeyVault.Core 1.0.0'.
+2020-05-02 19:52:51.7021|TRACE|PackageDownloader|Downloading NuGet package System.Spatial 5.6.4 from https://www.nuget.org/api/v2/.
+2020-05-02 19:52:51.7889|TRACE|NuGet|Installing 'System.Spatial 5.6.4'.
+2020-05-02 19:52:51.8259|TRACE|NuGet|Successfully installed 'System.Spatial 5.6.4'.
+2020-05-02 19:52:52.2468|TRACE|PackageDownloader|Downloading NuGet package Microsoft.Data.Edm 5.6.4 from https://www.nuget.org/api/v2/.
+2020-05-02 19:52:52.3788|TRACE|NuGet|Installing 'Microsoft.Data.Edm 5.6.4'.
+2020-05-02 19:52:52.4218|TRACE|NuGet|Successfully installed 'Microsoft.Data.Edm 5.6.4'.
+2020-05-02 19:52:52.5338|TRACE|Packages|Kadrovska.Service 0.0.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\src.
+2020-05-02 19:52:52.5338|TRACE|Packages|Microsoft.Azure.KeyVault.Core 1.0.0 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Azure.KeyVault.Core.1.0.0.
+2020-05-02 19:52:52.5338|TRACE|Packages|Microsoft.Data.Edm 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Edm.5.6.4.
+2020-05-02 19:52:52.5338|TRACE|Packages|System.Spatial 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\System.Spatial.5.6.4.
+2020-05-02 19:52:52.5338|TRACE|Packages|Microsoft.Data.OData 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.OData.5.6.4.
+2020-05-02 19:52:52.5338|TRACE|Packages|Microsoft.Data.Services.Client 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Services.Client.5.6.4.
+2020-05-02 19:52:52.5338|TRACE|Packages|Newtonsoft.Json 6.0.8 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Newtonsoft.Json.6.0.8.
+2020-05-02 19:52:52.5338|TRACE|Packages|Rhetos 3.0.1 (requested from Rhetos framework) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer.
+2020-05-02 19:52:52.5338|TRACE|Packages|Rhetos.AfterDeploy 1.2.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.AfterDeploy.1.2.0.
+2020-05-02 19:52:52.5338|TRACE|Packages|Rhetos.CommonConcepts 3.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.CommonConcepts.3.0.1.
+2020-05-02 19:52:52.5338|TRACE|Packages|WindowsAzure.Storage 7.2.1 (requested from package Rhetos.LightDMS) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\WindowsAzure.Storage.7.2.1.
+2020-05-02 19:52:52.5338|TRACE|Packages|Rhetos.LightDMS 1.7.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.LightDMS.1.7.0.
+2020-05-02 19:52:52.5338|TRACE|Packages|Rhetos.MvcModelGenerator.Client 2.4.0 (requested from package Rhetos.MvcModelGenerator) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.Client.2.4.0.
+2020-05-02 19:52:52.5338|TRACE|Packages|Rhetos.MvcModelGenerator 2.4.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.2.4.0.
+2020-05-02 19:52:52.5338|TRACE|Packages|Rhetos.RestGenerator 2.5.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.RestGenerator.2.5.0.
+2020-05-02 19:52:52.6998|TRACE|DeployPackages|Loading plugins.
+2020-05-02 19:52:53.4518|TRACE|DeployPackages|SQL connection: DataSource=gemini\sql2016btim, InitialCatalog=BlazorKadrovska
+2020-05-02 19:53:09.6040|ERROR|DeployPackages|Rhetos.FrameworkException: Could not connect to server 'gemini\sql2016btim', database 'BlazorKadrovska' using integrated security account dskorosavljevic. ---> System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Rhetos.Persistence.MsSqlExecuter.SafeExecuteCommand(Action`1 action, Boolean useTransaction) in C:\My Projects\Rhetos\Source\Rhetos.Persistence\MsSqlExecuter.cs:line 184
+   --- End of inner exception stack trace ---
+   at Rhetos.Deployment.ApplicationGenerator.ValidateDbConnection() in C:\My Projects\Rhetos\Source\Rhetos.Deployment\ApplicationGenerator.cs:line 150
+   at Rhetos.Deployment.ApplicationGenerator.ExecuteGenerators(Boolean deployDatabaseOnly) in C:\My Projects\Rhetos\Source\Rhetos.Deployment\ApplicationGenerator.cs:line 76
+   at DeployPackages.Program.GenerateApplication(ILogger logger, DeployArguments arguments) in C:\My Projects\Rhetos\Source\DeployPackages\Program.cs:line 184
+   at DeployPackages.Program.Main(String[] args) in C:\My Projects\Rhetos\Source\DeployPackages\Program.cs:line 69
+Info: 
+2020-05-02 19:53:45.5081|TRACE|DeployPackages|Moving old generated files to cache.
+2020-05-02 19:53:45.5520|TRACE|DeployPackages|Getting packages.
+2020-05-02 19:53:45.5660|TRACE|PackageDownloader|Not looking for Rhetos.CommonConcepts (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-02 19:53:47.7606|TRACE|PackageDownloader|Downloading NuGet package Rhetos.CommonConcepts 3.0.1 from https://www.nuget.org/api/v2/.
+2020-05-02 19:53:47.9076|TRACE|NuGet|'Rhetos.CommonConcepts 3.0.1' already installed.
+2020-05-02 19:53:48.0126|TRACE|PackageDownloader|Not looking for Rhetos.RestGenerator (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-02 19:53:48.3538|TRACE|PackageDownloader|Downloading NuGet package Rhetos.RestGenerator 2.5.0 from https://www.nuget.org/api/v2/.
+2020-05-02 19:53:48.3798|TRACE|NuGet|'Rhetos.RestGenerator 2.5.0' already installed.
+2020-05-02 19:53:48.4049|TRACE|PackageDownloader|Reading package Rhetos.AfterDeploy from cache 'Rhetos.AfterDeploy.1.2.0'.
+2020-05-02 19:53:48.4049|TRACE|DeployPackages|Reading Rhetos.AfterDeploy from cache.
+2020-05-02 19:53:48.4138|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator from cache 'Rhetos.MvcModelGenerator.2.4.0'.
+2020-05-02 19:53:48.4138|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator from cache.
+2020-05-02 19:53:48.4138|TRACE|PackageDownloader|Reading package Rhetos.LightDMS from cache 'Rhetos.LightDMS.1.7.0'.
+2020-05-02 19:53:48.4138|TRACE|DeployPackages|Reading Rhetos.LightDMS from cache.
+2020-05-02 19:53:48.4138|TRACE|PackageDownloader|Reading package Kadrovska.Service from unpacked source folder with metadata Kadrovska.Service.nuspec.
+2020-05-02 19:53:48.4249|TRACE|DeployPackages|Reading Kadrovska.Service from source.
+2020-05-02 19:53:48.4609|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator.Client from cache 'Rhetos.MvcModelGenerator.Client.2.4.0'.
+2020-05-02 19:53:48.4609|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator.Client from cache.
+2020-05-02 19:53:48.4609|TRACE|PackageDownloader|Reading package WindowsAzure.Storage from cache 'WindowsAzure.Storage.7.2.1'.
+2020-05-02 19:53:48.4609|TRACE|DeployPackages|Reading WindowsAzure.Storage from cache.
+2020-05-02 19:53:48.4738|TRACE|PackageDownloader|Reading package Microsoft.Data.OData from cache 'Microsoft.Data.OData.5.6.4'.
+2020-05-02 19:53:48.4738|TRACE|DeployPackages|Reading Microsoft.Data.OData from cache.
+2020-05-02 19:53:48.4939|TRACE|PackageDownloader|Reading package Newtonsoft.Json from cache 'Newtonsoft.Json.6.0.8'.
+2020-05-02 19:53:48.4939|TRACE|DeployPackages|Reading Newtonsoft.Json from cache.
+2020-05-02 19:53:48.4939|TRACE|PackageDownloader|Reading package Microsoft.Data.Services.Client from cache 'Microsoft.Data.Services.Client.5.6.4'.
+2020-05-02 19:53:48.4939|TRACE|DeployPackages|Reading Microsoft.Data.Services.Client from cache.
+2020-05-02 19:53:48.5109|TRACE|PackageDownloader|Reading package Microsoft.Azure.KeyVault.Core from cache 'Microsoft.Azure.KeyVault.Core.1.0.0'.
+2020-05-02 19:53:48.5109|TRACE|DeployPackages|Reading Microsoft.Azure.KeyVault.Core from cache.
+2020-05-02 19:53:48.5109|TRACE|PackageDownloader|Reading package System.Spatial from cache 'System.Spatial.5.6.4'.
+2020-05-02 19:53:48.5109|TRACE|DeployPackages|Reading System.Spatial from cache.
+2020-05-02 19:53:48.5259|TRACE|PackageDownloader|Reading package Microsoft.Data.Edm from cache 'Microsoft.Data.Edm.5.6.4'.
+2020-05-02 19:53:48.5259|TRACE|DeployPackages|Reading Microsoft.Data.Edm from cache.
+2020-05-02 19:53:48.6429|TRACE|Packages|Kadrovska.Service 0.0.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\src.
+2020-05-02 19:53:48.6429|TRACE|Packages|Microsoft.Azure.KeyVault.Core 1.0.0 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Azure.KeyVault.Core.1.0.0.
+2020-05-02 19:53:48.6429|TRACE|Packages|Microsoft.Data.Edm 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Edm.5.6.4.
+2020-05-02 19:53:48.6429|TRACE|Packages|System.Spatial 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\System.Spatial.5.6.4.
+2020-05-02 19:53:48.6429|TRACE|Packages|Microsoft.Data.OData 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.OData.5.6.4.
+2020-05-02 19:53:48.6429|TRACE|Packages|Microsoft.Data.Services.Client 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Services.Client.5.6.4.
+2020-05-02 19:53:48.6429|TRACE|Packages|Newtonsoft.Json 6.0.8 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Newtonsoft.Json.6.0.8.
+2020-05-02 19:53:48.6429|TRACE|Packages|Rhetos 3.0.1 (requested from Rhetos framework) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer.
+2020-05-02 19:53:48.6429|TRACE|Packages|Rhetos.AfterDeploy 1.2.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.AfterDeploy.1.2.0.
+2020-05-02 19:53:48.6429|TRACE|Packages|Rhetos.CommonConcepts 3.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.CommonConcepts.3.0.1.
+2020-05-02 19:53:48.6429|TRACE|Packages|WindowsAzure.Storage 7.2.1 (requested from package Rhetos.LightDMS) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\WindowsAzure.Storage.7.2.1.
+2020-05-02 19:53:48.6429|TRACE|Packages|Rhetos.LightDMS 1.7.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.LightDMS.1.7.0.
+2020-05-02 19:53:48.6429|TRACE|Packages|Rhetos.MvcModelGenerator.Client 2.4.0 (requested from package Rhetos.MvcModelGenerator) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.Client.2.4.0.
+2020-05-02 19:53:48.6429|TRACE|Packages|Rhetos.MvcModelGenerator 2.4.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.2.4.0.
+2020-05-02 19:53:48.6429|TRACE|Packages|Rhetos.RestGenerator 2.5.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.RestGenerator.2.5.0.
+2020-05-02 19:53:48.7829|TRACE|DeployPackages|Loading plugins.
+2020-05-02 19:53:49.3839|TRACE|DeployPackages|SQL connection: DataSource=gemini\sql2016btim, InitialCatalog=BlazorKadrovska
+2020-05-02 19:53:49.7055|TRACE|DeployPackages|Preparing Rhetos database.
+2020-05-02 19:53:50.0511|TRACE|DeployPackages|Parsing DSL scripts.
+2020-05-02 19:53:50.4480|TRACE|DeployPackages|Application model has 894 statements.
+2020-05-02 19:53:50.4480|TRACE|DeployPackages|Compiling DOM assembly.
+2020-05-02 19:53:50.7093|TRACE|AssemblyGenerator|Compiling assembly: ServerDom.Model.dll.
+2020-05-02 19:53:53.3459|TRACE|AssemblyGenerator|Compiling assembly: ServerDom.Orm.dll.
+2020-05-02 19:53:53.5469|TRACE|AssemblyGenerator|Compiling assembly: ServerDom.Repositories.dll.
+2020-05-02 19:53:54.0549|TRACE|DeployPackages|Generated 229 types.
+2020-05-02 19:53:54.0549|TRACE|DeployPackages|Executing CaptionsResourceGenerator.
+2020-05-02 19:53:54.1279|TRACE|AssemblyGenerator|Compiling assembly: Captions.dll.
+2020-05-02 19:53:54.1749|TRACE|DeployPackages|Executing MvcModelGenerator.
+2020-05-02 19:53:54.2249|TRACE|AssemblyGenerator|Compiling assembly: Rhetos.Mvc.dll.
+2020-05-02 19:53:54.2869|TRACE|DeployPackages|Executing RestGenerator.
+2020-05-02 19:53:54.3469|TRACE|AssemblyGenerator|Compiling assembly: RestService.dll.
+2020-05-02 19:53:54.5499|INFO|AssemblyGenerator|88 warning(s) while compiling RestService.dll:
+C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\RestService.cs(3062,27): warning CS0618: 'LegacyClientException' is obsolete: 'Use ClientException instead.' (88 warnings)
+2020-05-02 19:53:54.5799|TRACE|DeployPackages|Executing EntityFrameworkMappingGenerator.
+2020-05-02 19:53:54.6339|TRACE|DeployPackages|Cleaning old migration data.
+2020-05-02 19:53:54.8108|TRACE|DeployPackages|Deleted 0 columns in data migration schemas, 7 remaining.
+2020-05-02 19:53:54.8896|TRACE|DeployPackages|Executing 0 before data migration scripts.
+2020-05-02 19:53:54.8985|TRACE|DeployPackages|Executing data migration scripts.
+2020-05-02 19:53:55.0063|INFO|DataMigration|Execute Rhetos.LightDMS\001 - CreateDefaultRepository.sql (tag CE0FC816-A00F-4640-ABE3-7138B49A7815)
+2020-05-02 19:53:55.0063|INFO|DataMigration|Execute Rhetos.LightDMS\002 - ExternalEntityID rename.sql (tag 9ADC0B53-3E8B-48C0-9AE1-39A7E50CB363)
+2020-05-02 19:53:55.0181|INFO|DataMigration|Execute Rhetos.LightDMS\003 - FileContent CreatedDate.sql (tag 880F7FF2-E0F6-4F04-AEC0-C435FB235CCC)
+2020-05-02 19:53:55.0181|INFO|DataMigration|Execute Rhetos.LightDMS\004 - FileContent_FileStream micanje RemoveQuery.sql (tag 9A2A9B64-A2BF-4F70-B507-CA887E4290B9)
+2020-05-02 19:53:55.5262|TRACE|DeployPackages|Executed 4 of 14 scripts.
+2020-05-02 19:53:55.5262|TRACE|DeployPackages|Executing 0 after data migration scripts.
+2020-05-02 19:53:55.5262|TRACE|DeployPackages|Upgrading database.
+2020-05-02 19:53:55.7896|TRACE|DeployPackages|DatabaseGenerator removing 0 concept applications.
+2020-05-02 19:53:55.8006|TRACE|DatabaseGenerator Concepts|Creating ModuleInfo LightDMS/Rhetos.DatabaseGenerator.DefaultConcepts.ModuleDatabaseDefinition, ID=0A926CB1-5D45-49BC-8FC9-496A4E1E4B43.
+2020-05-02 19:53:55.8006|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo LightDMS.Checkout/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=88C5AF91-C6C4-4E09-8BCA-B916C523AA6E.
+2020-05-02 19:53:55.8006|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.Checkout.DocumentID/Rhetos.DatabaseGenerator.DefaultConcepts.GuidPropertyDatabaseDefinition, ID=FD81E40D-EFC7-4C45-83BF-50F301A57DE7.
+2020-05-02 19:53:55.8006|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.Checkout.Comment/Rhetos.DatabaseGenerator.DefaultConcepts.LongStringPropertyDatabaseDefinition, ID=8A46AC10-3AEA-4641-B9E2-B00B4024C6C7.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.Checkout.CreatedDate/Rhetos.DatabaseGenerator.DefaultConcepts.DateTimePropertyDatabaseDefinition, ID=5E0860E1-9FBE-4735-8C89-FFBC3F99BCB8.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.Checkout.CreatedBy/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=CFADBAB7-2169-42FE-A49E-7BA4C23C9D21.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo LightDMS.DocumentRepository/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=F6F5D818-E42B-45E6-97EB-517CF5996604.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.Checkout.Repository/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=FA83C7EC-6A1B-4C7B-8C8D-79760481B548.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo LightDMS.Checkout/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=D719F9A6-5DCE-4653-96C4-C834942B2A9A.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating SqlViewInfo LightDMS.Checkout_As_DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlViewDatabaseDefinition, ID=0B2BE959-A396-4A96-9F39-C8CF34D2C658.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo LightDMS.DocumentVersion/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=C3388F8E-A2F1-4D8D-9D46-91AAC57DBC58.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.DocumentVersion.DocumentID/Rhetos.DatabaseGenerator.DefaultConcepts.GuidPropertyDatabaseDefinition, ID=EA0E1729-F622-465B-B7FE-278C2C6FF875.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.DocumentVersion.Comment/Rhetos.DatabaseGenerator.DefaultConcepts.LongStringPropertyDatabaseDefinition, ID=6133F653-B094-486E-AEA9-E0DD21FD636C.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.DocumentVersion.CreatedDate/Rhetos.DatabaseGenerator.DefaultConcepts.DateTimePropertyDatabaseDefinition, ID=46E99DF6-F253-4655-B0BA-1B4CF075B778.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.DocumentVersion.CreatedBy/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=85877DAC-C6B8-43B0-B3A9-68AF30BE9E56.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.DocumentVersion.Repository/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=8950C8B3-1604-486D-BFB3-1E7105E9D72D.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.DocumentVersion.VersionNumber/Rhetos.DatabaseGenerator.DefaultConcepts.IntegerPropertyDatabaseDefinition, ID=A3663A99-2395-4283-8F42-CF938BE0BEC1.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.DocumentVersion.FileName/Rhetos.DatabaseGenerator.DefaultConcepts.LongStringPropertyDatabaseDefinition, ID=A4239009-AF92-41E6-9E0E-758A05AAFC84.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo LightDMS.FileContent/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=7C33339E-23AD-47A2-8B89-3CE304CD0E38.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.DocumentVersion.FileContent/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=519BA74A-C9C4-4A18-8877-8ED418ACBE4B.
+2020-05-02 19:53:55.8156|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo LightDMS.DocumentVersion.'DocumentID VersionNumber'/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=86A493D8-DA4A-4935-BA95-E09217D4C982.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating SqlViewInfo LightDMS.DocumentVersion_As_DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlViewDatabaseDefinition, ID=0951D315-8433-4A05-B951-154B63423E47.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo LightDMS.UndoCheckout/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=04A8FCB3-1507-485C-B2A5-A9E7AF18C7C6.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.UndoCheckout.DocumentID/Rhetos.DatabaseGenerator.DefaultConcepts.GuidPropertyDatabaseDefinition, ID=1FCE7A51-475B-4D59-AEE0-5D35674546AB.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.UndoCheckout.Comment/Rhetos.DatabaseGenerator.DefaultConcepts.LongStringPropertyDatabaseDefinition, ID=D12B9074-1264-43F4-99FA-4F1BFC129121.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.UndoCheckout.CreatedDate/Rhetos.DatabaseGenerator.DefaultConcepts.DateTimePropertyDatabaseDefinition, ID=5A52920A-A44B-45BE-BF8E-4702C68CFBD9.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.UndoCheckout.CreatedBy/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=36FCE0DA-6A78-4F99-BF17-4AC280CBA559.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.UndoCheckout.Repository/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=9F317A55-256C-4ED4-AC10-F470DD09805E.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating SqlViewInfo LightDMS.UndoCheckout_As_DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlViewDatabaseDefinition, ID=D1F3906C-857A-4AF3-A1D5-C36313C0B899.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating SqlObjectInfo LightDMS.DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlObjectDatabaseDefinition, ID=2E9540FC-7BCB-41B5-A506-53787C616E92.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo LightDMS.DocumentStatusBeforeEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlQueryableDatabaseDefinition, ID=4FC95D78-3F34-4181-AE57-3AAA85420012.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo LightDMS.ComputeDocumentStatus/Rhetos.DatabaseGenerator.DefaultConcepts.SqlQueryableDatabaseDefinition, ID=CC77002D-6D92-494C-9647-C13FF5DA63B2.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo LightDMS.DocumentStatus/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=80E8DE73-99C8-4327-89D8-D2C247362CDB.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.DocumentStatus.LastEventID/Rhetos.DatabaseGenerator.DefaultConcepts.GuidPropertyDatabaseDefinition, ID=A60707B6-689F-4274-8FF5-51155702267D.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.DocumentStatus.CheckedOutTo/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=35068E8B-C17B-4662-B611-69B64C1D46CB.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.DocumentStatus.IsCheckout/Rhetos.DatabaseGenerator.DefaultConcepts.BoolPropertyDatabaseDefinition, ID=80C886CD-95A4-4686-A7F4-1C6C1A43644A.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.DocumentStatus.LastVersion/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=725DE3F9-42D7-4E9D-9476-0FA901D36414.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo LightDMS.DocumentVersion/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=FD56F8BC-6751-4894-B924-88A5DE8327F6.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.FileContent.CreatedDate/Rhetos.DatabaseGenerator.DefaultConcepts.DateTimePropertyDatabaseDefinition, ID=05909FE3-6355-46E4-83F3-3FA3D6C66F3D.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.FileContent.AzureStorage/Rhetos.DatabaseGenerator.DefaultConcepts.BoolPropertyDatabaseDefinition, ID=8B0B9108-35E2-4328-AEF1-4F800C3B46D7.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.FileContent.Content/Rhetos.DatabaseGenerator.DefaultConcepts.BinaryPropertyDatabaseDefinition, ID=5CBACEAB-30DC-48E8-8CEA-D75E162E5FB3.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo LightDMS.DocumentVersionExt/Rhetos.DatabaseGenerator.DefaultConcepts.SqlQueryableDatabaseDefinition, ID=948D26CD-AA24-4034-BC7F-3DD2DE9DD564.
+2020-05-02 19:53:55.8316|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo LightDMS.DocumentRepository.Name/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=42DEA54B-B87C-41A0-B6FB-6A2EC47C95B8.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo LightDMS.DocumentRepository/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=DA95A5B4-93A7-44E4-A15F-317350FB6EC9.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating SqlObjectInfo LightDMS.IX_DocumentVersion_DocumentID_CreatedDate_ID/Rhetos.DatabaseGenerator.DefaultConcepts.SqlObjectDatabaseDefinition, ID=73933CA0-2B69-4BE6-B4E2-36255A17A906.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating SqlObjectInfo LightDMS.IX_Checkout_DocumentID_CreatedDate_ID/Rhetos.DatabaseGenerator.DefaultConcepts.SqlObjectDatabaseDefinition, ID=597AA966-C32B-4B4F-9627-C211506554A0.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating SqlObjectInfo LightDMS.IX_UndoCheckout_DocumentID_CreatedDate_ID/Rhetos.DatabaseGenerator.DefaultConcepts.SqlObjectDatabaseDefinition, ID=F6FACBA1-336B-4FCA-9771-FB9CF3DCBA7A.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo LightDMS.UndoCheckout/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=2FF784FF-4612-4F8A-AF29-FFFDBB1ED6BE.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo LightDMS.DocumentVersion.FileContent/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=CFEF8B74-4FC0-472C-9885-847E458BE71B.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo LightDMS.Checkout.CreatedBy/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=C62447D0-CCD7-4E09-94BD-4AC109939544.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo LightDMS.DocumentStatus.CheckedOutTo/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=7C2EFFC0-C5D5-4C17-A94F-7D4AEF9C88F6.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo LightDMS.DocumentStatus.LastVersion/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=C095F92E-E399-4978-BB8B-E32E8E5FB00C.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo LightDMS.DocumentVersion.CreatedBy/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=22E69368-A43D-469F-B228-6F4208F4FD25.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo LightDMS.Checkout.Repository/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=003C4E24-0E01-4EA5-BF55-BF2BD422DC72.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo LightDMS.DocumentVersion.Repository/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=1DD229F3-6801-47D9-8E26-471E03E8D71E.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo LightDMS.UndoCheckout.Repository/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=BC1CF844-1CAF-4D82-91FF-3D99C58F7B38.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo LightDMS.UndoCheckout.CreatedBy/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=42432882-1C74-45AA-86F4-2970D7B3BD9E.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo LightDMS.DocumentVersion.FileContent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=F9E7B0A5-28E9-482C-AE79-2FE314DDF4EC.
+2020-05-02 19:53:55.8466|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo LightDMS.FileContent.CreatedDate/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=0A43DA7F-D1F9-4F8E-B34D-0424CB68B07E.
+2020-05-02 19:53:55.8466|INFO|DeployPackages|DatabaseGenerator creating 59 concept applications.
+2020-05-02 19:53:58.3295|TRACE|DeployPackages|Deleting redundant migration data.
+2020-05-02 19:53:58.5847|TRACE|DeployPackages|Deleted 6 columns in data migration schemas, 11 remaining.
+2020-05-02 19:53:58.6485|TRACE|DeployPackages|Uploading DSL scripts.
+2020-05-02 19:53:58.9216|TRACE|DeployPackages|Uploaded 14 DSL scripts to database.
+2020-05-02 19:53:58.9265|TRACE|DeployPackages|Loading generated plugins.
+2020-05-02 19:53:59.1286|TRACE|DeployPackages|Initialization ClaimGenerator.
+2020-05-02 19:53:59.7866|TRACE|ClaimGenerator Claims|Inserting claims LightDMS.Checkout.Edit, LightDMS.Checkout.New, LightDMS.Checkout.Read, LightDMS.Checkout.Remove, LightDMS.ComputeDocumentStatus.Read, LightDMS.DocumentEvent.Read, LightDMS.DocumentRepository.Edit, LightDMS.DocumentRepository.New, LightDMS.DocumentRepository.Read, LightDMS.DocumentRepository.Remove, LightDMS.DocumentStatus.Edit, LightDMS.DocumentStatus.New, LightDMS.DocumentStatus.Read, LightDMS.DocumentStatus.Remove, LightDMS.DocumentStatusBeforeEvent.Read, LightDMS.DocumentVersion.Edit, LightDMS.DocumentVersion.New, LightDMS.DocumentVersion.Read, LightDMS.DocumentVersion.Remove, LightDMS.DocumentVersionExt.Read, LightDMS.FileContent.Edit, LightDMS.FileContent.New, LightDMS.FileContent.Read, LightDMS.FileContent.Remove, LightDMS.UndoCheckout.Edit, LightDMS.UndoCheckout.New, LightDMS.UndoCheckout.Read, LightDMS.UndoCheckout.Remove.
+2020-05-02 19:54:00.2892|TRACE|DeployPackages|Initialization ExecuteSqlAfterDeploy.
+2020-05-02 19:54:00.3012|TRACE|DeployPackages|Executed 0 after-deploy scripts.
+2020-05-02 19:54:00.3012|TRACE|DeployPackages|Initialization KeepSynchronizedRecomputeOnDeploy.
+2020-05-02 19:54:00.3461|INFO|KeepSynchronizedRecomputeOnDeploy|Recomputing LightDMS.DocumentStatus from LightDMS.ComputeDocumentStatus.
+2020-05-02 19:54:00.4504|TRACE|DeployPackages|Updated Web.config modification date to restart server.
+2020-05-02 19:54:00.4504|TRACE|DeployPackages|Done.
+2020-05-05 19:58:38.3847|TRACE|DeployPackages|Moving old generated files to cache.
+2020-05-05 19:58:38.4597|TRACE|DeployPackages|Getting packages.
+2020-05-05 19:58:38.4837|TRACE|PackageDownloader|Not looking for Rhetos.CommonConcepts (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-05 19:58:40.5690|TRACE|PackageDownloader|Downloading NuGet package Rhetos.CommonConcepts 3.0.1 from https://www.nuget.org/api/v2/.
+2020-05-05 19:58:40.7623|TRACE|NuGet|'Rhetos.CommonConcepts 3.0.1' already installed.
+2020-05-05 19:58:40.9503|TRACE|PackageDownloader|Not looking for Rhetos.RestGenerator (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-05 19:58:41.2628|TRACE|PackageDownloader|Downloading NuGet package Rhetos.RestGenerator 2.5.0 from https://www.nuget.org/api/v2/.
+2020-05-05 19:58:41.2867|TRACE|NuGet|'Rhetos.RestGenerator 2.5.0' already installed.
+2020-05-05 19:58:41.3126|TRACE|PackageDownloader|Reading package Rhetos.AfterDeploy from cache 'Rhetos.AfterDeploy.1.2.0'.
+2020-05-05 19:58:41.3126|TRACE|DeployPackages|Reading Rhetos.AfterDeploy from cache.
+2020-05-05 19:58:41.3126|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator from cache 'Rhetos.MvcModelGenerator.2.4.0'.
+2020-05-05 19:58:41.3126|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator from cache.
+2020-05-05 19:58:41.3276|TRACE|PackageDownloader|Reading package Rhetos.LightDMS from cache 'Rhetos.LightDMS.1.7.0'.
+2020-05-05 19:58:41.3276|TRACE|DeployPackages|Reading Rhetos.LightDMS from cache.
+2020-05-05 19:58:41.3276|TRACE|PackageDownloader|Reading package Kadrovska.Service from unpacked source folder with metadata Kadrovska.Service.nuspec.
+2020-05-05 19:58:41.3276|TRACE|DeployPackages|Reading Kadrovska.Service from source.
+2020-05-05 19:58:41.3697|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator.Client from cache 'Rhetos.MvcModelGenerator.Client.2.4.0'.
+2020-05-05 19:58:41.3697|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator.Client from cache.
+2020-05-05 19:58:41.3766|TRACE|PackageDownloader|Reading package WindowsAzure.Storage from cache 'WindowsAzure.Storage.7.2.1'.
+2020-05-05 19:58:41.3766|TRACE|DeployPackages|Reading WindowsAzure.Storage from cache.
+2020-05-05 19:58:41.3766|TRACE|PackageDownloader|Reading package Microsoft.Data.OData from cache 'Microsoft.Data.OData.5.6.4'.
+2020-05-05 19:58:41.3766|TRACE|DeployPackages|Reading Microsoft.Data.OData from cache.
+2020-05-05 19:58:41.4166|TRACE|PackageDownloader|Reading package Newtonsoft.Json from cache 'Newtonsoft.Json.6.0.8'.
+2020-05-05 19:58:41.4166|TRACE|DeployPackages|Reading Newtonsoft.Json from cache.
+2020-05-05 19:58:41.4270|TRACE|PackageDownloader|Reading package Microsoft.Data.Services.Client from cache 'Microsoft.Data.Services.Client.5.6.4'.
+2020-05-05 19:58:41.4270|TRACE|DeployPackages|Reading Microsoft.Data.Services.Client from cache.
+2020-05-05 19:58:41.4449|TRACE|PackageDownloader|Reading package Microsoft.Azure.KeyVault.Core from cache 'Microsoft.Azure.KeyVault.Core.1.0.0'.
+2020-05-05 19:58:41.4449|TRACE|DeployPackages|Reading Microsoft.Azure.KeyVault.Core from cache.
+2020-05-05 19:58:41.4449|TRACE|PackageDownloader|Reading package System.Spatial from cache 'System.Spatial.5.6.4'.
+2020-05-05 19:58:41.4449|TRACE|DeployPackages|Reading System.Spatial from cache.
+2020-05-05 19:58:41.4709|TRACE|PackageDownloader|Reading package Microsoft.Data.Edm from cache 'Microsoft.Data.Edm.5.6.4'.
+2020-05-05 19:58:41.4709|TRACE|DeployPackages|Reading Microsoft.Data.Edm from cache.
+2020-05-05 19:58:41.7379|TRACE|Packages|Kadrovska.Service 0.0.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\src.
+2020-05-05 19:58:41.7379|TRACE|Packages|Microsoft.Azure.KeyVault.Core 1.0.0 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Azure.KeyVault.Core.1.0.0.
+2020-05-05 19:58:41.7379|TRACE|Packages|Microsoft.Data.Edm 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Edm.5.6.4.
+2020-05-05 19:58:41.7379|TRACE|Packages|System.Spatial 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\System.Spatial.5.6.4.
+2020-05-05 19:58:41.7379|TRACE|Packages|Microsoft.Data.OData 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.OData.5.6.4.
+2020-05-05 19:58:41.7379|TRACE|Packages|Microsoft.Data.Services.Client 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Services.Client.5.6.4.
+2020-05-05 19:58:41.7379|TRACE|Packages|Newtonsoft.Json 6.0.8 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Newtonsoft.Json.6.0.8.
+2020-05-05 19:58:41.7379|TRACE|Packages|Rhetos 3.0.1 (requested from Rhetos framework) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer.
+2020-05-05 19:58:41.7379|TRACE|Packages|Rhetos.AfterDeploy 1.2.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.AfterDeploy.1.2.0.
+2020-05-05 19:58:41.7379|TRACE|Packages|Rhetos.CommonConcepts 3.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.CommonConcepts.3.0.1.
+2020-05-05 19:58:41.7379|TRACE|Packages|WindowsAzure.Storage 7.2.1 (requested from package Rhetos.LightDMS) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\WindowsAzure.Storage.7.2.1.
+2020-05-05 19:58:41.7379|TRACE|Packages|Rhetos.LightDMS 1.7.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.LightDMS.1.7.0.
+2020-05-05 19:58:41.7379|TRACE|Packages|Rhetos.MvcModelGenerator.Client 2.4.0 (requested from package Rhetos.MvcModelGenerator) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.Client.2.4.0.
+2020-05-05 19:58:41.7379|TRACE|Packages|Rhetos.MvcModelGenerator 2.4.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.2.4.0.
+2020-05-05 19:58:41.7379|TRACE|Packages|Rhetos.RestGenerator 2.5.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.RestGenerator.2.5.0.
+2020-05-05 19:58:41.9249|TRACE|DeployPackages|Loading plugins.
+2020-05-05 19:58:42.7520|TRACE|DeployPackages|SQL connection: DataSource=gemini\sql2016btim, InitialCatalog=BlazorKadrovska
+2020-05-05 19:58:43.0018|TRACE|DeployPackages|Preparing Rhetos database.
+2020-05-05 19:58:43.4016|TRACE|DeployPackages|Parsing DSL scripts.
+2020-05-05 19:58:43.5988|ERROR|DeployPackages|Rhetos.Dsl.DslSyntaxException: Unrecognized concept keyword 'EMail'. At line 8, column 3, file 'C:\aplikacije\Kadrovska_2_0\src\DslScripts\Djelatnik.rhe',
+ after: "...ticniBroj; ShortString Prezime {Required;} ShortString Ime {Required;}",
+ before: "EMail Email; ShortString Mobitel; ShortString Tvrtka; Reference Odj...".
+   at Rhetos.Dsl.DslParser.ParseNextConcept(TokenReader tokenReader, Stack`1 context, MultiDictionary`2 conceptParsers) in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslParser.cs:line 163
+   at Rhetos.Dsl.DslParser.ExtractConcepts(MultiDictionary`2 conceptParsers) in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslParser.cs:line 104
+   at Rhetos.Dsl.DslParser.GetConcepts() in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslParser.cs:line 54
+   at Rhetos.Dsl.DslParser.get_ParsedConcepts() in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslParser.cs:line 47
+   at Rhetos.Dsl.DslModel.Initialize(DslContainer dslContainer) in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslModel.cs:line 81
+   at Rhetos.Dsl.DslModel.<>c__DisplayClass11_0.<.ctor>b__0() in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslModel.cs:line 60
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at Rhetos.Dsl.DslModel.get_Concepts() in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslModel.cs:line 70
+   at Rhetos.Deployment.ApplicationGenerator.ExecuteGenerators(Boolean deployDatabaseOnly) in C:\My Projects\Rhetos\Source\Rhetos.Deployment\ApplicationGenerator.cs:line 82
+   at DeployPackages.Program.GenerateApplication(ILogger logger, DeployArguments arguments) in C:\My Projects\Rhetos\Source\DeployPackages\Program.cs:line 184
+   at DeployPackages.Program.Main(String[] args) in C:\My Projects\Rhetos\Source\DeployPackages\Program.cs:line 69
+Info: 
+2020-05-05 19:59:02.3069|TRACE|DeployPackages|Moving old generated files to cache.
+2020-05-05 19:59:02.3549|TRACE|DeployPackages|Getting packages.
+2020-05-05 19:59:02.3699|TRACE|PackageDownloader|Not looking for Rhetos.CommonConcepts (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-05 19:59:05.3156|TRACE|PackageDownloader|Downloading NuGet package Rhetos.CommonConcepts 3.0.1 from https://www.nuget.org/api/v2/.
+2020-05-05 19:59:05.4735|TRACE|NuGet|'Rhetos.CommonConcepts 3.0.1' already installed.
+2020-05-05 19:59:05.5765|TRACE|PackageDownloader|Not looking for Rhetos.RestGenerator (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-05 19:59:05.9197|TRACE|PackageDownloader|Downloading NuGet package Rhetos.RestGenerator 2.5.0 from https://www.nuget.org/api/v2/.
+2020-05-05 19:59:05.9337|TRACE|NuGet|'Rhetos.RestGenerator 2.5.0' already installed.
+2020-05-05 19:59:05.9577|TRACE|PackageDownloader|Reading package Rhetos.AfterDeploy from cache 'Rhetos.AfterDeploy.1.2.0'.
+2020-05-05 19:59:05.9577|TRACE|DeployPackages|Reading Rhetos.AfterDeploy from cache.
+2020-05-05 19:59:05.9577|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator from cache 'Rhetos.MvcModelGenerator.2.4.0'.
+2020-05-05 19:59:05.9577|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator from cache.
+2020-05-05 19:59:05.9717|TRACE|PackageDownloader|Reading package Rhetos.LightDMS from cache 'Rhetos.LightDMS.1.7.0'.
+2020-05-05 19:59:05.9717|TRACE|DeployPackages|Reading Rhetos.LightDMS from cache.
+2020-05-05 19:59:05.9717|TRACE|PackageDownloader|Reading package Kadrovska.Service from unpacked source folder with metadata Kadrovska.Service.nuspec.
+2020-05-05 19:59:05.9717|TRACE|DeployPackages|Reading Kadrovska.Service from source.
+2020-05-05 19:59:06.0182|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator.Client from cache 'Rhetos.MvcModelGenerator.Client.2.4.0'.
+2020-05-05 19:59:06.0182|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator.Client from cache.
+2020-05-05 19:59:06.0182|TRACE|PackageDownloader|Reading package WindowsAzure.Storage from cache 'WindowsAzure.Storage.7.2.1'.
+2020-05-05 19:59:06.0182|TRACE|DeployPackages|Reading WindowsAzure.Storage from cache.
+2020-05-05 19:59:06.0362|TRACE|PackageDownloader|Reading package Microsoft.Data.OData from cache 'Microsoft.Data.OData.5.6.4'.
+2020-05-05 19:59:06.0362|TRACE|DeployPackages|Reading Microsoft.Data.OData from cache.
+2020-05-05 19:59:06.0602|TRACE|PackageDownloader|Reading package Newtonsoft.Json from cache 'Newtonsoft.Json.6.0.8'.
+2020-05-05 19:59:06.0602|TRACE|DeployPackages|Reading Newtonsoft.Json from cache.
+2020-05-05 19:59:06.0692|TRACE|PackageDownloader|Reading package Microsoft.Data.Services.Client from cache 'Microsoft.Data.Services.Client.5.6.4'.
+2020-05-05 19:59:06.0692|TRACE|DeployPackages|Reading Microsoft.Data.Services.Client from cache.
+2020-05-05 19:59:06.0782|TRACE|PackageDownloader|Reading package Microsoft.Azure.KeyVault.Core from cache 'Microsoft.Azure.KeyVault.Core.1.0.0'.
+2020-05-05 19:59:06.0782|TRACE|DeployPackages|Reading Microsoft.Azure.KeyVault.Core from cache.
+2020-05-05 19:59:06.0782|TRACE|PackageDownloader|Reading package System.Spatial from cache 'System.Spatial.5.6.4'.
+2020-05-05 19:59:06.0782|TRACE|DeployPackages|Reading System.Spatial from cache.
+2020-05-05 19:59:06.0962|TRACE|PackageDownloader|Reading package Microsoft.Data.Edm from cache 'Microsoft.Data.Edm.5.6.4'.
+2020-05-05 19:59:06.0962|TRACE|DeployPackages|Reading Microsoft.Data.Edm from cache.
+2020-05-05 19:59:06.2492|TRACE|Packages|Kadrovska.Service 0.0.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\src.
+2020-05-05 19:59:06.2502|TRACE|Packages|Microsoft.Azure.KeyVault.Core 1.0.0 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Azure.KeyVault.Core.1.0.0.
+2020-05-05 19:59:06.2502|TRACE|Packages|Microsoft.Data.Edm 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Edm.5.6.4.
+2020-05-05 19:59:06.2502|TRACE|Packages|System.Spatial 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\System.Spatial.5.6.4.
+2020-05-05 19:59:06.2502|TRACE|Packages|Microsoft.Data.OData 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.OData.5.6.4.
+2020-05-05 19:59:06.2502|TRACE|Packages|Microsoft.Data.Services.Client 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Services.Client.5.6.4.
+2020-05-05 19:59:06.2502|TRACE|Packages|Newtonsoft.Json 6.0.8 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Newtonsoft.Json.6.0.8.
+2020-05-05 19:59:06.2502|TRACE|Packages|Rhetos 3.0.1 (requested from Rhetos framework) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer.
+2020-05-05 19:59:06.2502|TRACE|Packages|Rhetos.AfterDeploy 1.2.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.AfterDeploy.1.2.0.
+2020-05-05 19:59:06.2502|TRACE|Packages|Rhetos.CommonConcepts 3.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.CommonConcepts.3.0.1.
+2020-05-05 19:59:06.2502|TRACE|Packages|WindowsAzure.Storage 7.2.1 (requested from package Rhetos.LightDMS) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\WindowsAzure.Storage.7.2.1.
+2020-05-05 19:59:06.2502|TRACE|Packages|Rhetos.LightDMS 1.7.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.LightDMS.1.7.0.
+2020-05-05 19:59:06.2502|TRACE|Packages|Rhetos.MvcModelGenerator.Client 2.4.0 (requested from package Rhetos.MvcModelGenerator) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.Client.2.4.0.
+2020-05-05 19:59:06.2502|TRACE|Packages|Rhetos.MvcModelGenerator 2.4.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.2.4.0.
+2020-05-05 19:59:06.2502|TRACE|Packages|Rhetos.RestGenerator 2.5.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.RestGenerator.2.5.0.
+2020-05-05 19:59:06.3932|TRACE|DeployPackages|Loading plugins.
+2020-05-05 19:59:07.0433|TRACE|DeployPackages|SQL connection: DataSource=gemini\sql2016btim, InitialCatalog=BlazorKadrovska
+2020-05-05 19:59:07.1812|TRACE|DeployPackages|Preparing Rhetos database.
+2020-05-05 19:59:07.5070|TRACE|DeployPackages|Parsing DSL scripts.
+2020-05-05 19:59:07.8130|ERROR|DeployPackages|Rhetos.Dsl.DslSyntaxException: Reference Kadrovska.Djelatnik.Tim: Referenced concept is not defined in DSL scripts: 'DataStructure Kadrovska.Tim'.
+   at Rhetos.Dsl.DslContainer.ReportErrorForUnresolvedConcepts() in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslContainer.cs:line 340
+   at Rhetos.Dsl.DslModel.Initialize(DslContainer dslContainer) in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslModel.cs:line 88
+   at Rhetos.Dsl.DslModel.<>c__DisplayClass11_0.<.ctor>b__0() in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslModel.cs:line 60
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at Rhetos.Dsl.DslModel.get_Concepts() in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslModel.cs:line 70
+   at Rhetos.Deployment.ApplicationGenerator.ExecuteGenerators(Boolean deployDatabaseOnly) in C:\My Projects\Rhetos\Source\Rhetos.Deployment\ApplicationGenerator.cs:line 82
+   at DeployPackages.Program.GenerateApplication(ILogger logger, DeployArguments arguments) in C:\My Projects\Rhetos\Source\DeployPackages\Program.cs:line 184
+   at DeployPackages.Program.Main(String[] args) in C:\My Projects\Rhetos\Source\DeployPackages\Program.cs:line 69
+Info: 
+2020-05-05 19:59:47.1851|TRACE|DeployPackages|Moving old generated files to cache.
+2020-05-05 19:59:47.2350|TRACE|DeployPackages|Getting packages.
+2020-05-05 19:59:47.2350|TRACE|PackageDownloader|Not looking for Rhetos.CommonConcepts (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-05 19:59:49.2325|TRACE|PackageDownloader|Downloading NuGet package Rhetos.CommonConcepts 3.0.1 from https://www.nuget.org/api/v2/.
+2020-05-05 19:59:49.3844|TRACE|NuGet|'Rhetos.CommonConcepts 3.0.1' already installed.
+2020-05-05 19:59:49.4904|TRACE|PackageDownloader|Not looking for Rhetos.RestGenerator (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-05 19:59:49.8233|TRACE|PackageDownloader|Downloading NuGet package Rhetos.RestGenerator 2.5.0 from https://www.nuget.org/api/v2/.
+2020-05-05 19:59:49.8346|TRACE|NuGet|'Rhetos.RestGenerator 2.5.0' already installed.
+2020-05-05 19:59:49.8545|TRACE|PackageDownloader|Reading package Rhetos.AfterDeploy from cache 'Rhetos.AfterDeploy.1.2.0'.
+2020-05-05 19:59:49.8545|TRACE|DeployPackages|Reading Rhetos.AfterDeploy from cache.
+2020-05-05 19:59:49.8654|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator from cache 'Rhetos.MvcModelGenerator.2.4.0'.
+2020-05-05 19:59:49.8654|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator from cache.
+2020-05-05 19:59:49.8654|TRACE|PackageDownloader|Reading package Rhetos.LightDMS from cache 'Rhetos.LightDMS.1.7.0'.
+2020-05-05 19:59:49.8654|TRACE|DeployPackages|Reading Rhetos.LightDMS from cache.
+2020-05-05 19:59:49.8654|TRACE|PackageDownloader|Reading package Kadrovska.Service from unpacked source folder with metadata Kadrovska.Service.nuspec.
+2020-05-05 19:59:49.8654|TRACE|DeployPackages|Reading Kadrovska.Service from source.
+2020-05-05 19:59:49.9174|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator.Client from cache 'Rhetos.MvcModelGenerator.Client.2.4.0'.
+2020-05-05 19:59:49.9174|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator.Client from cache.
+2020-05-05 19:59:49.9244|TRACE|PackageDownloader|Reading package WindowsAzure.Storage from cache 'WindowsAzure.Storage.7.2.1'.
+2020-05-05 19:59:49.9244|TRACE|DeployPackages|Reading WindowsAzure.Storage from cache.
+2020-05-05 19:59:49.9244|TRACE|PackageDownloader|Reading package Microsoft.Data.OData from cache 'Microsoft.Data.OData.5.6.4'.
+2020-05-05 19:59:49.9244|TRACE|DeployPackages|Reading Microsoft.Data.OData from cache.
+2020-05-05 19:59:49.9634|TRACE|PackageDownloader|Reading package Newtonsoft.Json from cache 'Newtonsoft.Json.6.0.8'.
+2020-05-05 19:59:49.9634|TRACE|DeployPackages|Reading Newtonsoft.Json from cache.
+2020-05-05 19:59:49.9704|TRACE|PackageDownloader|Reading package Microsoft.Data.Services.Client from cache 'Microsoft.Data.Services.Client.5.6.4'.
+2020-05-05 19:59:49.9704|TRACE|DeployPackages|Reading Microsoft.Data.Services.Client from cache.
+2020-05-05 19:59:49.9704|TRACE|PackageDownloader|Reading package Microsoft.Azure.KeyVault.Core from cache 'Microsoft.Azure.KeyVault.Core.1.0.0'.
+2020-05-05 19:59:49.9704|TRACE|DeployPackages|Reading Microsoft.Azure.KeyVault.Core from cache.
+2020-05-05 19:59:49.9854|TRACE|PackageDownloader|Reading package System.Spatial from cache 'System.Spatial.5.6.4'.
+2020-05-05 19:59:49.9854|TRACE|DeployPackages|Reading System.Spatial from cache.
+2020-05-05 19:59:49.9854|TRACE|PackageDownloader|Reading package Microsoft.Data.Edm from cache 'Microsoft.Data.Edm.5.6.4'.
+2020-05-05 19:59:49.9854|TRACE|DeployPackages|Reading Microsoft.Data.Edm from cache.
+2020-05-05 19:59:50.1284|TRACE|Packages|Kadrovska.Service 0.0.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\src.
+2020-05-05 19:59:50.1284|TRACE|Packages|Microsoft.Azure.KeyVault.Core 1.0.0 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Azure.KeyVault.Core.1.0.0.
+2020-05-05 19:59:50.1284|TRACE|Packages|Microsoft.Data.Edm 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Edm.5.6.4.
+2020-05-05 19:59:50.1284|TRACE|Packages|System.Spatial 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\System.Spatial.5.6.4.
+2020-05-05 19:59:50.1284|TRACE|Packages|Microsoft.Data.OData 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.OData.5.6.4.
+2020-05-05 19:59:50.1284|TRACE|Packages|Microsoft.Data.Services.Client 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Services.Client.5.6.4.
+2020-05-05 19:59:50.1284|TRACE|Packages|Newtonsoft.Json 6.0.8 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Newtonsoft.Json.6.0.8.
+2020-05-05 19:59:50.1284|TRACE|Packages|Rhetos 3.0.1 (requested from Rhetos framework) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer.
+2020-05-05 19:59:50.1284|TRACE|Packages|Rhetos.AfterDeploy 1.2.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.AfterDeploy.1.2.0.
+2020-05-05 19:59:50.1284|TRACE|Packages|Rhetos.CommonConcepts 3.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.CommonConcepts.3.0.1.
+2020-05-05 19:59:50.1284|TRACE|Packages|WindowsAzure.Storage 7.2.1 (requested from package Rhetos.LightDMS) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\WindowsAzure.Storage.7.2.1.
+2020-05-05 19:59:50.1284|TRACE|Packages|Rhetos.LightDMS 1.7.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.LightDMS.1.7.0.
+2020-05-05 19:59:50.1284|TRACE|Packages|Rhetos.MvcModelGenerator.Client 2.4.0 (requested from package Rhetos.MvcModelGenerator) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.Client.2.4.0.
+2020-05-05 19:59:50.1284|TRACE|Packages|Rhetos.MvcModelGenerator 2.4.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.2.4.0.
+2020-05-05 19:59:50.1284|TRACE|Packages|Rhetos.RestGenerator 2.5.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.RestGenerator.2.5.0.
+2020-05-05 19:59:50.2754|TRACE|DeployPackages|Loading plugins.
+2020-05-05 19:59:50.9087|TRACE|DeployPackages|SQL connection: DataSource=gemini\sql2016btim, InitialCatalog=BlazorKadrovska
+2020-05-05 19:59:51.0781|TRACE|DeployPackages|Preparing Rhetos database.
+2020-05-05 19:59:51.3894|TRACE|DeployPackages|Parsing DSL scripts.
+2020-05-05 19:59:51.7615|TRACE|DeployPackages|Application model has 923 statements.
+2020-05-05 19:59:51.7665|TRACE|DeployPackages|Compiling DOM assembly.
+2020-05-05 19:59:52.0395|TRACE|AssemblyGenerator|Compiling assembly: ServerDom.Model.dll.
+2020-05-05 19:59:54.8335|TRACE|AssemblyGenerator|Compiling assembly: ServerDom.Orm.dll.
+2020-05-05 19:59:55.0526|TRACE|AssemblyGenerator|Compiling assembly: ServerDom.Repositories.dll.
+2020-05-05 19:59:55.6196|TRACE|DeployPackages|Generated 239 types.
+2020-05-05 19:59:55.6246|TRACE|DeployPackages|Executing CaptionsResourceGenerator.
+2020-05-05 19:59:55.7205|TRACE|AssemblyGenerator|Compiling assembly: Captions.dll.
+2020-05-05 19:59:55.7665|TRACE|DeployPackages|Executing MvcModelGenerator.
+2020-05-05 19:59:55.8286|TRACE|AssemblyGenerator|Compiling assembly: Rhetos.Mvc.dll.
+2020-05-05 19:59:55.8916|TRACE|DeployPackages|Executing RestGenerator.
+2020-05-05 19:59:55.9545|TRACE|AssemblyGenerator|Compiling assembly: RestService.dll.
+2020-05-05 19:59:56.1582|INFO|AssemblyGenerator|96 warning(s) while compiling RestService.dll:
+C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\RestService.cs(3290,27): warning CS0618: 'LegacyClientException' is obsolete: 'Use ClientException instead.' (96 warnings)
+2020-05-05 19:59:56.1903|TRACE|DeployPackages|Executing EntityFrameworkMappingGenerator.
+2020-05-05 19:59:56.2444|TRACE|DeployPackages|Cleaning old migration data.
+2020-05-05 19:59:56.4354|TRACE|DeployPackages|Deleted 0 columns in data migration schemas, 11 remaining.
+2020-05-05 19:59:56.5383|TRACE|DeployPackages|Executing 0 before data migration scripts.
+2020-05-05 19:59:56.5383|TRACE|DeployPackages|Executing data migration scripts.
+2020-05-05 19:59:56.6754|TRACE|DeployPackages|Executed 0 of 14 scripts.
+2020-05-05 19:59:56.6754|TRACE|DeployPackages|Executing 0 after data migration scripts.
+2020-05-05 19:59:56.6754|TRACE|DeployPackages|Upgrading database.
+2020-05-05 19:59:56.9930|TRACE|DatabaseGenerator Concepts|Refresh DataStructureInfo LightDMS.DocumentStatusBeforeEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlQueryableDatabaseDefinition, ID=4FC95D78-3F34-4181-AE57-3AAA85420012. It depends on changed concepts: SqlObjectInfo LightDMS.DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlObjectDatabaseDefinition.
+2020-05-05 19:59:56.9930|TRACE|DatabaseGenerator Concepts|Refresh DataStructureInfo LightDMS.ComputeDocumentStatus/Rhetos.DatabaseGenerator.DefaultConcepts.SqlQueryableDatabaseDefinition, ID=CC77002D-6D92-494C-9647-C13FF5DA63B2. It depends on changed concepts: SqlObjectInfo LightDMS.DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlObjectDatabaseDefinition.
+2020-05-05 19:59:56.9930|TRACE|DatabaseGenerator Concepts|Removing EntityLoggingInfo LightDMS.UndoCheckout/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=2FF784FF-4612-4F8A-AF29-FFFDBB1ED6BE.
+2020-05-05 19:59:57.0000|TRACE|DatabaseGenerator Concepts|Removing EntityLoggingInfo LightDMS.DocumentVersion/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=FD56F8BC-6751-4894-B924-88A5DE8327F6.
+2020-05-05 19:59:57.0000|TRACE|DatabaseGenerator Concepts|Removing DataStructureInfo LightDMS.ComputeDocumentStatus/Rhetos.DatabaseGenerator.DefaultConcepts.SqlQueryableDatabaseDefinition, ID=CC77002D-6D92-494C-9647-C13FF5DA63B2.
+2020-05-05 19:59:57.0000|TRACE|DatabaseGenerator Concepts|Removing DataStructureInfo LightDMS.DocumentStatusBeforeEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlQueryableDatabaseDefinition, ID=4FC95D78-3F34-4181-AE57-3AAA85420012.
+2020-05-05 19:59:57.0000|TRACE|DatabaseGenerator Concepts|Removing SqlObjectInfo LightDMS.DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlObjectDatabaseDefinition, ID=2E9540FC-7BCB-41B5-A506-53787C616E92.
+2020-05-05 19:59:57.0000|TRACE|DatabaseGenerator Concepts|Removing SqlViewInfo LightDMS.UndoCheckout_As_DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlViewDatabaseDefinition, ID=D1F3906C-857A-4AF3-A1D5-C36313C0B899.
+2020-05-05 19:59:57.0000|TRACE|DatabaseGenerator Concepts|Removing SqlViewInfo LightDMS.DocumentVersion_As_DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlViewDatabaseDefinition, ID=0951D315-8433-4A05-B951-154B63423E47.
+2020-05-05 19:59:57.0000|TRACE|DatabaseGenerator Concepts|Removing SqlViewInfo LightDMS.Checkout_As_DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlViewDatabaseDefinition, ID=0B2BE959-A396-4A96-9F39-C8CF34D2C658.
+2020-05-05 19:59:57.0000|TRACE|DatabaseGenerator Concepts|Removing EntityLoggingInfo LightDMS.Checkout/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=D719F9A6-5DCE-4653-96C4-C834942B2A9A.
+2020-05-05 19:59:57.0000|INFO|DeployPackages|DatabaseGenerator removing 9 concept applications.
+2020-05-05 19:59:57.0000|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Djelatnik.Email/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=91BBDCD0-77B3-431B-92B3-74AA54812846.
+2020-05-05 19:59:57.0240|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Djelatnik.Mobitel/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=6EC322CC-629F-49E7-9808-055CD43B3321.
+2020-05-05 19:59:57.0240|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Djelatnik.Tvrtka/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=033287E3-7D83-40B1-B2EF-EAFB765E2F41.
+2020-05-05 19:59:57.0240|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Kadrovska.Odjel/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=D30571C7-4151-47EB-8CD9-92D32B7DDF74.
+2020-05-05 19:59:57.0240|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Odjel.Naziv/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=3A3F1BAC-B735-4D63-ACBB-508BFC009AA7.
+2020-05-05 19:59:57.0240|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Kadrovska.Sektor/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=DBAAFE41-A6AD-43F1-8534-6903886F797C.
+2020-05-05 19:59:57.0240|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Sektor.Naziv/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=4FA0BD1B-1428-466F-A085-E7EBF731D133.
+2020-05-05 19:59:57.0240|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Sektor.Voditelj/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=6D5C9FA0-CE8B-485D-9F93-6B29EDEE4422.
+2020-05-05 19:59:57.0240|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Kadrovska.Sektor.Voditelj/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=3859AAB5-70E2-4416-AEF5-9B0051486446.
+2020-05-05 19:59:57.0240|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Kadrovska.Odjel.Naziv/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=8F0A4252-B974-44FB-9BAE-76AA70AE5550.
+2020-05-05 19:59:57.0240|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Kadrovska.Sektor.Naziv/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=AA8726F9-B2D3-4AEC-9BC9-288AEB6B9CE6.
+2020-05-05 19:59:57.0310|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Kadrovska.Sektor.Voditelj/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=E297CBF7-0562-4034-B266-E895ABB9F4CB.
+2020-05-05 19:59:57.0310|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo LightDMS.Checkout/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=D719F9A6-5DCE-4653-96C4-C834942B2A9A.
+2020-05-05 19:59:57.0310|TRACE|DatabaseGenerator Concepts|Creating SqlViewInfo LightDMS.Checkout_As_DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlViewDatabaseDefinition, ID=0B2BE959-A396-4A96-9F39-C8CF34D2C658.
+2020-05-05 19:59:57.0310|TRACE|DatabaseGenerator Concepts|Creating SqlViewInfo LightDMS.DocumentVersion_As_DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlViewDatabaseDefinition, ID=0951D315-8433-4A05-B951-154B63423E47.
+2020-05-05 19:59:57.0310|TRACE|DatabaseGenerator Concepts|Creating SqlViewInfo LightDMS.UndoCheckout_As_DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlViewDatabaseDefinition, ID=D1F3906C-857A-4AF3-A1D5-C36313C0B899.
+2020-05-05 19:59:57.0310|TRACE|DatabaseGenerator Concepts|Creating SqlObjectInfo LightDMS.DocumentEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlObjectDatabaseDefinition, ID=2E9540FC-7BCB-41B5-A506-53787C616E92.
+2020-05-05 19:59:57.0310|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo LightDMS.DocumentVersion/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=FD56F8BC-6751-4894-B924-88A5DE8327F6.
+2020-05-05 19:59:57.0310|TRACE|DatabaseGenerator Concepts|Creating EntityLoggingInfo LightDMS.UndoCheckout/Rhetos.DatabaseGenerator.DefaultConcepts.EntityLoggingDefinition, ID=2FF784FF-4612-4F8A-AF29-FFFDBB1ED6BE.
+2020-05-05 19:59:57.0310|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo LightDMS.DocumentStatusBeforeEvent/Rhetos.DatabaseGenerator.DefaultConcepts.SqlQueryableDatabaseDefinition, ID=4FC95D78-3F34-4181-AE57-3AAA85420012.
+2020-05-05 19:59:57.0310|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo LightDMS.ComputeDocumentStatus/Rhetos.DatabaseGenerator.DefaultConcepts.SqlQueryableDatabaseDefinition, ID=CC77002D-6D92-494C-9647-C13FF5DA63B2.
+2020-05-05 19:59:57.0310|INFO|DeployPackages|DatabaseGenerator creating 21 concept applications.
+2020-05-05 19:59:58.2442|TRACE|DeployPackages|Deleting redundant migration data.
+2020-05-05 19:59:58.4135|TRACE|DeployPackages|Deleted 0 columns in data migration schemas, 11 remaining.
+2020-05-05 19:59:58.4721|TRACE|DeployPackages|Uploading DSL scripts.
+2020-05-05 19:59:58.7862|TRACE|DeployPackages|Uploaded 17 DSL scripts to database.
+2020-05-05 19:59:58.7862|TRACE|DeployPackages|Loading generated plugins.
+2020-05-05 19:59:59.0052|TRACE|DeployPackages|Initialization ClaimGenerator.
+2020-05-05 19:59:59.7403|TRACE|ClaimGenerator Claims|Inserting claims Kadrovska.Odjel.Edit, Kadrovska.Odjel.New, Kadrovska.Odjel.Read, Kadrovska.Odjel.Remove, Kadrovska.Sektor.Edit, Kadrovska.Sektor.New, Kadrovska.Sektor.Read, Kadrovska.Sektor.Remove.
+2020-05-05 19:59:59.9742|TRACE|DeployPackages|Initialization ExecuteSqlAfterDeploy.
+2020-05-05 19:59:59.9742|TRACE|DeployPackages|Executed 0 after-deploy scripts.
+2020-05-05 19:59:59.9742|TRACE|DeployPackages|Initialization KeepSynchronizedRecomputeOnDeploy.
+2020-05-05 20:00:00.0692|TRACE|DeployPackages|Updated Web.config modification date to restart server.
+2020-05-05 20:00:00.0692|TRACE|DeployPackages|Done.
+2020-05-05 20:01:08.2598|TRACE|DeployPackages|Moving old generated files to cache.
+2020-05-05 20:01:08.3298|TRACE|DeployPackages|Getting packages.
+2020-05-05 20:01:08.3438|TRACE|PackageDownloader|Not looking for Rhetos.CommonConcepts (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-05 20:01:11.1379|TRACE|PackageDownloader|Downloading NuGet package Rhetos.CommonConcepts 3.0.1 from https://www.nuget.org/api/v2/.
+2020-05-05 20:01:11.2939|TRACE|NuGet|'Rhetos.CommonConcepts 3.0.1' already installed.
+2020-05-05 20:01:11.4009|TRACE|PackageDownloader|Not looking for Rhetos.RestGenerator (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-05 20:01:11.7443|TRACE|PackageDownloader|Downloading NuGet package Rhetos.RestGenerator 2.5.0 from https://www.nuget.org/api/v2/.
+2020-05-05 20:01:11.7562|TRACE|NuGet|'Rhetos.RestGenerator 2.5.0' already installed.
+2020-05-05 20:01:11.7813|TRACE|PackageDownloader|Reading package Rhetos.AfterDeploy from cache 'Rhetos.AfterDeploy.1.2.0'.
+2020-05-05 20:01:11.7813|TRACE|DeployPackages|Reading Rhetos.AfterDeploy from cache.
+2020-05-05 20:01:11.7813|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator from cache 'Rhetos.MvcModelGenerator.2.4.0'.
+2020-05-05 20:01:11.7813|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator from cache.
+2020-05-05 20:01:11.7813|TRACE|PackageDownloader|Reading package Rhetos.LightDMS from cache 'Rhetos.LightDMS.1.7.0'.
+2020-05-05 20:01:11.7813|TRACE|DeployPackages|Reading Rhetos.LightDMS from cache.
+2020-05-05 20:01:11.8003|TRACE|PackageDownloader|Reading package Kadrovska.Service from unpacked source folder with metadata Kadrovska.Service.nuspec.
+2020-05-05 20:01:11.8003|TRACE|DeployPackages|Reading Kadrovska.Service from source.
+2020-05-05 20:01:11.8392|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator.Client from cache 'Rhetos.MvcModelGenerator.Client.2.4.0'.
+2020-05-05 20:01:11.8392|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator.Client from cache.
+2020-05-05 20:01:11.8593|TRACE|PackageDownloader|Reading package WindowsAzure.Storage from cache 'WindowsAzure.Storage.7.2.1'.
+2020-05-05 20:01:11.8593|TRACE|DeployPackages|Reading WindowsAzure.Storage from cache.
+2020-05-05 20:01:11.8593|TRACE|PackageDownloader|Reading package Microsoft.Data.OData from cache 'Microsoft.Data.OData.5.6.4'.
+2020-05-05 20:01:11.8593|TRACE|DeployPackages|Reading Microsoft.Data.OData from cache.
+2020-05-05 20:01:11.8938|TRACE|PackageDownloader|Reading package Newtonsoft.Json from cache 'Newtonsoft.Json.6.0.8'.
+2020-05-05 20:01:11.8938|TRACE|DeployPackages|Reading Newtonsoft.Json from cache.
+2020-05-05 20:01:11.8938|TRACE|PackageDownloader|Reading package Microsoft.Data.Services.Client from cache 'Microsoft.Data.Services.Client.5.6.4'.
+2020-05-05 20:01:11.8938|TRACE|DeployPackages|Reading Microsoft.Data.Services.Client from cache.
+2020-05-05 20:01:11.9128|TRACE|PackageDownloader|Reading package Microsoft.Azure.KeyVault.Core from cache 'Microsoft.Azure.KeyVault.Core.1.0.0'.
+2020-05-05 20:01:11.9128|TRACE|DeployPackages|Reading Microsoft.Azure.KeyVault.Core from cache.
+2020-05-05 20:01:11.9128|TRACE|PackageDownloader|Reading package System.Spatial from cache 'System.Spatial.5.6.4'.
+2020-05-05 20:01:11.9128|TRACE|DeployPackages|Reading System.Spatial from cache.
+2020-05-05 20:01:11.9308|TRACE|PackageDownloader|Reading package Microsoft.Data.Edm from cache 'Microsoft.Data.Edm.5.6.4'.
+2020-05-05 20:01:11.9308|TRACE|DeployPackages|Reading Microsoft.Data.Edm from cache.
+2020-05-05 20:01:12.0623|TRACE|Packages|Kadrovska.Service 0.0.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\src.
+2020-05-05 20:01:12.0623|TRACE|Packages|Microsoft.Azure.KeyVault.Core 1.0.0 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Azure.KeyVault.Core.1.0.0.
+2020-05-05 20:01:12.0623|TRACE|Packages|Microsoft.Data.Edm 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Edm.5.6.4.
+2020-05-05 20:01:12.0623|TRACE|Packages|System.Spatial 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\System.Spatial.5.6.4.
+2020-05-05 20:01:12.0623|TRACE|Packages|Microsoft.Data.OData 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.OData.5.6.4.
+2020-05-05 20:01:12.0623|TRACE|Packages|Microsoft.Data.Services.Client 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Services.Client.5.6.4.
+2020-05-05 20:01:12.0623|TRACE|Packages|Newtonsoft.Json 6.0.8 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Newtonsoft.Json.6.0.8.
+2020-05-05 20:01:12.0623|TRACE|Packages|Rhetos 3.0.1 (requested from Rhetos framework) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer.
+2020-05-05 20:01:12.0623|TRACE|Packages|Rhetos.AfterDeploy 1.2.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.AfterDeploy.1.2.0.
+2020-05-05 20:01:12.0623|TRACE|Packages|Rhetos.CommonConcepts 3.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.CommonConcepts.3.0.1.
+2020-05-05 20:01:12.0623|TRACE|Packages|WindowsAzure.Storage 7.2.1 (requested from package Rhetos.LightDMS) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\WindowsAzure.Storage.7.2.1.
+2020-05-05 20:01:12.0623|TRACE|Packages|Rhetos.LightDMS 1.7.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.LightDMS.1.7.0.
+2020-05-05 20:01:12.0623|TRACE|Packages|Rhetos.MvcModelGenerator.Client 2.4.0 (requested from package Rhetos.MvcModelGenerator) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.Client.2.4.0.
+2020-05-05 20:01:12.0623|TRACE|Packages|Rhetos.MvcModelGenerator 2.4.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.2.4.0.
+2020-05-05 20:01:12.0623|TRACE|Packages|Rhetos.RestGenerator 2.5.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.RestGenerator.2.5.0.
+2020-05-05 20:01:12.2083|TRACE|DeployPackages|Loading plugins.
+2020-05-05 20:01:12.8303|TRACE|DeployPackages|SQL connection: DataSource=gemini\sql2016btim, InitialCatalog=BlazorKadrovska
+2020-05-05 20:01:12.9863|TRACE|DeployPackages|Preparing Rhetos database.
+2020-05-05 20:01:13.2884|TRACE|DeployPackages|Parsing DSL scripts.
+2020-05-05 20:01:13.6664|TRACE|DeployPackages|Application model has 924 statements.
+2020-05-05 20:01:13.6664|TRACE|DeployPackages|Compiling DOM assembly.
+2020-05-05 20:01:13.8434|TRACE|AssemblyGenerator|Restoring assembly from cache: ServerDom.Model.dll.
+2020-05-05 20:01:13.8623|TRACE|AssemblyGenerator|Restoring assembly from cache: ServerDom.Orm.dll.
+2020-05-05 20:01:13.8993|TRACE|AssemblyGenerator|Restoring assembly from cache: ServerDom.Repositories.dll.
+2020-05-05 20:01:13.9223|TRACE|DeployPackages|Generated 239 types.
+2020-05-05 20:01:13.9423|TRACE|DeployPackages|Executing CaptionsResourceGenerator.
+2020-05-05 20:01:13.9863|TRACE|AssemblyGenerator|Compiling assembly: Captions.dll.
+2020-05-05 20:01:16.2185|TRACE|DeployPackages|Executing MvcModelGenerator.
+2020-05-05 20:01:16.2665|TRACE|AssemblyGenerator|Compiling assembly: Rhetos.Mvc.dll.
+2020-05-05 20:01:16.4855|TRACE|DeployPackages|Executing RestGenerator.
+2020-05-05 20:01:16.5485|TRACE|AssemblyGenerator|Restoring assembly from cache: RestService.dll.
+2020-05-05 20:01:16.5655|TRACE|DeployPackages|Executing EntityFrameworkMappingGenerator.
+2020-05-05 20:01:16.6255|TRACE|DeployPackages|Cleaning old migration data.
+2020-05-05 20:01:16.7574|TRACE|DeployPackages|Deleted 0 columns in data migration schemas, 11 remaining.
+2020-05-05 20:01:16.8380|TRACE|DeployPackages|Executing 0 before data migration scripts.
+2020-05-05 20:01:16.8450|TRACE|DeployPackages|Executing data migration scripts.
+2020-05-05 20:01:16.9659|TRACE|DeployPackages|Executed 0 of 14 scripts.
+2020-05-05 20:01:16.9699|TRACE|DeployPackages|Executing 0 after data migration scripts.
+2020-05-05 20:01:16.9699|TRACE|DeployPackages|Upgrading database.
+2020-05-05 20:01:17.2884|TRACE|DeployPackages|DatabaseGenerator removing 0 concept applications.
+2020-05-05 20:01:17.2964|TRACE|DeployPackages|DatabaseGenerator creating 0 concept applications.
+2020-05-05 20:01:17.5123|TRACE|DeployPackages|Deleting redundant migration data.
+2020-05-05 20:01:17.6431|TRACE|DeployPackages|Deleted 0 columns in data migration schemas, 11 remaining.
+2020-05-05 20:01:17.6977|TRACE|DeployPackages|Uploading DSL scripts.
+2020-05-05 20:01:18.0088|TRACE|DeployPackages|Uploaded 18 DSL scripts to database.
+2020-05-05 20:01:18.0088|TRACE|DeployPackages|Loading generated plugins.
+2020-05-05 20:01:18.2128|TRACE|DeployPackages|Initialization ClaimGenerator.
+2020-05-05 20:01:18.6293|TRACE|DeployPackages|Initialization ExecuteSqlAfterDeploy.
+2020-05-05 20:01:18.6413|TRACE|DeployPackages|Executed 0 after-deploy scripts.
+2020-05-05 20:01:18.6413|TRACE|DeployPackages|Initialization KeepSynchronizedRecomputeOnDeploy.
+2020-05-05 20:01:18.7205|TRACE|DeployPackages|Updated Web.config modification date to restart server.
+2020-05-05 20:01:18.7205|TRACE|DeployPackages|Done.
+2020-05-05 20:01:23.4870|TRACE|DeployPackages|Moving old generated files to cache.
+2020-05-05 20:01:23.5503|TRACE|DeployPackages|Getting packages.
+2020-05-05 20:01:23.5633|TRACE|PackageDownloader|Not looking for Rhetos.CommonConcepts (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-05 20:01:25.3969|TRACE|PackageDownloader|Downloading NuGet package Rhetos.CommonConcepts 3.0.1 from https://www.nuget.org/api/v2/.
+2020-05-05 20:01:25.5478|TRACE|NuGet|'Rhetos.CommonConcepts 3.0.1' already installed.
+2020-05-05 20:01:25.6509|TRACE|PackageDownloader|Not looking for Rhetos.RestGenerator (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-05 20:01:25.9905|TRACE|PackageDownloader|Downloading NuGet package Rhetos.RestGenerator 2.5.0 from https://www.nuget.org/api/v2/.
+2020-05-05 20:01:26.0033|TRACE|NuGet|'Rhetos.RestGenerator 2.5.0' already installed.
+2020-05-05 20:01:26.0243|TRACE|PackageDownloader|Reading package Rhetos.AfterDeploy from cache 'Rhetos.AfterDeploy.1.2.0'.
+2020-05-05 20:01:26.0243|TRACE|DeployPackages|Reading Rhetos.AfterDeploy from cache.
+2020-05-05 20:01:26.0323|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator from cache 'Rhetos.MvcModelGenerator.2.4.0'.
+2020-05-05 20:01:26.0323|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator from cache.
+2020-05-05 20:01:26.0323|TRACE|PackageDownloader|Reading package Rhetos.LightDMS from cache 'Rhetos.LightDMS.1.7.0'.
+2020-05-05 20:01:26.0323|TRACE|DeployPackages|Reading Rhetos.LightDMS from cache.
+2020-05-05 20:01:26.0323|TRACE|PackageDownloader|Reading package Kadrovska.Service from unpacked source folder with metadata Kadrovska.Service.nuspec.
+2020-05-05 20:01:26.0323|TRACE|DeployPackages|Reading Kadrovska.Service from source.
+2020-05-05 20:01:26.0763|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator.Client from cache 'Rhetos.MvcModelGenerator.Client.2.4.0'.
+2020-05-05 20:01:26.0763|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator.Client from cache.
+2020-05-05 20:01:26.0823|TRACE|PackageDownloader|Reading package WindowsAzure.Storage from cache 'WindowsAzure.Storage.7.2.1'.
+2020-05-05 20:01:26.0823|TRACE|DeployPackages|Reading WindowsAzure.Storage from cache.
+2020-05-05 20:01:26.0823|TRACE|PackageDownloader|Reading package Microsoft.Data.OData from cache 'Microsoft.Data.OData.5.6.4'.
+2020-05-05 20:01:26.0823|TRACE|DeployPackages|Reading Microsoft.Data.OData from cache.
+2020-05-05 20:01:26.1113|TRACE|PackageDownloader|Reading package Newtonsoft.Json from cache 'Newtonsoft.Json.6.0.8'.
+2020-05-05 20:01:26.1113|TRACE|DeployPackages|Reading Newtonsoft.Json from cache.
+2020-05-05 20:01:26.1113|TRACE|PackageDownloader|Reading package Microsoft.Data.Services.Client from cache 'Microsoft.Data.Services.Client.5.6.4'.
+2020-05-05 20:01:26.1113|TRACE|DeployPackages|Reading Microsoft.Data.Services.Client from cache.
+2020-05-05 20:01:26.1283|TRACE|PackageDownloader|Reading package Microsoft.Azure.KeyVault.Core from cache 'Microsoft.Azure.KeyVault.Core.1.0.0'.
+2020-05-05 20:01:26.1283|TRACE|DeployPackages|Reading Microsoft.Azure.KeyVault.Core from cache.
+2020-05-05 20:01:26.1283|TRACE|PackageDownloader|Reading package System.Spatial from cache 'System.Spatial.5.6.4'.
+2020-05-05 20:01:26.1283|TRACE|DeployPackages|Reading System.Spatial from cache.
+2020-05-05 20:01:26.1453|TRACE|PackageDownloader|Reading package Microsoft.Data.Edm from cache 'Microsoft.Data.Edm.5.6.4'.
+2020-05-05 20:01:26.1453|TRACE|DeployPackages|Reading Microsoft.Data.Edm from cache.
+2020-05-05 20:01:26.3353|TRACE|Packages|Kadrovska.Service 0.0.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\src.
+2020-05-05 20:01:26.3353|TRACE|Packages|Microsoft.Azure.KeyVault.Core 1.0.0 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Azure.KeyVault.Core.1.0.0.
+2020-05-05 20:01:26.3353|TRACE|Packages|Microsoft.Data.Edm 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Edm.5.6.4.
+2020-05-05 20:01:26.3353|TRACE|Packages|System.Spatial 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\System.Spatial.5.6.4.
+2020-05-05 20:01:26.3353|TRACE|Packages|Microsoft.Data.OData 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.OData.5.6.4.
+2020-05-05 20:01:26.3353|TRACE|Packages|Microsoft.Data.Services.Client 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Services.Client.5.6.4.
+2020-05-05 20:01:26.3353|TRACE|Packages|Newtonsoft.Json 6.0.8 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Newtonsoft.Json.6.0.8.
+2020-05-05 20:01:26.3353|TRACE|Packages|Rhetos 3.0.1 (requested from Rhetos framework) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer.
+2020-05-05 20:01:26.3353|TRACE|Packages|Rhetos.AfterDeploy 1.2.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.AfterDeploy.1.2.0.
+2020-05-05 20:01:26.3353|TRACE|Packages|Rhetos.CommonConcepts 3.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.CommonConcepts.3.0.1.
+2020-05-05 20:01:26.3353|TRACE|Packages|WindowsAzure.Storage 7.2.1 (requested from package Rhetos.LightDMS) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\WindowsAzure.Storage.7.2.1.
+2020-05-05 20:01:26.3353|TRACE|Packages|Rhetos.LightDMS 1.7.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.LightDMS.1.7.0.
+2020-05-05 20:01:26.3353|TRACE|Packages|Rhetos.MvcModelGenerator.Client 2.4.0 (requested from package Rhetos.MvcModelGenerator) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.Client.2.4.0.
+2020-05-05 20:01:26.3353|TRACE|Packages|Rhetos.MvcModelGenerator 2.4.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.2.4.0.
+2020-05-05 20:01:26.3353|TRACE|Packages|Rhetos.RestGenerator 2.5.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.RestGenerator.2.5.0.
+2020-05-05 20:01:26.4813|TRACE|DeployPackages|Loading plugins.
+2020-05-05 20:01:27.1023|TRACE|DeployPackages|SQL connection: DataSource=gemini\sql2016btim, InitialCatalog=BlazorKadrovska
+2020-05-05 20:01:27.2503|TRACE|DeployPackages|Preparing Rhetos database.
+2020-05-05 20:01:27.5544|TRACE|DeployPackages|Parsing DSL scripts.
+2020-05-05 20:01:27.8624|ERROR|DeployPackages|Rhetos.Dsl.DslSyntaxException: Reference Kadrovska.Djelatnik.Tim: Referenced concept is not defined in DSL scripts: 'DataStructure Kadrovska.Tim'.
+   at Rhetos.Dsl.DslContainer.ReportErrorForUnresolvedConcepts() in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslContainer.cs:line 340
+   at Rhetos.Dsl.DslModel.Initialize(DslContainer dslContainer) in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslModel.cs:line 88
+   at Rhetos.Dsl.DslModel.<>c__DisplayClass11_0.<.ctor>b__0() in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslModel.cs:line 60
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at Rhetos.Dsl.DslModel.get_Concepts() in C:\My Projects\Rhetos\Source\Rhetos.Dsl\DslModel.cs:line 70
+   at Rhetos.Deployment.ApplicationGenerator.ExecuteGenerators(Boolean deployDatabaseOnly) in C:\My Projects\Rhetos\Source\Rhetos.Deployment\ApplicationGenerator.cs:line 82
+   at DeployPackages.Program.GenerateApplication(ILogger logger, DeployArguments arguments) in C:\My Projects\Rhetos\Source\DeployPackages\Program.cs:line 184
+   at DeployPackages.Program.Main(String[] args) in C:\My Projects\Rhetos\Source\DeployPackages\Program.cs:line 69
+Info: 
+2020-05-05 20:01:58.2692|TRACE|DeployPackages|Moving old generated files to cache.
+2020-05-05 20:01:58.3192|TRACE|DeployPackages|Getting packages.
+2020-05-05 20:01:58.3352|TRACE|PackageDownloader|Not looking for Rhetos.CommonConcepts (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-05 20:02:00.2069|TRACE|PackageDownloader|Downloading NuGet package Rhetos.CommonConcepts 3.0.1 from https://www.nuget.org/api/v2/.
+2020-05-05 20:02:00.3688|TRACE|NuGet|'Rhetos.CommonConcepts 3.0.1' already installed.
+2020-05-05 20:02:00.4788|TRACE|PackageDownloader|Not looking for Rhetos.RestGenerator (version not specified) in packages cache because the request does not specify an exact version.
+2020-05-05 20:02:00.7492|TRACE|PackageDownloader|Downloading NuGet package Rhetos.RestGenerator 2.5.0 from https://www.nuget.org/api/v2/.
+2020-05-05 20:02:00.7621|TRACE|NuGet|'Rhetos.RestGenerator 2.5.0' already installed.
+2020-05-05 20:02:00.7851|TRACE|PackageDownloader|Reading package Rhetos.AfterDeploy from cache 'Rhetos.AfterDeploy.1.2.0'.
+2020-05-05 20:02:00.7851|TRACE|DeployPackages|Reading Rhetos.AfterDeploy from cache.
+2020-05-05 20:02:00.7851|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator from cache 'Rhetos.MvcModelGenerator.2.4.0'.
+2020-05-05 20:02:00.7851|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator from cache.
+2020-05-05 20:02:00.8001|TRACE|PackageDownloader|Reading package Rhetos.LightDMS from cache 'Rhetos.LightDMS.1.7.0'.
+2020-05-05 20:02:00.8001|TRACE|DeployPackages|Reading Rhetos.LightDMS from cache.
+2020-05-05 20:02:00.8001|TRACE|PackageDownloader|Reading package Kadrovska.Service from unpacked source folder with metadata Kadrovska.Service.nuspec.
+2020-05-05 20:02:00.8001|TRACE|DeployPackages|Reading Kadrovska.Service from source.
+2020-05-05 20:02:00.8421|TRACE|PackageDownloader|Reading package Rhetos.MvcModelGenerator.Client from cache 'Rhetos.MvcModelGenerator.Client.2.4.0'.
+2020-05-05 20:02:00.8421|TRACE|DeployPackages|Reading Rhetos.MvcModelGenerator.Client from cache.
+2020-05-05 20:02:00.8481|TRACE|PackageDownloader|Reading package WindowsAzure.Storage from cache 'WindowsAzure.Storage.7.2.1'.
+2020-05-05 20:02:00.8481|TRACE|DeployPackages|Reading WindowsAzure.Storage from cache.
+2020-05-05 20:02:00.8481|TRACE|PackageDownloader|Reading package Microsoft.Data.OData from cache 'Microsoft.Data.OData.5.6.4'.
+2020-05-05 20:02:00.8481|TRACE|DeployPackages|Reading Microsoft.Data.OData from cache.
+2020-05-05 20:02:00.8811|TRACE|PackageDownloader|Reading package Newtonsoft.Json from cache 'Newtonsoft.Json.6.0.8'.
+2020-05-05 20:02:00.8811|TRACE|DeployPackages|Reading Newtonsoft.Json from cache.
+2020-05-05 20:02:00.8811|TRACE|PackageDownloader|Reading package Microsoft.Data.Services.Client from cache 'Microsoft.Data.Services.Client.5.6.4'.
+2020-05-05 20:02:00.8811|TRACE|DeployPackages|Reading Microsoft.Data.Services.Client from cache.
+2020-05-05 20:02:00.8991|TRACE|PackageDownloader|Reading package Microsoft.Azure.KeyVault.Core from cache 'Microsoft.Azure.KeyVault.Core.1.0.0'.
+2020-05-05 20:02:00.8991|TRACE|DeployPackages|Reading Microsoft.Azure.KeyVault.Core from cache.
+2020-05-05 20:02:00.8991|TRACE|PackageDownloader|Reading package System.Spatial from cache 'System.Spatial.5.6.4'.
+2020-05-05 20:02:00.8991|TRACE|DeployPackages|Reading System.Spatial from cache.
+2020-05-05 20:02:00.9171|TRACE|PackageDownloader|Reading package Microsoft.Data.Edm from cache 'Microsoft.Data.Edm.5.6.4'.
+2020-05-05 20:02:00.9171|TRACE|DeployPackages|Reading Microsoft.Data.Edm from cache.
+2020-05-05 20:02:01.0666|TRACE|Packages|Kadrovska.Service 0.0.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\src.
+2020-05-05 20:02:01.0666|TRACE|Packages|Microsoft.Azure.KeyVault.Core 1.0.0 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Azure.KeyVault.Core.1.0.0.
+2020-05-05 20:02:01.0666|TRACE|Packages|Microsoft.Data.Edm 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Edm.5.6.4.
+2020-05-05 20:02:01.0666|TRACE|Packages|System.Spatial 5.6.4 (requested from package Microsoft.Data.OData) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\System.Spatial.5.6.4.
+2020-05-05 20:02:01.0666|TRACE|Packages|Microsoft.Data.OData 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.OData.5.6.4.
+2020-05-05 20:02:01.0666|TRACE|Packages|Microsoft.Data.Services.Client 5.6.4 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Microsoft.Data.Services.Client.5.6.4.
+2020-05-05 20:02:01.0666|TRACE|Packages|Newtonsoft.Json 6.0.8 (requested from package WindowsAzure.Storage) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Newtonsoft.Json.6.0.8.
+2020-05-05 20:02:01.0666|TRACE|Packages|Rhetos 3.0.1 (requested from Rhetos framework) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer.
+2020-05-05 20:02:01.0666|TRACE|Packages|Rhetos.AfterDeploy 1.2.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.AfterDeploy.1.2.0.
+2020-05-05 20:02:01.0666|TRACE|Packages|Rhetos.CommonConcepts 3.0.1 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.CommonConcepts.3.0.1.
+2020-05-05 20:02:01.0666|TRACE|Packages|WindowsAzure.Storage 7.2.1 (requested from package Rhetos.LightDMS) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\WindowsAzure.Storage.7.2.1.
+2020-05-05 20:02:01.0666|TRACE|Packages|Rhetos.LightDMS 1.7.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.LightDMS.1.7.0.
+2020-05-05 20:02:01.0666|TRACE|Packages|Rhetos.MvcModelGenerator.Client 2.4.0 (requested from package Rhetos.MvcModelGenerator) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.Client.2.4.0.
+2020-05-05 20:02:01.0666|TRACE|Packages|Rhetos.MvcModelGenerator 2.4.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.MvcModelGenerator.2.4.0.
+2020-05-05 20:02:01.0666|TRACE|Packages|Rhetos.RestGenerator 2.5.0 (requested from configuration file RhetosPackages.config) in C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\PackagesCache\Rhetos.RestGenerator.2.5.0.
+2020-05-05 20:02:01.2266|TRACE|DeployPackages|Loading plugins.
+2020-05-05 20:02:01.8370|TRACE|DeployPackages|SQL connection: DataSource=gemini\sql2016btim, InitialCatalog=BlazorKadrovska
+2020-05-05 20:02:01.9846|TRACE|DeployPackages|Preparing Rhetos database.
+2020-05-05 20:02:02.2914|TRACE|DeployPackages|Parsing DSL scripts.
+2020-05-05 20:02:02.6291|TRACE|DeployPackages|Application model has 939 statements.
+2020-05-05 20:02:02.6291|TRACE|DeployPackages|Compiling DOM assembly.
+2020-05-05 20:02:02.7911|TRACE|AssemblyGenerator|Compiling assembly: ServerDom.Model.dll.
+2020-05-05 20:02:05.2816|TRACE|AssemblyGenerator|Compiling assembly: ServerDom.Orm.dll.
+2020-05-05 20:02:05.4906|TRACE|AssemblyGenerator|Compiling assembly: ServerDom.Repositories.dll.
+2020-05-05 20:02:06.0236|TRACE|DeployPackages|Generated 244 types.
+2020-05-05 20:02:06.0236|TRACE|DeployPackages|Executing CaptionsResourceGenerator.
+2020-05-05 20:02:06.0806|TRACE|AssemblyGenerator|Compiling assembly: Captions.dll.
+2020-05-05 20:02:06.1466|TRACE|DeployPackages|Executing MvcModelGenerator.
+2020-05-05 20:02:06.1966|TRACE|AssemblyGenerator|Compiling assembly: Rhetos.Mvc.dll.
+2020-05-05 20:02:06.2726|TRACE|DeployPackages|Executing RestGenerator.
+2020-05-05 20:02:06.3156|TRACE|AssemblyGenerator|Compiling assembly: RestService.dll.
+2020-05-05 20:02:06.5006|INFO|AssemblyGenerator|100 warning(s) while compiling RestService.dll:
+C:\aplikacije\Kadrovska_2_0\dist\KadrovskaRhetosServer\bin\Generated\RestService.cs(719,27): warning CS0618: 'LegacyClientException' is obsolete: 'Use ClientException instead.' (100 warnings)
+2020-05-05 20:02:06.5366|TRACE|DeployPackages|Executing EntityFrameworkMappingGenerator.
+2020-05-05 20:02:06.6046|TRACE|DeployPackages|Cleaning old migration data.
+2020-05-05 20:02:06.7415|TRACE|DeployPackages|Deleted 0 columns in data migration schemas, 11 remaining.
+2020-05-05 20:02:06.8186|TRACE|DeployPackages|Executing 0 before data migration scripts.
+2020-05-05 20:02:06.8186|TRACE|DeployPackages|Executing data migration scripts.
+2020-05-05 20:02:06.9323|TRACE|DeployPackages|Executed 0 of 14 scripts.
+2020-05-05 20:02:06.9323|TRACE|DeployPackages|Executing 0 after data migration scripts.
+2020-05-05 20:02:06.9372|TRACE|DeployPackages|Upgrading database.
+2020-05-05 20:02:07.2211|TRACE|DatabaseGenerator Concepts|Removing SqlIndexMultipleInfo Kadrovska.Sektor.Voditelj/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=E297CBF7-0562-4034-B266-E895ABB9F4CB.
+2020-05-05 20:02:07.2211|TRACE|DatabaseGenerator Concepts|Removing ReferencePropertyDbConstraintInfo Kadrovska.Sektor.Voditelj/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=3859AAB5-70E2-4416-AEF5-9B0051486446.
+2020-05-05 20:02:07.2211|TRACE|DatabaseGenerator Concepts|Removing PropertyInfo Kadrovska.Sektor.Voditelj/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=6D5C9FA0-CE8B-485D-9F93-6B29EDEE4422.
+2020-05-05 20:02:07.2211|INFO|DeployPackages|DatabaseGenerator removing 3 concept applications.
+2020-05-05 20:02:07.2340|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Djelatnik.Odjel/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=0C940508-FAC2-454D-A6C8-AAE6E658E380.
+2020-05-05 20:02:07.2340|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Djelatnik.Sektor/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=4159E9B1-2CFE-4059-B009-F8990F4A90DC.
+2020-05-05 20:02:07.2340|TRACE|DatabaseGenerator Concepts|Creating DataStructureInfo Kadrovska.Tim/Rhetos.DatabaseGenerator.DefaultConcepts.EntityDatabaseDefinition, ID=E520B4AF-3072-4A92-96A3-9C9211A84A5C.
+2020-05-05 20:02:07.2340|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Djelatnik.Tim/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=FB19FFCC-E596-4184-9560-911151E127E0.
+2020-05-05 20:02:07.2340|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Tim.Naziv/Rhetos.DatabaseGenerator.DefaultConcepts.ShortStringPropertyDatabaseDefinition, ID=A941DCAE-F438-4CB1-BA25-A39169E84F77.
+2020-05-05 20:02:07.2340|TRACE|DatabaseGenerator Concepts|Creating PropertyInfo Kadrovska.Tim.Voditelj/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyDatabaseDefinition, ID=D72CCA0B-E05C-452C-9433-2E68C47A7FCE.
+2020-05-05 20:02:07.2340|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Kadrovska.Djelatnik.Odjel/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=C066AB2F-99DD-45DA-9C98-E0FEF1E4549E.
+2020-05-05 20:02:07.2340|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Kadrovska.Djelatnik.Sektor/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=FB916E82-C326-463C-90D2-FD4A5001E34E.
+2020-05-05 20:02:07.2340|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Kadrovska.Djelatnik.Tim/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=0DFFA533-AA87-46AE-A940-E943309B3490.
+2020-05-05 20:02:07.2340|TRACE|DatabaseGenerator Concepts|Creating ReferencePropertyDbConstraintInfo Kadrovska.Tim.Voditelj/Rhetos.DatabaseGenerator.DefaultConcepts.ReferencePropertyConstraintDatabaseDefinition, ID=9A052447-EC40-4833-B556-796EF2C300E7.
+2020-05-05 20:02:07.2340|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Kadrovska.Tim.Naziv/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=B754B27F-355E-4070-99CF-5996B87692FF.
+2020-05-05 20:02:07.2500|TRACE|DatabaseGenerator Concepts|Creating SqlIndexMultipleInfo Kadrovska.Tim.Voditelj/Rhetos.DatabaseGenerator.DefaultConcepts.SqlIndexMultipleDatabaseDefinition, ID=EBE581C2-5056-47F7-B9AD-24F66CB678A0.
+2020-05-05 20:02:07.2500|INFO|DeployPackages|DatabaseGenerator creating 12 concept applications.
+2020-05-05 20:02:08.1307|TRACE|DeployPackages|Deleting redundant migration data.
+2020-05-05 20:02:08.2639|TRACE|DeployPackages|Deleted 0 columns in data migration schemas, 12 remaining.
+2020-05-05 20:02:08.3249|TRACE|DeployPackages|Uploading DSL scripts.
+2020-05-05 20:02:08.6439|TRACE|DeployPackages|Uploaded 18 DSL scripts to database.
+2020-05-05 20:02:08.6439|TRACE|DeployPackages|Loading generated plugins.
+2020-05-05 20:02:08.8434|TRACE|DeployPackages|Initialization ClaimGenerator.
+2020-05-05 20:02:09.2504|TRACE|ClaimGenerator Claims|Inserting claims Kadrovska.Tim.Edit, Kadrovska.Tim.New, Kadrovska.Tim.Read, Kadrovska.Tim.Remove.
+2020-05-05 20:02:09.4124|TRACE|DeployPackages|Initialization ExecuteSqlAfterDeploy.
+2020-05-05 20:02:09.4244|TRACE|DeployPackages|Executed 0 after-deploy scripts.
+2020-05-05 20:02:09.4244|TRACE|DeployPackages|Initialization KeepSynchronizedRecomputeOnDeploy.
+2020-05-05 20:02:09.5084|TRACE|DeployPackages|Updated Web.config modification date to restart server.
+2020-05-05 20:02:09.5084|TRACE|DeployPackages|Done.

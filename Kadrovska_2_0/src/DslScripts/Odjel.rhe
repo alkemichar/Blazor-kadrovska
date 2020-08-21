@@ -1,0 +1,7 @@
+﻿Module Kadrovska
+{
+	Entity Odjel
+	{		
+		ShortString Naziv { Required; Unique; }
+	}
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rhetos.Interfaces</name>
+    </assembly>
+    <members>
+        <member name="T:Rhetos.IService">
+            <summary>
+            Initialize plugin web service. Called at run-time.
+            </summary>
+        </member>
+        <member name="M:Rhetos.IService.Initialize">
+            <summary>
+            Called only once when initializing the server process (see Global.asax: Application_Start).
+            </summary>
+        </member>
+        <member name="M:Rhetos.IService.InitializeApplicationInstance(System.Web.HttpApplication)">
+            <summary>
+            Called once for each System.Web.HttpApplication instance in the server process (see Global.asax: HttpApplication.Init).
+            </summary>
+        </member>
+    </members>
+</doc>

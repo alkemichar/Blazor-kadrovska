@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rhetos.TestCommon</name>
+    </assembly>
+    <members>
+        <member name="M:Rhetos.TestCommon.TestUtility.AssertContains(System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String)">
+            <summary>
+            Case-insensitive comparison.
+            </summary>
+        </member>
+        <member name="M:Rhetos.TestCommon.TestUtility.AssertContains(System.String,System.String,System.String)">
+            <summary>
+            Case-insensitive comparison.
+            </summary>
+        </member>
+        <member name="M:Rhetos.TestCommon.TestUtility.AssertNotContains(System.String,System.String[],System.String)">
+            <summary>
+            Case-insensitive comparison.
+            </summary>
+        </member>
+        <member name="M:Rhetos.TestCommon.TestUtility.AssertNotContains(System.String,System.String,System.String)">
+            <summary>
+            Case-insensitive comparison.
+            </summary>
+        </member>
+        <member name="M:Rhetos.TestCommon.TestUtility.AssertAreEqualByLine(System.String,System.String,System.String)">
+            <summary>
+            Useful for comparing long texts. Reports first line that doesn't match.
+            </summary>
+        </member>
+        <member name="M:Rhetos.TestCommon.TestUtility.CheckDatabaseAvailability(System.String)">
+            <summary>
+            Unit test will be marked as "Inconclusive" if this function fails.
+            </summary>
+        </member>
+        <member name="M:Rhetos.TestCommon.TestUtility.CompressReport(System.String)">
+            <summary>
+            Shortens sequences of repeating characters, if longer then 3.
+            Example: "aaaaaaaaaaXXXbbbb" => "aaa...(10)XXXbbb...(5)"
+            </summary>
+        </member>
+    </members>
+</doc>
